@@ -1,0 +1,2607 @@
+@import url(konstruct/vendor/aos.css);
+@import url(konstruct/vendor/normalize.css);
+html, body {
+  margin: 0; }
+
+.container {
+  max-width: 100%; }
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .container {
+    padding: 0 10px; } }
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  .container {
+    padding: 0 baseline; } }
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    width: 940px;
+    margin: 0 auto; } }
+
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto; } }
+
+.grid, .tabs .tabs__header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.grid__item, .grid .one-whole, .tabs .tabs__header .one-whole, .grid .two-quarters, .tabs .tabs__header .two-quarters, .grid .three-sixths, .tabs .tabs__header .three-sixths, .grid .four-eighths, .tabs .tabs__header .four-eighths, .grid .five-tenths, .tabs .tabs__header .five-tenths, .grid .six-twelfths, .tabs .tabs__header .six-twelfths, .grid .one-half, .tabs .tabs__header .one-half, .tabs .tabs__header li, .grid .two-eighths, .tabs .tabs__header .two-eighths, .grid .three-twelfths, .tabs .tabs__header .three-twelfths, .grid .one-quarter, .tabs .tabs__header .one-quarter, .grid .six-eighths, .tabs .tabs__header .six-eighths, .grid .nine-twelfths, .tabs .tabs__header .nine-twelfths, .grid .three-quarters, .tabs .tabs__header .three-quarters, .grid .two-sixths, .tabs .tabs__header .two-sixths, .grid .four-twelfths, .tabs .tabs__header .four-twelfths, .grid .one-third, .tabs .tabs__header .one-third, .grid .four-sixths, .tabs .tabs__header .four-sixths, .grid .eight-twelfths, .tabs .tabs__header .eight-twelfths, .grid .two-thirds, .tabs .tabs__header .two-thirds, .grid .two-tenths, .tabs .tabs__header .two-tenths, .grid .one-fifth, .tabs .tabs__header .one-fifth, .grid .four-tenths, .tabs .tabs__header .four-tenths, .grid .two-fifths, .tabs .tabs__header .two-fifths, .grid .two-twelfths, .tabs .tabs__header .two-twelfths, .grid .one-sixth, .tabs .tabs__header .one-sixth, .grid .ten-twelfths, .tabs .tabs__header .ten-twelfths, .grid .five-sixths, .tabs .tabs__header .five-sixths, .grid .three-eighths, .tabs .tabs__header .three-eighths, .card.long .card__header .lesson-detail {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.3s;
+          transition: 0.3s; }
+
+.grid__gutter {
+  margin-left: -20px; }
+  .grid__gutter .grid__item, .grid__gutter .grid .one-whole, .grid .grid__gutter .one-whole, .grid__gutter .tabs .tabs__header .one-whole, .tabs .tabs__header .grid__gutter .one-whole, .grid__gutter .grid .two-quarters, .grid .grid__gutter .two-quarters, .grid__gutter .tabs .tabs__header .two-quarters, .tabs .tabs__header .grid__gutter .two-quarters, .grid__gutter .grid .three-sixths, .grid .grid__gutter .three-sixths, .grid__gutter .tabs .tabs__header .three-sixths, .tabs .tabs__header .grid__gutter .three-sixths, .grid__gutter .grid .four-eighths, .grid .grid__gutter .four-eighths, .grid__gutter .tabs .tabs__header .four-eighths, .tabs .tabs__header .grid__gutter .four-eighths, .grid__gutter .grid .five-tenths, .grid .grid__gutter .five-tenths, .grid__gutter .tabs .tabs__header .five-tenths, .tabs .tabs__header .grid__gutter .five-tenths, .grid__gutter .grid .six-twelfths, .grid .grid__gutter .six-twelfths, .grid__gutter .tabs .tabs__header .six-twelfths, .tabs .tabs__header .grid__gutter .six-twelfths, .grid__gutter .grid .one-half, .grid .grid__gutter .one-half, .grid__gutter .tabs .tabs__header .one-half, .tabs .tabs__header .grid__gutter .one-half, .grid__gutter .tabs .tabs__header li, .tabs .tabs__header .grid__gutter li, .grid__gutter .grid .two-eighths, .grid .grid__gutter .two-eighths, .grid__gutter .tabs .tabs__header .two-eighths, .tabs .tabs__header .grid__gutter .two-eighths, .grid__gutter .grid .three-twelfths, .grid .grid__gutter .three-twelfths, .grid__gutter .tabs .tabs__header .three-twelfths, .tabs .tabs__header .grid__gutter .three-twelfths, .grid__gutter .grid .one-quarter, .grid .grid__gutter .one-quarter, .grid__gutter .tabs .tabs__header .one-quarter, .tabs .tabs__header .grid__gutter .one-quarter, .grid__gutter .grid .six-eighths, .grid .grid__gutter .six-eighths, .grid__gutter .tabs .tabs__header .six-eighths, .tabs .tabs__header .grid__gutter .six-eighths, .grid__gutter .grid .nine-twelfths, .grid .grid__gutter .nine-twelfths, .grid__gutter .tabs .tabs__header .nine-twelfths, .tabs .tabs__header .grid__gutter .nine-twelfths, .grid__gutter .grid .three-quarters, .grid .grid__gutter .three-quarters, .grid__gutter .tabs .tabs__header .three-quarters, .tabs .tabs__header .grid__gutter .three-quarters, .grid__gutter .grid .two-sixths, .grid .grid__gutter .two-sixths, .grid__gutter .tabs .tabs__header .two-sixths, .tabs .tabs__header .grid__gutter .two-sixths, .grid__gutter .grid .four-twelfths, .grid .grid__gutter .four-twelfths, .grid__gutter .tabs .tabs__header .four-twelfths, .tabs .tabs__header .grid__gutter .four-twelfths, .grid__gutter .grid .one-third, .grid .grid__gutter .one-third, .grid__gutter .tabs .tabs__header .one-third, .tabs .tabs__header .grid__gutter .one-third, .grid__gutter .grid .four-sixths, .grid .grid__gutter .four-sixths, .grid__gutter .tabs .tabs__header .four-sixths, .tabs .tabs__header .grid__gutter .four-sixths, .grid__gutter .grid .eight-twelfths, .grid .grid__gutter .eight-twelfths, .grid__gutter .tabs .tabs__header .eight-twelfths, .tabs .tabs__header .grid__gutter .eight-twelfths, .grid__gutter .grid .two-thirds, .grid .grid__gutter .two-thirds, .grid__gutter .tabs .tabs__header .two-thirds, .tabs .tabs__header .grid__gutter .two-thirds, .grid__gutter .grid .two-tenths, .grid .grid__gutter .two-tenths, .grid__gutter .tabs .tabs__header .two-tenths, .tabs .tabs__header .grid__gutter .two-tenths, .grid__gutter .grid .one-fifth, .grid .grid__gutter .one-fifth, .grid__gutter .tabs .tabs__header .one-fifth, .tabs .tabs__header .grid__gutter .one-fifth, .grid__gutter .grid .four-tenths, .grid .grid__gutter .four-tenths, .grid__gutter .tabs .tabs__header .four-tenths, .tabs .tabs__header .grid__gutter .four-tenths, .grid__gutter .grid .two-fifths, .grid .grid__gutter .two-fifths, .grid__gutter .tabs .tabs__header .two-fifths, .tabs .tabs__header .grid__gutter .two-fifths, .grid__gutter .grid .two-twelfths, .grid .grid__gutter .two-twelfths, .grid__gutter .tabs .tabs__header .two-twelfths, .tabs .tabs__header .grid__gutter .two-twelfths, .grid__gutter .grid .one-sixth, .grid .grid__gutter .one-sixth, .grid__gutter .tabs .tabs__header .one-sixth, .tabs .tabs__header .grid__gutter .one-sixth, .grid__gutter .grid .ten-twelfths, .grid .grid__gutter .ten-twelfths, .grid__gutter .tabs .tabs__header .ten-twelfths, .tabs .tabs__header .grid__gutter .ten-twelfths, .grid__gutter .grid .five-sixths, .grid .grid__gutter .five-sixths, .grid__gutter .tabs .tabs__header .five-sixths, .tabs .tabs__header .grid__gutter .five-sixths, .grid__gutter .grid .three-eighths, .grid .grid__gutter .three-eighths, .grid__gutter .tabs .tabs__header .three-eighths, .tabs .tabs__header .grid__gutter .three-eighths, .grid__gutter .card.long .card__header .lesson-detail, .card.long .card__header .grid__gutter .lesson-detail {
+    padding-left: 20px; }
+
+.grid__gutter-large {
+  margin-left: -40px; }
+  .grid__gutter-large .grid__item, .grid__gutter-large .grid .one-whole, .grid .grid__gutter-large .one-whole, .grid__gutter-large .tabs .tabs__header .one-whole, .tabs .tabs__header .grid__gutter-large .one-whole, .grid__gutter-large .grid .two-quarters, .grid .grid__gutter-large .two-quarters, .grid__gutter-large .tabs .tabs__header .two-quarters, .tabs .tabs__header .grid__gutter-large .two-quarters, .grid__gutter-large .grid .three-sixths, .grid .grid__gutter-large .three-sixths, .grid__gutter-large .tabs .tabs__header .three-sixths, .tabs .tabs__header .grid__gutter-large .three-sixths, .grid__gutter-large .grid .four-eighths, .grid .grid__gutter-large .four-eighths, .grid__gutter-large .tabs .tabs__header .four-eighths, .tabs .tabs__header .grid__gutter-large .four-eighths, .grid__gutter-large .grid .five-tenths, .grid .grid__gutter-large .five-tenths, .grid__gutter-large .tabs .tabs__header .five-tenths, .tabs .tabs__header .grid__gutter-large .five-tenths, .grid__gutter-large .grid .six-twelfths, .grid .grid__gutter-large .six-twelfths, .grid__gutter-large .tabs .tabs__header .six-twelfths, .tabs .tabs__header .grid__gutter-large .six-twelfths, .grid__gutter-large .grid .one-half, .grid .grid__gutter-large .one-half, .grid__gutter-large .tabs .tabs__header .one-half, .tabs .tabs__header .grid__gutter-large .one-half, .grid__gutter-large .tabs .tabs__header li, .tabs .tabs__header .grid__gutter-large li, .grid__gutter-large .grid .two-eighths, .grid .grid__gutter-large .two-eighths, .grid__gutter-large .tabs .tabs__header .two-eighths, .tabs .tabs__header .grid__gutter-large .two-eighths, .grid__gutter-large .grid .three-twelfths, .grid .grid__gutter-large .three-twelfths, .grid__gutter-large .tabs .tabs__header .three-twelfths, .tabs .tabs__header .grid__gutter-large .three-twelfths, .grid__gutter-large .grid .one-quarter, .grid .grid__gutter-large .one-quarter, .grid__gutter-large .tabs .tabs__header .one-quarter, .tabs .tabs__header .grid__gutter-large .one-quarter, .grid__gutter-large .grid .six-eighths, .grid .grid__gutter-large .six-eighths, .grid__gutter-large .tabs .tabs__header .six-eighths, .tabs .tabs__header .grid__gutter-large .six-eighths, .grid__gutter-large .grid .nine-twelfths, .grid .grid__gutter-large .nine-twelfths, .grid__gutter-large .tabs .tabs__header .nine-twelfths, .tabs .tabs__header .grid__gutter-large .nine-twelfths, .grid__gutter-large .grid .three-quarters, .grid .grid__gutter-large .three-quarters, .grid__gutter-large .tabs .tabs__header .three-quarters, .tabs .tabs__header .grid__gutter-large .three-quarters, .grid__gutter-large .grid .two-sixths, .grid .grid__gutter-large .two-sixths, .grid__gutter-large .tabs .tabs__header .two-sixths, .tabs .tabs__header .grid__gutter-large .two-sixths, .grid__gutter-large .grid .four-twelfths, .grid .grid__gutter-large .four-twelfths, .grid__gutter-large .tabs .tabs__header .four-twelfths, .tabs .tabs__header .grid__gutter-large .four-twelfths, .grid__gutter-large .grid .one-third, .grid .grid__gutter-large .one-third, .grid__gutter-large .tabs .tabs__header .one-third, .tabs .tabs__header .grid__gutter-large .one-third, .grid__gutter-large .grid .four-sixths, .grid .grid__gutter-large .four-sixths, .grid__gutter-large .tabs .tabs__header .four-sixths, .tabs .tabs__header .grid__gutter-large .four-sixths, .grid__gutter-large .grid .eight-twelfths, .grid .grid__gutter-large .eight-twelfths, .grid__gutter-large .tabs .tabs__header .eight-twelfths, .tabs .tabs__header .grid__gutter-large .eight-twelfths, .grid__gutter-large .grid .two-thirds, .grid .grid__gutter-large .two-thirds, .grid__gutter-large .tabs .tabs__header .two-thirds, .tabs .tabs__header .grid__gutter-large .two-thirds, .grid__gutter-large .grid .two-tenths, .grid .grid__gutter-large .two-tenths, .grid__gutter-large .tabs .tabs__header .two-tenths, .tabs .tabs__header .grid__gutter-large .two-tenths, .grid__gutter-large .grid .one-fifth, .grid .grid__gutter-large .one-fifth, .grid__gutter-large .tabs .tabs__header .one-fifth, .tabs .tabs__header .grid__gutter-large .one-fifth, .grid__gutter-large .grid .four-tenths, .grid .grid__gutter-large .four-tenths, .grid__gutter-large .tabs .tabs__header .four-tenths, .tabs .tabs__header .grid__gutter-large .four-tenths, .grid__gutter-large .grid .two-fifths, .grid .grid__gutter-large .two-fifths, .grid__gutter-large .tabs .tabs__header .two-fifths, .tabs .tabs__header .grid__gutter-large .two-fifths, .grid__gutter-large .grid .two-twelfths, .grid .grid__gutter-large .two-twelfths, .grid__gutter-large .tabs .tabs__header .two-twelfths, .tabs .tabs__header .grid__gutter-large .two-twelfths, .grid__gutter-large .grid .one-sixth, .grid .grid__gutter-large .one-sixth, .grid__gutter-large .tabs .tabs__header .one-sixth, .tabs .tabs__header .grid__gutter-large .one-sixth, .grid__gutter-large .grid .ten-twelfths, .grid .grid__gutter-large .ten-twelfths, .grid__gutter-large .tabs .tabs__header .ten-twelfths, .tabs .tabs__header .grid__gutter-large .ten-twelfths, .grid__gutter-large .grid .five-sixths, .grid .grid__gutter-large .five-sixths, .grid__gutter-large .tabs .tabs__header .five-sixths, .tabs .tabs__header .grid__gutter-large .five-sixths, .grid__gutter-large .grid .three-eighths, .grid .grid__gutter-large .three-eighths, .grid__gutter-large .tabs .tabs__header .three-eighths, .tabs .tabs__header .grid__gutter-large .three-eighths, .grid__gutter-large .card.long .card__header .lesson-detail, .card.long .card__header .grid__gutter-large .lesson-detail {
+    padding-left: 40px; }
+
+.grid__gutter-small {
+  margin-left: -10px; }
+  .grid__gutter-small .grid__item, .grid__gutter-small .grid .one-whole, .grid .grid__gutter-small .one-whole, .grid__gutter-small .tabs .tabs__header .one-whole, .tabs .tabs__header .grid__gutter-small .one-whole, .grid__gutter-small .grid .two-quarters, .grid .grid__gutter-small .two-quarters, .grid__gutter-small .tabs .tabs__header .two-quarters, .tabs .tabs__header .grid__gutter-small .two-quarters, .grid__gutter-small .grid .three-sixths, .grid .grid__gutter-small .three-sixths, .grid__gutter-small .tabs .tabs__header .three-sixths, .tabs .tabs__header .grid__gutter-small .three-sixths, .grid__gutter-small .grid .four-eighths, .grid .grid__gutter-small .four-eighths, .grid__gutter-small .tabs .tabs__header .four-eighths, .tabs .tabs__header .grid__gutter-small .four-eighths, .grid__gutter-small .grid .five-tenths, .grid .grid__gutter-small .five-tenths, .grid__gutter-small .tabs .tabs__header .five-tenths, .tabs .tabs__header .grid__gutter-small .five-tenths, .grid__gutter-small .grid .six-twelfths, .grid .grid__gutter-small .six-twelfths, .grid__gutter-small .tabs .tabs__header .six-twelfths, .tabs .tabs__header .grid__gutter-small .six-twelfths, .grid__gutter-small .grid .one-half, .grid .grid__gutter-small .one-half, .grid__gutter-small .tabs .tabs__header .one-half, .tabs .tabs__header .grid__gutter-small .one-half, .grid__gutter-small .tabs .tabs__header li, .tabs .tabs__header .grid__gutter-small li, .grid__gutter-small .grid .two-eighths, .grid .grid__gutter-small .two-eighths, .grid__gutter-small .tabs .tabs__header .two-eighths, .tabs .tabs__header .grid__gutter-small .two-eighths, .grid__gutter-small .grid .three-twelfths, .grid .grid__gutter-small .three-twelfths, .grid__gutter-small .tabs .tabs__header .three-twelfths, .tabs .tabs__header .grid__gutter-small .three-twelfths, .grid__gutter-small .grid .one-quarter, .grid .grid__gutter-small .one-quarter, .grid__gutter-small .tabs .tabs__header .one-quarter, .tabs .tabs__header .grid__gutter-small .one-quarter, .grid__gutter-small .grid .six-eighths, .grid .grid__gutter-small .six-eighths, .grid__gutter-small .tabs .tabs__header .six-eighths, .tabs .tabs__header .grid__gutter-small .six-eighths, .grid__gutter-small .grid .nine-twelfths, .grid .grid__gutter-small .nine-twelfths, .grid__gutter-small .tabs .tabs__header .nine-twelfths, .tabs .tabs__header .grid__gutter-small .nine-twelfths, .grid__gutter-small .grid .three-quarters, .grid .grid__gutter-small .three-quarters, .grid__gutter-small .tabs .tabs__header .three-quarters, .tabs .tabs__header .grid__gutter-small .three-quarters, .grid__gutter-small .grid .two-sixths, .grid .grid__gutter-small .two-sixths, .grid__gutter-small .tabs .tabs__header .two-sixths, .tabs .tabs__header .grid__gutter-small .two-sixths, .grid__gutter-small .grid .four-twelfths, .grid .grid__gutter-small .four-twelfths, .grid__gutter-small .tabs .tabs__header .four-twelfths, .tabs .tabs__header .grid__gutter-small .four-twelfths, .grid__gutter-small .grid .one-third, .grid .grid__gutter-small .one-third, .grid__gutter-small .tabs .tabs__header .one-third, .tabs .tabs__header .grid__gutter-small .one-third, .grid__gutter-small .grid .four-sixths, .grid .grid__gutter-small .four-sixths, .grid__gutter-small .tabs .tabs__header .four-sixths, .tabs .tabs__header .grid__gutter-small .four-sixths, .grid__gutter-small .grid .eight-twelfths, .grid .grid__gutter-small .eight-twelfths, .grid__gutter-small .tabs .tabs__header .eight-twelfths, .tabs .tabs__header .grid__gutter-small .eight-twelfths, .grid__gutter-small .grid .two-thirds, .grid .grid__gutter-small .two-thirds, .grid__gutter-small .tabs .tabs__header .two-thirds, .tabs .tabs__header .grid__gutter-small .two-thirds, .grid__gutter-small .grid .two-tenths, .grid .grid__gutter-small .two-tenths, .grid__gutter-small .tabs .tabs__header .two-tenths, .tabs .tabs__header .grid__gutter-small .two-tenths, .grid__gutter-small .grid .one-fifth, .grid .grid__gutter-small .one-fifth, .grid__gutter-small .tabs .tabs__header .one-fifth, .tabs .tabs__header .grid__gutter-small .one-fifth, .grid__gutter-small .grid .four-tenths, .grid .grid__gutter-small .four-tenths, .grid__gutter-small .tabs .tabs__header .four-tenths, .tabs .tabs__header .grid__gutter-small .four-tenths, .grid__gutter-small .grid .two-fifths, .grid .grid__gutter-small .two-fifths, .grid__gutter-small .tabs .tabs__header .two-fifths, .tabs .tabs__header .grid__gutter-small .two-fifths, .grid__gutter-small .grid .two-twelfths, .grid .grid__gutter-small .two-twelfths, .grid__gutter-small .tabs .tabs__header .two-twelfths, .tabs .tabs__header .grid__gutter-small .two-twelfths, .grid__gutter-small .grid .one-sixth, .grid .grid__gutter-small .one-sixth, .grid__gutter-small .tabs .tabs__header .one-sixth, .tabs .tabs__header .grid__gutter-small .one-sixth, .grid__gutter-small .grid .ten-twelfths, .grid .grid__gutter-small .ten-twelfths, .grid__gutter-small .tabs .tabs__header .ten-twelfths, .tabs .tabs__header .grid__gutter-small .ten-twelfths, .grid__gutter-small .grid .five-sixths, .grid .grid__gutter-small .five-sixths, .grid__gutter-small .tabs .tabs__header .five-sixths, .tabs .tabs__header .grid__gutter-small .five-sixths, .grid__gutter-small .grid .three-eighths, .grid .grid__gutter-small .three-eighths, .grid__gutter-small .tabs .tabs__header .three-eighths, .tabs .tabs__header .grid__gutter-small .three-eighths, .grid__gutter-small .card.long .card__header .lesson-detail, .card.long .card__header .grid__gutter-small .lesson-detail {
+    padding-left: 10px; }
+
+.one-whole, .grid .one-whole, .tabs .tabs__header .one-whole {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 100%;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%; }
+
+.one-half, .two-quarters, .three-sixths, .four-eighths, .five-tenths, .six-twelfths, .grid .one-half, .tabs .tabs__header .one-half, .tabs .tabs__header li {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 50%;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%; }
+
+.one-third, .two-sixths, .four-twelfths, .grid .one-third, .tabs .tabs__header .one-third {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 33.333%;
+      -ms-flex: 0 0 33.333%;
+          flex: 0 0 33.333%; }
+
+.two-thirds, .four-sixths, .grid .four-sixths, .tabs .tabs__header .four-sixths, .eight-twelfths, .grid .two-thirds, .tabs .tabs__header .two-thirds {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 66.666%;
+      -ms-flex: 0 0 66.666%;
+          flex: 0 0 66.666%; }
+
+.one-quarter, .two-eighths, .three-twelfths, .grid .one-quarter, .tabs .tabs__header .one-quarter {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 25%;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%; }
+
+.three-quarters, .six-eighths, .nine-twelfths, .grid .three-quarters, .tabs .tabs__header .three-quarters {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 75%;
+      -ms-flex: 0 0 75%;
+          flex: 0 0 75%; }
+
+.one-fifth, .two-tenths, .grid .one-fifth, .tabs .tabs__header .one-fifth {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 20%;
+      -ms-flex: 0 0 20%;
+          flex: 0 0 20%; }
+
+.two-fifths, .four-tenths, .grid .two-fifths, .tabs .tabs__header .two-fifths {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 40%;
+      -ms-flex: 0 0 40%;
+          flex: 0 0 40%; }
+
+.three-fifths, .six-tenths {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 60%;
+      -ms-flex: 0 0 60%;
+          flex: 0 0 60%; }
+
+.four-fifths, .eight-tenths {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 80%;
+      -ms-flex: 0 0 80%;
+          flex: 0 0 80%; }
+
+.one-sixth, .two-twelfths, .grid .one-sixth, .tabs .tabs__header .one-sixth {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 16.666%;
+      -ms-flex: 0 0 16.666%;
+          flex: 0 0 16.666%; }
+
+.five-sixths, .ten-twelfths, .grid .five-sixths, .tabs .tabs__header .five-sixths {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 83.333%;
+      -ms-flex: 0 0 83.333%;
+          flex: 0 0 83.333%; }
+
+.one-eighth {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 12.5%;
+      -ms-flex: 0 0 12.5%;
+          flex: 0 0 12.5%; }
+
+.three-eighths, .grid .three-eighths, .tabs .tabs__header .three-eighths {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 37.5%;
+      -ms-flex: 0 0 37.5%;
+          flex: 0 0 37.5%; }
+
+.five-eighths {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 62.5%;
+      -ms-flex: 0 0 62.5%;
+          flex: 0 0 62.5%; }
+
+.seven-eighths {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 87.5%;
+      -ms-flex: 0 0 87.5%;
+          flex: 0 0 87.5%; }
+
+.one-tenth {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 10%;
+      -ms-flex: 0 0 10%;
+          flex: 0 0 10%; }
+
+.three-tenths {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 30%;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%; }
+
+.seven-tenths {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 70%;
+      -ms-flex: 0 0 70%;
+          flex: 0 0 70%; }
+
+.one-twelfth {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 8.333%;
+      -ms-flex: 0 0 8.333%;
+          flex: 0 0 8.333%; }
+
+.five-twelfths {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 41.666%;
+      -ms-flex: 0 0 41.666%;
+          flex: 0 0 41.666%; }
+
+.seven-twelfths {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 58.333%;
+      -ms-flex: 0 0 58.333%;
+          flex: 0 0 58.333%; }
+
+.eleven-twelfths {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 91.666%;
+      -ms-flex: 0 0 91.666%;
+          flex: 0 0 91.666%; }
+
+@media only screen and (max-width: 320px) {
+  .feature--one-whole, .grid .scaled.two-quarters, .tabs .tabs__header .scaled.two-quarters, .grid .scaled.three-sixths, .tabs .tabs__header .scaled.three-sixths, .grid .scaled.four-eighths, .tabs .tabs__header .scaled.four-eighths, .grid .scaled.five-tenths, .tabs .tabs__header .scaled.five-tenths, .grid .scaled.six-twelfths, .tabs .tabs__header .scaled.six-twelfths, .grid .scaled.one-half, .tabs .tabs__header .scaled.one-half, .tabs .tabs__header li.scaled, .grid .two-tenths, .tabs .tabs__header .two-tenths, .grid .one-fifth, .tabs .tabs__header .one-fifth, .grid .four-tenths, .tabs .tabs__header .four-tenths, .grid .two-fifths, .tabs .tabs__header .two-fifths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%; }
+  .feature--one-half, .feature--two-quarters, .feature--three-sixths, .feature--four-eighths, .feature--five-tenths, .feature--six-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%; }
+  .feature--one-third, .feature--two-sixths, .feature--four-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 33.333%;
+        -ms-flex: 0 0 33.333%;
+            flex: 0 0 33.333%; }
+  .feature--two-thirds, .feature--four-sixths, .feature--eight-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 66.666%;
+        -ms-flex: 0 0 66.666%;
+            flex: 0 0 66.666%; }
+  .feature--one-quarter, .feature--two-eighths, .feature--three-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 25%;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%; }
+  .feature--three-quarters, .feature--six-eighths, .feature--nine-twelfths, .card.long .card__header .lesson-detail {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 75%;
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%; }
+  .feature--one-fifth, .feature--two-tenths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 20%;
+        -ms-flex: 0 0 20%;
+            flex: 0 0 20%; }
+  .feature--two-fifths, .feature--four-tenths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 40%;
+        -ms-flex: 0 0 40%;
+            flex: 0 0 40%; }
+  .feature--three-fifths, .feature--six-tenths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 60%;
+        -ms-flex: 0 0 60%;
+            flex: 0 0 60%; }
+  .feature--four-fifths, .feature--eight-tenths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 80%;
+        -ms-flex: 0 0 80%;
+            flex: 0 0 80%; }
+  .feature--one-sixth, .feature--two-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 16.666%;
+        -ms-flex: 0 0 16.666%;
+            flex: 0 0 16.666%; }
+  .feature--five-sixths, .feature--ten-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 83.333%;
+        -ms-flex: 0 0 83.333%;
+            flex: 0 0 83.333%; }
+  .feature--one-eighth {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 12.5%;
+        -ms-flex: 0 0 12.5%;
+            flex: 0 0 12.5%; }
+  .feature--three-eighths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 37.5%;
+        -ms-flex: 0 0 37.5%;
+            flex: 0 0 37.5%; }
+  .feature--five-eighths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 62.5%;
+        -ms-flex: 0 0 62.5%;
+            flex: 0 0 62.5%; }
+  .feature--seven-eighths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 87.5%;
+        -ms-flex: 0 0 87.5%;
+            flex: 0 0 87.5%; }
+  .feature--one-tenth {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 10%;
+        -ms-flex: 0 0 10%;
+            flex: 0 0 10%; }
+  .feature--three-tenths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 30%;
+        -ms-flex: 0 0 30%;
+            flex: 0 0 30%; }
+  .feature--seven-tenths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 70%;
+        -ms-flex: 0 0 70%;
+            flex: 0 0 70%; }
+  .feature--one-twelfth {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 8.333%;
+        -ms-flex: 0 0 8.333%;
+            flex: 0 0 8.333%; }
+  .feature--five-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 41.666%;
+        -ms-flex: 0 0 41.666%;
+            flex: 0 0 41.666%; }
+  .feature--seven-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 58.333%;
+        -ms-flex: 0 0 58.333%;
+            flex: 0 0 58.333%; }
+  .feature--eleven-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 91.666%;
+        -ms-flex: 0 0 91.666%;
+            flex: 0 0 91.666%; } }
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .mobile--one-whole, .grid .scaled.two-quarters, .tabs .tabs__header .scaled.two-quarters, .grid .scaled.three-sixths, .tabs .tabs__header .scaled.three-sixths, .grid .scaled.four-eighths, .tabs .tabs__header .scaled.four-eighths, .grid .scaled.five-tenths, .tabs .tabs__header .scaled.five-tenths, .grid .scaled.six-twelfths, .tabs .tabs__header .scaled.six-twelfths, .grid .scaled.one-half, .tabs .tabs__header .scaled.one-half, .tabs .tabs__header li.scaled, .grid .two-tenths, .tabs .tabs__header .two-tenths, .grid .one-fifth, .tabs .tabs__header .one-fifth, .grid .four-tenths, .tabs .tabs__header .four-tenths, .grid .two-fifths, .tabs .tabs__header .two-fifths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%; }
+  .mobile--one-half, .mobile--two-quarters, .mobile--three-sixths, .mobile--four-eighths, .mobile--five-tenths, .mobile--six-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%; }
+  .mobile--one-third, .mobile--two-sixths, .mobile--four-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 33.333%;
+        -ms-flex: 0 0 33.333%;
+            flex: 0 0 33.333%; }
+  .mobile--two-thirds, .mobile--four-sixths, .mobile--eight-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 66.666%;
+        -ms-flex: 0 0 66.666%;
+            flex: 0 0 66.666%; }
+  .mobile--one-quarter, .mobile--two-eighths, .mobile--three-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 25%;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%; }
+  .mobile--three-quarters, .mobile--six-eighths, .mobile--nine-twelfths, .card.long .card__header .lesson-detail {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 75%;
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%; }
+  .mobile--one-fifth, .mobile--two-tenths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 20%;
+        -ms-flex: 0 0 20%;
+            flex: 0 0 20%; }
+  .mobile--two-fifths, .mobile--four-tenths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 40%;
+        -ms-flex: 0 0 40%;
+            flex: 0 0 40%; }
+  .mobile--three-fifths, .mobile--six-tenths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 60%;
+        -ms-flex: 0 0 60%;
+            flex: 0 0 60%; }
+  .mobile--four-fifths, .mobile--eight-tenths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 80%;
+        -ms-flex: 0 0 80%;
+            flex: 0 0 80%; }
+  .mobile--one-sixth, .mobile--two-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 16.666%;
+        -ms-flex: 0 0 16.666%;
+            flex: 0 0 16.666%; }
+  .mobile--five-sixths, .mobile--ten-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 83.333%;
+        -ms-flex: 0 0 83.333%;
+            flex: 0 0 83.333%; }
+  .mobile--one-eighth {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 12.5%;
+        -ms-flex: 0 0 12.5%;
+            flex: 0 0 12.5%; }
+  .mobile--three-eighths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 37.5%;
+        -ms-flex: 0 0 37.5%;
+            flex: 0 0 37.5%; }
+  .mobile--five-eighths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 62.5%;
+        -ms-flex: 0 0 62.5%;
+            flex: 0 0 62.5%; }
+  .mobile--seven-eighths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 87.5%;
+        -ms-flex: 0 0 87.5%;
+            flex: 0 0 87.5%; }
+  .mobile--one-tenth {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 10%;
+        -ms-flex: 0 0 10%;
+            flex: 0 0 10%; }
+  .mobile--three-tenths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 30%;
+        -ms-flex: 0 0 30%;
+            flex: 0 0 30%; }
+  .mobile--seven-tenths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 70%;
+        -ms-flex: 0 0 70%;
+            flex: 0 0 70%; }
+  .mobile--one-twelfth {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 8.333%;
+        -ms-flex: 0 0 8.333%;
+            flex: 0 0 8.333%; }
+  .mobile--five-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 41.666%;
+        -ms-flex: 0 0 41.666%;
+            flex: 0 0 41.666%; }
+  .mobile--seven-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 58.333%;
+        -ms-flex: 0 0 58.333%;
+            flex: 0 0 58.333%; }
+  .mobile--eleven-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 91.666%;
+        -ms-flex: 0 0 91.666%;
+            flex: 0 0 91.666%; } }
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  .tablet--one-whole, .grid .scaled.two-quarters, .tabs .tabs__header .scaled.two-quarters, .grid .scaled.three-sixths, .tabs .tabs__header .scaled.three-sixths, .grid .scaled.four-eighths, .tabs .tabs__header .scaled.four-eighths, .grid .scaled.five-tenths, .tabs .tabs__header .scaled.five-tenths, .grid .scaled.six-twelfths, .tabs .tabs__header .scaled.six-twelfths, .grid .scaled.one-half, .tabs .tabs__header .scaled.one-half, .tabs .tabs__header li.scaled {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%; }
+  .tablet--one-half, .tablet--two-quarters, .tablet--three-sixths, .tablet--four-eighths, .tablet--five-tenths, .tablet--six-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%; }
+  .tablet--one-third, .tablet--two-sixths, .tablet--four-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 33.333%;
+        -ms-flex: 0 0 33.333%;
+            flex: 0 0 33.333%; }
+  .tablet--two-thirds, .tablet--four-sixths, .tablet--eight-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 66.666%;
+        -ms-flex: 0 0 66.666%;
+            flex: 0 0 66.666%; }
+  .tablet--one-quarter, .tablet--two-eighths, .tablet--three-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 25%;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%; }
+  .tablet--three-quarters, .tablet--six-eighths, .tablet--nine-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 75%;
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%; }
+  .tablet--one-fifth, .tablet--two-tenths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 20%;
+        -ms-flex: 0 0 20%;
+            flex: 0 0 20%; }
+  .tablet--two-fifths, .tablet--four-tenths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 40%;
+        -ms-flex: 0 0 40%;
+            flex: 0 0 40%; }
+  .tablet--three-fifths, .tablet--six-tenths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 60%;
+        -ms-flex: 0 0 60%;
+            flex: 0 0 60%; }
+  .tablet--four-fifths, .tablet--eight-tenths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 80%;
+        -ms-flex: 0 0 80%;
+            flex: 0 0 80%; }
+  .tablet--one-sixth, .tablet--two-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 16.666%;
+        -ms-flex: 0 0 16.666%;
+            flex: 0 0 16.666%; }
+  .tablet--five-sixths, .tablet--ten-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 83.333%;
+        -ms-flex: 0 0 83.333%;
+            flex: 0 0 83.333%; }
+  .tablet--one-eighth {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 12.5%;
+        -ms-flex: 0 0 12.5%;
+            flex: 0 0 12.5%; }
+  .tablet--three-eighths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 37.5%;
+        -ms-flex: 0 0 37.5%;
+            flex: 0 0 37.5%; }
+  .tablet--five-eighths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 62.5%;
+        -ms-flex: 0 0 62.5%;
+            flex: 0 0 62.5%; }
+  .tablet--seven-eighths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 87.5%;
+        -ms-flex: 0 0 87.5%;
+            flex: 0 0 87.5%; }
+  .tablet--one-tenth {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 10%;
+        -ms-flex: 0 0 10%;
+            flex: 0 0 10%; }
+  .tablet--three-tenths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 30%;
+        -ms-flex: 0 0 30%;
+            flex: 0 0 30%; }
+  .tablet--seven-tenths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 70%;
+        -ms-flex: 0 0 70%;
+            flex: 0 0 70%; }
+  .tablet--one-twelfth {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 8.333%;
+        -ms-flex: 0 0 8.333%;
+            flex: 0 0 8.333%; }
+  .tablet--five-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 41.666%;
+        -ms-flex: 0 0 41.666%;
+            flex: 0 0 41.666%; }
+  .tablet--seven-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 58.333%;
+        -ms-flex: 0 0 58.333%;
+            flex: 0 0 58.333%; }
+  .tablet--eleven-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 91.666%;
+        -ms-flex: 0 0 91.666%;
+            flex: 0 0 91.666%; } }
+
+@media only screen and (min-width: 1024px) {
+  .desk--one-whole {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%; }
+  .desk--one-half, .desk--two-quarters, .desk--three-sixths, .desk--four-eighths, .desk--five-tenths, .desk--six-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%; }
+  .desk--one-third, .desk--two-sixths, .desk--four-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 33.333%;
+        -ms-flex: 0 0 33.333%;
+            flex: 0 0 33.333%; }
+  .desk--two-thirds, .desk--four-sixths, .desk--eight-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 66.666%;
+        -ms-flex: 0 0 66.666%;
+            flex: 0 0 66.666%; }
+  .desk--one-quarter, .desk--two-eighths, .desk--three-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 25%;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%; }
+  .desk--three-quarters, .desk--six-eighths, .desk--nine-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 75%;
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%; }
+  .desk--one-fifth, .desk--two-tenths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 20%;
+        -ms-flex: 0 0 20%;
+            flex: 0 0 20%; }
+  .desk--two-fifths, .desk--four-tenths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 40%;
+        -ms-flex: 0 0 40%;
+            flex: 0 0 40%; }
+  .desk--three-fifths, .desk--six-tenths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 60%;
+        -ms-flex: 0 0 60%;
+            flex: 0 0 60%; }
+  .desk--four-fifths, .desk--eight-tenths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 80%;
+        -ms-flex: 0 0 80%;
+            flex: 0 0 80%; }
+  .desk--one-sixth, .desk--two-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 16.666%;
+        -ms-flex: 0 0 16.666%;
+            flex: 0 0 16.666%; }
+  .desk--five-sixths, .desk--ten-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 83.333%;
+        -ms-flex: 0 0 83.333%;
+            flex: 0 0 83.333%; }
+  .desk--one-eighth {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 12.5%;
+        -ms-flex: 0 0 12.5%;
+            flex: 0 0 12.5%; }
+  .desk--three-eighths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 37.5%;
+        -ms-flex: 0 0 37.5%;
+            flex: 0 0 37.5%; }
+  .desk--five-eighths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 62.5%;
+        -ms-flex: 0 0 62.5%;
+            flex: 0 0 62.5%; }
+  .desk--seven-eighths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 87.5%;
+        -ms-flex: 0 0 87.5%;
+            flex: 0 0 87.5%; }
+  .desk--one-tenth, .card.long .card__header .icon {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 10%;
+        -ms-flex: 0 0 10%;
+            flex: 0 0 10%; }
+  .desk--three-tenths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 30%;
+        -ms-flex: 0 0 30%;
+            flex: 0 0 30%; }
+  .desk--seven-tenths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 70%;
+        -ms-flex: 0 0 70%;
+            flex: 0 0 70%; }
+  .desk--one-twelfth {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 8.333%;
+        -ms-flex: 0 0 8.333%;
+            flex: 0 0 8.333%; }
+  .desk--five-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 41.666%;
+        -ms-flex: 0 0 41.666%;
+            flex: 0 0 41.666%; }
+  .desk--seven-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 58.333%;
+        -ms-flex: 0 0 58.333%;
+            flex: 0 0 58.333%; }
+  .desk--eleven-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 91.666%;
+        -ms-flex: 0 0 91.666%;
+            flex: 0 0 91.666%; } }
+
+@media only screen and (min-width: 1200px) {
+  .desk-wide--one-whole {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%; }
+  .desk-wide--one-half, .desk-wide--two-quarters, .desk-wide--three-sixths, .desk-wide--four-eighths, .desk-wide--five-tenths, .desk-wide--six-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 50%;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%; }
+  .desk-wide--one-third, .desk-wide--two-sixths, .desk-wide--four-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 33.333%;
+        -ms-flex: 0 0 33.333%;
+            flex: 0 0 33.333%; }
+  .desk-wide--two-thirds, .desk-wide--four-sixths, .desk-wide--eight-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 66.666%;
+        -ms-flex: 0 0 66.666%;
+            flex: 0 0 66.666%; }
+  .desk-wide--one-quarter, .desk-wide--two-eighths, .desk-wide--three-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 25%;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%; }
+  .desk-wide--three-quarters, .desk-wide--six-eighths, .desk-wide--nine-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 75%;
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%; }
+  .desk-wide--one-fifth, .desk-wide--two-tenths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 20%;
+        -ms-flex: 0 0 20%;
+            flex: 0 0 20%; }
+  .desk-wide--two-fifths, .desk-wide--four-tenths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 40%;
+        -ms-flex: 0 0 40%;
+            flex: 0 0 40%; }
+  .desk-wide--three-fifths, .desk-wide--six-tenths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 60%;
+        -ms-flex: 0 0 60%;
+            flex: 0 0 60%; }
+  .desk-wide--four-fifths, .desk-wide--eight-tenths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 80%;
+        -ms-flex: 0 0 80%;
+            flex: 0 0 80%; }
+  .desk-wide--one-sixth, .desk-wide--two-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 16.666%;
+        -ms-flex: 0 0 16.666%;
+            flex: 0 0 16.666%; }
+  .desk-wide--five-sixths, .desk-wide--ten-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 83.333%;
+        -ms-flex: 0 0 83.333%;
+            flex: 0 0 83.333%; }
+  .desk-wide--one-eighth {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 12.5%;
+        -ms-flex: 0 0 12.5%;
+            flex: 0 0 12.5%; }
+  .desk-wide--three-eighths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 37.5%;
+        -ms-flex: 0 0 37.5%;
+            flex: 0 0 37.5%; }
+  .desk-wide--five-eighths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 62.5%;
+        -ms-flex: 0 0 62.5%;
+            flex: 0 0 62.5%; }
+  .desk-wide--seven-eighths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 87.5%;
+        -ms-flex: 0 0 87.5%;
+            flex: 0 0 87.5%; }
+  .desk-wide--one-tenth, .card.long .card__header .icon {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 10%;
+        -ms-flex: 0 0 10%;
+            flex: 0 0 10%; }
+  .desk-wide--three-tenths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 30%;
+        -ms-flex: 0 0 30%;
+            flex: 0 0 30%; }
+  .desk-wide--seven-tenths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 70%;
+        -ms-flex: 0 0 70%;
+            flex: 0 0 70%; }
+  .desk-wide--one-twelfth {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 8.333%;
+        -ms-flex: 0 0 8.333%;
+            flex: 0 0 8.333%; }
+  .desk-wide--five-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 41.666%;
+        -ms-flex: 0 0 41.666%;
+            flex: 0 0 41.666%; }
+  .desk-wide--seven-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 58.333%;
+        -ms-flex: 0 0 58.333%;
+            flex: 0 0 58.333%; }
+  .desk-wide--eleven-twelfths {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 91.666%;
+        -ms-flex: 0 0 91.666%;
+            flex: 0 0 91.666%; } }
+
+body {
+  font-size: 75%; }
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  body {
+    font-size: 87.5%; } }
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  body {
+    font-size: 100%; } }
+
+@media only screen and (min-width: 1024px) {
+  body {
+    font-size: 100%; } }
+
+@media only screen and (min-width: 1200px) {
+  body {
+    font-size: 100%; } }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold; }
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 40px; }
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px; }
+
+h3 {
+  font-size: 1.125em;
+  margin-top: 20px;
+  margin-bottom: 0; }
+
+h4 {
+  font-size: 1em;
+  margin-bottom: 20px; }
+
+h5 {
+  font-size: 0.75em;
+  margin-bottom: 20px; }
+
+h6 {
+  font-size: 0.625em; }
+
+body,
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 20px;
+  margin: 0 0 20px 0;
+  color: #333; }
+
+strong,
+b {
+  font-weight: bold; }
+
+code {
+  line-height: 20px;
+  margin: 0; }
+
+pre {
+  margin: 0 0 20px 0; }
+
+a {
+  color: #00BFFF;
+  text-decoration: none; }
+  a:hover {
+    color: #0064cd;
+    text-decoration: none; }
+
+hr {
+  margin: 19px 0;
+  border: 0;
+  border-bottom: 1px solid #555;
+  line-height: 20px; }
+
+ol, ul {
+  margin: 0 0 20px 0;
+  padding-left: 20px; }
+  ol ol, ol ul, ul ol, ul ul {
+    margin: 0;
+    padding-left: 20px; }
+  ol li, ul li {
+    line-height: 20px;
+    margin: 0;
+    padding: 0; }
+
+dl {
+  line-height: 20px;
+  margin: 0 0 20px 0; }
+  dl dt {
+    font-weight: bold; }
+  dl dd {
+    margin: 0 0 0 20px; }
+
+table {
+  width: 100%;
+  margin: 2px 0 20px 0;
+  padding: 0;
+  border: solid 1px #555; }
+  table tr {
+    line-height: 20px;
+    height: auto; }
+  table td, table th {
+    line-height: 20px;
+    margin: 0;
+    border-right: solid 1px #555; }
+  table th {
+    font-weight: normal;
+    text-align: left; }
+  table thead {
+    line-height: 20px; }
+  table tbody {
+    line-height: 20px; }
+
+img {
+  display: block; }
+
+form label {
+  width: 95%;
+  line-height: 20px;
+  display: block; }
+
+form input[type="text"],
+form input[type="password"],
+form input[type="select"],
+form input[type="search"] {
+  width: 90%;
+  margin-bottom: 0px;
+  display: block;
+  padding: 10px; }
+
+form textarea {
+  padding: 10px;
+  width: 90%;
+  height: 200px;
+  line-height: 20px;
+  margin-bottom: 5px;
+  display: block;
+  clear: left;
+  overflow: auto; }
+
+form input[type="radio"],
+form input[type="checkbox"] {
+  margin: 0px 6.66667px 0px 10px;
+  display: inline-block; }
+
+form input[type="file"] {
+  margin: 0px 6px 3px 6px; }
+
+form input[type="submit"],
+form input[type="reset"],
+form input[type="button"] {
+  position: relative;
+  top: 5px;
+  margin-bottom: 24px; }
+
+form legend {
+  padding-bottom: 24px; }
+
+form {
+  margin-bottom: 20px; }
+  form .radio,
+  form .checkbox {
+    padding: 0 0 0 0 !important; }
+    form .radio ul,
+    form .checkbox ul {
+      margin: 0;
+      padding: 0;
+      text-align: left;
+      margin-bottom: -1px !important; }
+      form .radio ul li,
+      form .checkbox ul li {
+        margin: 0;
+        list-style: none;
+        display: block; }
+        form .radio ul li a,
+        form .checkbox ul li a {
+          padding: 0 5px;
+          display: block; }
+  form .field-item {
+    margin-bottom: 20px;
+    padding: 0 0 2px 0; }
+  form input {
+    border: solid 1px #999; }
+  form .textarea {
+    margin-bottom: 19px; }
+
+form.stacked label {
+  display: block; }
+
+form.stacked .radio label, form.stacked .checkbox label {
+  display: inline-block; }
+
+form.inline label {
+  display: inline-block;
+  width: 150px;
+  line-height: 20px; }
+
+.button {
+  display: inline-block; }
+  .button:hover {
+    text-decoration: none; }
+  .button.small {
+    padding: 3.33333px 5px;
+    font-size: 0.75em; }
+  .button.medium {
+    padding: 5px 10px;
+    font-size: 1em; }
+  .button.large {
+    padding: 10px 20px;
+    font-size: 1.125em; }
+  .button.small {
+    padding: 3.33333px 5px;
+    font-size: 0.75em; }
+  .button.medium {
+    padding: 5px 10px;
+    font-size: 1em; }
+  .button.large {
+    padding: 10px 20px;
+    font-size: 1.125em; }
+
+.message {
+  display: block;
+  padding: 10px;
+  margin-bottom: 20px; }
+  .message h4, .message p {
+    margin: 0; }
+  .message.info {
+    background: #ccf2ff; }
+    .message.info h4, .message.info p {
+      color: #0099cc; }
+  .message.warning {
+    background: #fee9cc; }
+    .message.warning h4, .message.warning p {
+      color: #c67605; }
+  .message.error {
+    background: #eca09a; }
+    .message.error h4, .message.error p {
+      color: #721c15; }
+
+.highlight {
+  background: #fff; }
+  .highlight .c {
+    color: #998;
+    font-style: italic; }
+  .highlight .err {
+    color: #a61717;
+    background-color: #e3d2d2; }
+  .highlight .k {
+    font-weight: bold; }
+  .highlight .o {
+    font-weight: bold; }
+  .highlight .cm {
+    color: #998;
+    font-style: italic; }
+  .highlight .cp {
+    color: #999;
+    font-weight: bold; }
+  .highlight .c1 {
+    color: #998;
+    font-style: italic; }
+  .highlight .cs {
+    color: #999;
+    font-weight: bold;
+    font-style: italic; }
+  .highlight .gd {
+    color: #000;
+    background-color: #fdd; }
+  .highlight .gd .x {
+    color: #000;
+    background-color: #faa; }
+  .highlight .ge {
+    font-style: italic; }
+  .highlight .gr {
+    color: #a00; }
+  .highlight .gh {
+    color: #999; }
+  .highlight .gi {
+    color: #000;
+    background-color: #dfd; }
+  .highlight .gi .x {
+    color: #000;
+    background-color: #afa; }
+  .highlight .go {
+    color: #888; }
+  .highlight .gp {
+    color: #555; }
+  .highlight .gs {
+    font-weight: bold; }
+  .highlight .gu {
+    color: #aaa; }
+  .highlight .gt {
+    color: #a00; }
+  .highlight .kc {
+    font-weight: bold; }
+  .highlight .kd {
+    font-weight: bold; }
+  .highlight .kp {
+    font-weight: bold; }
+  .highlight .kr {
+    font-weight: bold; }
+  .highlight .kt {
+    color: #458;
+    font-weight: bold; }
+  .highlight .m {
+    color: #099; }
+  .highlight .s {
+    color: #d14; }
+  .highlight .na {
+    color: #008080; }
+  .highlight .nb {
+    color: #0086B3; }
+  .highlight .nc {
+    color: #458;
+    font-weight: bold; }
+  .highlight .no {
+    color: #008080; }
+  .highlight .ni {
+    color: #800080; }
+  .highlight .ne {
+    color: #900;
+    font-weight: bold; }
+  .highlight .nf {
+    color: #900;
+    font-weight: bold; }
+  .highlight .nn {
+    color: #555; }
+  .highlight .nt {
+    color: #000080; }
+  .highlight .nv {
+    color: #008080; }
+  .highlight .ow {
+    font-weight: bold; }
+  .highlight .w {
+    color: #bbb; }
+  .highlight .mf {
+    color: #099; }
+  .highlight .mh {
+    color: #099; }
+  .highlight .mi {
+    color: #099; }
+  .highlight .mo {
+    color: #099; }
+  .highlight .sb {
+    color: #d14; }
+  .highlight .sc {
+    color: #d14; }
+  .highlight .sd {
+    color: #d14; }
+  .highlight .s2 {
+    color: #d14; }
+  .highlight .se {
+    color: #d14; }
+  .highlight .sh {
+    color: #d14; }
+  .highlight .si {
+    color: #d14; }
+  .highlight .sx {
+    color: #d14; }
+  .highlight .sr {
+    color: #009926; }
+  .highlight .s1 {
+    color: #d14; }
+  .highlight .ss {
+    color: #990073; }
+  .highlight .bp {
+    color: #999; }
+  .highlight .vc {
+    color: #008080; }
+  .highlight .vg {
+    color: #008080; }
+  .highlight .vi {
+    color: #008080; }
+  .highlight .il {
+    color: #099; }
+
+a {
+  cursor: pointer; }
+
+.section {
+  padding: 10px; }
+
+.dropdown {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; }
+
+.v-align {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  right: 0; }
+
+.mathematics {
+  background: #F5A623; }
+  .mathematics .icon {
+    background: #F5A623; }
+    .mathematics .icon:after {
+      background: #F5A623; }
+    .mathematics .icon svg {
+      border: 1px solid #fff;
+      border-radius: 100%;
+      padding: 5px; }
+      .mathematics .icon svg polygon,
+      .mathematics .icon svg circle,
+      .mathematics .icon svg rect,
+      .mathematics .icon svg path {
+        fill: #F5A623; }
+  .mathematics .lesson-detail:after {
+    position: absolute;
+    bottom: 0;
+    right: -15px;
+    height: 30px;
+    width: 20px;
+    content: '';
+    background: #F5A623;
+    -webkit-transform: skewX(-30deg);
+        -ms-transform: skewX(-30deg);
+            transform: skewX(-30deg); }
+
+.physical {
+  background: #D0021B; }
+  .physical .icon {
+    background: #D0021B; }
+    .physical .icon:after {
+      background: #D0021B; }
+    .physical .icon svg {
+      border: 1px solid #fff;
+      border-radius: 100%;
+      padding: 5px; }
+      .physical .icon svg polygon,
+      .physical .icon svg circle,
+      .physical .icon svg rect,
+      .physical .icon svg path {
+        fill: #D0021B; }
+  .physical .lesson-detail:after {
+    position: absolute;
+    bottom: 0;
+    right: -15px;
+    height: 30px;
+    width: 20px;
+    content: '';
+    background: #D0021B;
+    -webkit-transform: skewX(-30deg);
+        -ms-transform: skewX(-30deg);
+            transform: skewX(-30deg); }
+
+.life {
+  background: #4A90E2; }
+  .life .icon {
+    background: #4A90E2; }
+    .life .icon:after {
+      background: #4A90E2; }
+    .life .icon svg {
+      border: 1px solid #fff;
+      border-radius: 100%;
+      padding: 5px; }
+      .life .icon svg polygon,
+      .life .icon svg circle,
+      .life .icon svg rect,
+      .life .icon svg path {
+        fill: #4A90E2; }
+  .life .lesson-detail:after {
+    position: absolute;
+    bottom: 0;
+    right: -15px;
+    height: 30px;
+    width: 20px;
+    content: '';
+    background: #4A90E2;
+    -webkit-transform: skewX(-30deg);
+        -ms-transform: skewX(-30deg);
+            transform: skewX(-30deg); }
+
+.natural {
+  background: #50E3C2; }
+  .natural .icon {
+    background: #50E3C2; }
+    .natural .icon:after {
+      background: #50E3C2; }
+    .natural .icon svg {
+      border: 1px solid #fff;
+      border-radius: 100%;
+      padding: 5px; }
+      .natural .icon svg polygon,
+      .natural .icon svg circle,
+      .natural .icon svg rect,
+      .natural .icon svg path {
+        fill: #50E3C2; }
+  .natural .lesson-detail:after {
+    position: absolute;
+    bottom: 0;
+    right: -15px;
+    height: 30px;
+    width: 20px;
+    content: '';
+    background: #50E3C2;
+    -webkit-transform: skewX(-30deg);
+        -ms-transform: skewX(-30deg);
+            transform: skewX(-30deg); }
+
+.robotics {
+  background: #3BBDB3; }
+  .robotics .icon {
+    background: #3BBDB3; }
+    .robotics .icon:after {
+      background: #3BBDB3; }
+    .robotics .icon svg {
+      border: 1px solid #fff;
+      border-radius: 100%;
+      padding: 5px; }
+      .robotics .icon svg polygon,
+      .robotics .icon svg circle,
+      .robotics .icon svg rect,
+      .robotics .icon svg path {
+        fill: #3BBDB3; }
+  .robotics .lesson-detail:after {
+    position: absolute;
+    bottom: 0;
+    right: -15px;
+    height: 30px;
+    width: 20px;
+    content: '';
+    background: #3BBDB3;
+    -webkit-transform: skewX(-30deg);
+        -ms-transform: skewX(-30deg);
+            transform: skewX(-30deg); }
+
+.coding {
+  background: #9013FE; }
+  .coding .icon {
+    background: #9013FE; }
+    .coding .icon:after {
+      background: #9013FE; }
+    .coding .icon svg {
+      border: 1px solid #fff;
+      border-radius: 100%;
+      padding: 5px; }
+      .coding .icon svg polygon,
+      .coding .icon svg circle,
+      .coding .icon svg rect,
+      .coding .icon svg path {
+        fill: #9013FE; }
+  .coding .lesson-detail:after {
+    position: absolute;
+    bottom: 0;
+    right: -15px;
+    height: 30px;
+    width: 20px;
+    content: '';
+    background: #9013FE;
+    -webkit-transform: skewX(-30deg);
+        -ms-transform: skewX(-30deg);
+            transform: skewX(-30deg); }
+
+.physical {
+  background: #D0021B; }
+  .physical .icon {
+    background: #D0021B; }
+    .physical .icon:after {
+      background: #D0021B; }
+    .physical .icon svg {
+      border: 1px solid #fff;
+      border-radius: 100%;
+      padding: 5px; }
+      .physical .icon svg polygon,
+      .physical .icon svg circle,
+      .physical .icon svg rect,
+      .physical .icon svg path {
+        fill: #D0021B; }
+  .physical .lesson-detail:after {
+    position: absolute;
+    bottom: 0;
+    right: -15px;
+    height: 30px;
+    width: 20px;
+    content: '';
+    background: #D0021B;
+    -webkit-transform: skewX(-30deg);
+        -ms-transform: skewX(-30deg);
+            transform: skewX(-30deg); }
+
+.life {
+  background: #4A90E2; }
+  .life .icon {
+    background: #4A90E2; }
+    .life .icon:after {
+      background: #4A90E2; }
+    .life .icon svg {
+      border: 1px solid #fff;
+      border-radius: 100%;
+      padding: 5px; }
+      .life .icon svg polygon,
+      .life .icon svg circle,
+      .life .icon svg rect,
+      .life .icon svg path {
+        fill: #4A90E2; }
+  .life .lesson-detail:after {
+    position: absolute;
+    bottom: 0;
+    right: -15px;
+    height: 30px;
+    width: 20px;
+    content: '';
+    background: #4A90E2;
+    -webkit-transform: skewX(-30deg);
+        -ms-transform: skewX(-30deg);
+            transform: skewX(-30deg); }
+
+.natural {
+  background: #50E3C2; }
+  .natural .icon {
+    background: #50E3C2; }
+    .natural .icon:after {
+      background: #50E3C2; }
+    .natural .icon svg {
+      border: 1px solid #fff;
+      border-radius: 100%;
+      padding: 5px; }
+      .natural .icon svg polygon,
+      .natural .icon svg circle,
+      .natural .icon svg rect,
+      .natural .icon svg path {
+        fill: #50E3C2; }
+  .natural .lesson-detail:after {
+    position: absolute;
+    bottom: 0;
+    right: -15px;
+    height: 30px;
+    width: 20px;
+    content: '';
+    background: #50E3C2;
+    -webkit-transform: skewX(-30deg);
+        -ms-transform: skewX(-30deg);
+            transform: skewX(-30deg); }
+
+.robotics {
+  background: #3BBDB3; }
+  .robotics .icon {
+    background: #3BBDB3; }
+    .robotics .icon:after {
+      background: #3BBDB3; }
+    .robotics .icon svg {
+      border: 1px solid #fff;
+      border-radius: 100%;
+      padding: 5px; }
+      .robotics .icon svg polygon,
+      .robotics .icon svg circle,
+      .robotics .icon svg rect,
+      .robotics .icon svg path {
+        fill: #3BBDB3; }
+  .robotics .lesson-detail:after {
+    position: absolute;
+    bottom: 0;
+    right: -15px;
+    height: 30px;
+    width: 20px;
+    content: '';
+    background: #3BBDB3;
+    -webkit-transform: skewX(-30deg);
+        -ms-transform: skewX(-30deg);
+            transform: skewX(-30deg); }
+
+.coding {
+  background: #9013FE; }
+  .coding .icon {
+    background: #9013FE; }
+    .coding .icon:after {
+      background: #9013FE; }
+    .coding .icon svg {
+      border: 1px solid #fff;
+      border-radius: 100%;
+      padding: 5px; }
+      .coding .icon svg polygon,
+      .coding .icon svg circle,
+      .coding .icon svg rect,
+      .coding .icon svg path {
+        fill: #9013FE; }
+  .coding .lesson-detail:after {
+    position: absolute;
+    bottom: 0;
+    right: -15px;
+    height: 30px;
+    width: 20px;
+    content: '';
+    background: #9013FE;
+    -webkit-transform: skewX(-30deg);
+        -ms-transform: skewX(-30deg);
+            transform: skewX(-30deg); }
+
+@media only screen and (max-width: 320px) {
+  .no-mobile {
+    display: none; } }
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .container {
+    padding: 0; }
+  .no-mobile {
+    display: none; } }
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  .no-mobile {
+    display: block; } }
+
+@media only screen and (min-width: 1024px) {
+  .no-mobile {
+    display: block; } }
+
+@media only screen and (min-width: 1200px) {
+  .no-mobile {
+    display: block; } }
+
+/**
+ * Toggle Switch Globals
+ *
+ * All switches should take on the class `c-hamburger` as well as their
+ * variant that will give them unique properties. This class is an overview
+ * class that acts as a reset for all versions of the icon.
+ */
+.c-hamburger {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 60px;
+  height: 60px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background 0.3s;
+          transition: background 0.3s;
+  float: right; }
+
+.c-hamburger:focus {
+  outline: none; }
+
+.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: 28px;
+  left: 15px;
+  right: 15px;
+  height: 4px;
+  background: white; }
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  content: ""; }
+
+.c-hamburger span::before {
+  top: -12px; }
+
+.c-hamburger span::after {
+  bottom: -12px; }
+
+/**
+ * Style 1
+ *
+ * Rotating hamburger icon (rot), that simply rotates 90 degrees when activated.
+ * Nothing too fancy, simple transition.
+ */
+.c-hamburger--rot span {
+  -webkit-transition: -webkit-transform 0.3s;
+          transition: transform 0.3s; }
+
+/* active state, i.e. menu open */
+.c-hamburger--rot.is-active span {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg); }
+
+/**
+ * Style 2
+ * 
+ * Hamburger to "x" (htx). Takes on a hamburger shape, bars slide
+ * down to center and transform into an "x".
+ */
+.c-hamburger--htx span::before,
+.c-hamburger--htx span::after {
+  -webkit-transition-duration: 0.3s, 0.3s;
+          transition-duration: 0.3s, 0.3s;
+  -webkit-transition-delay: 0.3s, 0s;
+          transition-delay: 0.3s, 0s; }
+
+.c-hamburger--htx span::before {
+  -webkit-transition-property: top, -webkit-transform;
+          transition-property: top, transform; }
+
+.c-hamburger--htx span::after {
+  -webkit-transition-property: bottom, -webkit-transform;
+          transition-property: bottom, transform; }
+
+/* active state, i.e. menu open */
+.c-hamburger--htx.is-active span {
+  background: none; }
+
+.c-hamburger--htx.is-active span::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg); }
+
+.c-hamburger--htx.is-active span::after {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+
+.c-hamburger--htx.is-active span::before,
+.c-hamburger--htx.is-active span::after {
+  -webkit-transition-delay: 0s, 0.3s;
+          transition-delay: 0s, 0.3s; }
+
+/**
+ * Style 3
+ *
+ * Hamburger to left-arrow (htla). Hamburger menu transforms to a left-pointing
+ * arrow. Usually indicates an off canvas menu sliding in from left that
+ * will be close on re-click of the icon.
+ */
+.c-hamburger--htla {
+  background-color: #32dc64; }
+
+.c-hamburger--htla span {
+  -webkit-transition: -webkit-transform 0.3s;
+          transition: transform 0.3s; }
+
+.c-hamburger--htla span::before {
+  -webkit-transform-origin: top right;
+      -ms-transform-origin: top right;
+          transform-origin: top right;
+  -webkit-transition: -webkit-transform 0.3s, width 0.3s, top 0.3s;
+          transition: transform 0.3s, width 0.3s, top 0.3s; }
+
+.c-hamburger--htla span::after {
+  -webkit-transform-origin: bottom right;
+      -ms-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.3s, width 0.3s, bottom 0.3s;
+          transition: transform 0.3s, width 0.3s, bottom 0.3s; }
+
+/* active state, i.e. menu open */
+.c-hamburger--htla.is-active {
+  background-color: #18903b; }
+
+.c-hamburger--htla.is-active span {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.c-hamburger--htla.is-active span::before,
+.c-hamburger--htla.is-active span::after {
+  width: 50%; }
+
+.c-hamburger--htla.is-active span::before {
+  top: 0;
+  -webkit-transform: translateX(19px) translateY(2px) rotate(45deg);
+      -ms-transform: translateX(19px) translateY(2px) rotate(45deg);
+          transform: translateX(19px) translateY(2px) rotate(45deg); }
+
+.c-hamburger--htla.is-active span::after {
+  bottom: 0;
+  -webkit-transform: translateX(19px) translateY(-2px) rotate(-45deg);
+      -ms-transform: translateX(19px) translateY(-2px) rotate(-45deg);
+          transform: translateX(19px) translateY(-2px) rotate(-45deg); }
+
+/**
+ * Style 4
+ *
+ * Hamburger to right-arrow (htra). Hamburger menu transforms to a
+ * right-pointing arrow. Usually indicates an off canvas menu sliding in from 
+ * right that will be close on re-click of the icon.
+ */
+.c-hamburger--htra {
+  background-color: #ff9650; }
+
+.c-hamburger--htra span {
+  -webkit-transition: -webkit-transform 0.3s;
+          transition: transform 0.3s; }
+
+.c-hamburger--htra span::before {
+  -webkit-transform-origin: top left;
+      -ms-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transition: -webkit-transform 0.3s, width 0.3s, top 0.3s;
+          transition: transform 0.3s, width 0.3s, top 0.3s; }
+
+.c-hamburger--htra span::after {
+  -webkit-transform-origin: bottom left;
+      -ms-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transition: -webkit-transform 0.3s, width 0.3s, bottom 0.3s;
+          transition: transform 0.3s, width 0.3s, bottom 0.3s; }
+
+/* active state, i.e. menu open */
+.c-hamburger--htra.is-active {
+  background-color: #e95d00; }
+
+.c-hamburger--htra.is-active span {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.c-hamburger--htra.is-active span::before,
+.c-hamburger--htra.is-active span::after {
+  width: 50%; }
+
+.c-hamburger--htra.is-active span::before {
+  top: 0;
+  -webkit-transform: translateX(-4px) translateY(2px) rotate(-45deg);
+      -ms-transform: translateX(-4px) translateY(2px) rotate(-45deg);
+          transform: translateX(-4px) translateY(2px) rotate(-45deg); }
+
+.c-hamburger--htra.is-active span::after {
+  bottom: 0;
+  -webkit-transform: translateX(-4px) translateY(-2px) rotate(45deg);
+      -ms-transform: translateX(-4px) translateY(-2px) rotate(45deg);
+          transform: translateX(-4px) translateY(-2px) rotate(45deg); }
+
+@font-face {
+  font-family: 'alarmClock';
+  src: url("../fonts/alarmClock.woff"); }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0; }
+  h1.mathematics, h2.mathematics, h3.mathematics, h4.mathematics, h5.mathematics, h6.mathematics {
+    color: #F5A623;
+    background: none; }
+  h1.physical, h2.physical, h3.physical, h4.physical, h5.physical, h6.physical {
+    color: #D0021B;
+    background: none; }
+  h1.life, h2.life, h3.life, h4.life, h5.life, h6.life {
+    color: #4A90E2;
+    background: none; }
+  h1.natural, h2.natural, h3.natural, h4.natural, h5.natural, h6.natural {
+    color: #50E3C2;
+    background: none; }
+  h1.robotics, h2.robotics, h3.robotics, h4.robotics, h5.robotics, h6.robotics {
+    color: #3BBDB3;
+    background: none; }
+  h1.coding, h2.coding, h3.coding, h4.coding, h5.coding, h6.coding {
+    color: #9013FE;
+    background: none; }
+
+h1 {
+  font-size: 2em;
+  font-weight: bold; }
+
+h2 {
+  font-size: 1.7em;
+  font-weight: bold; }
+
+.grid.half.small li:first-child, .tabs .half.small.tabs__header li:first-child {
+  text-align: right; }
+
+.grid.half.small li:last-child, .tabs .half.small.tabs__header li:last-child {
+  text-align: left; }
+
+.grid.inline.small .grid__item, .tabs .inline.small.tabs__header .grid__item, .grid.inline.small .one-whole, .tabs .inline.small.tabs__header .grid .one-whole, .grid .tabs .inline.small.tabs__header .one-whole, .grid.inline.small .tabs .tabs__header .one-whole, .tabs .tabs__header .grid.inline.small .one-whole, .tabs .inline.small.tabs__header .one-whole, .grid.inline.small .two-quarters, .tabs .inline.small.tabs__header .grid .two-quarters, .grid .tabs .inline.small.tabs__header .two-quarters, .grid.inline.small .tabs .tabs__header .two-quarters, .tabs .tabs__header .grid.inline.small .two-quarters, .tabs .inline.small.tabs__header .two-quarters, .grid.inline.small .three-sixths, .tabs .inline.small.tabs__header .grid .three-sixths, .grid .tabs .inline.small.tabs__header .three-sixths, .grid.inline.small .tabs .tabs__header .three-sixths, .tabs .tabs__header .grid.inline.small .three-sixths, .tabs .inline.small.tabs__header .three-sixths, .grid.inline.small .four-eighths, .tabs .inline.small.tabs__header .grid .four-eighths, .grid .tabs .inline.small.tabs__header .four-eighths, .grid.inline.small .tabs .tabs__header .four-eighths, .tabs .tabs__header .grid.inline.small .four-eighths, .tabs .inline.small.tabs__header .four-eighths, .grid.inline.small .five-tenths, .tabs .inline.small.tabs__header .grid .five-tenths, .grid .tabs .inline.small.tabs__header .five-tenths, .grid.inline.small .tabs .tabs__header .five-tenths, .tabs .tabs__header .grid.inline.small .five-tenths, .tabs .inline.small.tabs__header .five-tenths, .grid.inline.small .six-twelfths, .tabs .inline.small.tabs__header .grid .six-twelfths, .grid .tabs .inline.small.tabs__header .six-twelfths, .grid.inline.small .tabs .tabs__header .six-twelfths, .tabs .tabs__header .grid.inline.small .six-twelfths, .tabs .inline.small.tabs__header .six-twelfths, .grid.inline.small .one-half, .tabs .inline.small.tabs__header .grid .one-half, .grid .tabs .inline.small.tabs__header .one-half, .grid.inline.small .tabs .tabs__header .one-half, .tabs .tabs__header .grid.inline.small .one-half, .tabs .inline.small.tabs__header .one-half, .grid.inline.small .tabs .tabs__header li, .tabs .tabs__header .grid.inline.small li, .tabs .inline.small.tabs__header li, .grid.inline.small .two-eighths, .tabs .inline.small.tabs__header .grid .two-eighths, .grid .tabs .inline.small.tabs__header .two-eighths, .grid.inline.small .tabs .tabs__header .two-eighths, .tabs .tabs__header .grid.inline.small .two-eighths, .tabs .inline.small.tabs__header .two-eighths, .grid.inline.small .three-twelfths, .tabs .inline.small.tabs__header .grid .three-twelfths, .grid .tabs .inline.small.tabs__header .three-twelfths, .grid.inline.small .tabs .tabs__header .three-twelfths, .tabs .tabs__header .grid.inline.small .three-twelfths, .tabs .inline.small.tabs__header .three-twelfths, .grid.inline.small .one-quarter, .tabs .inline.small.tabs__header .grid .one-quarter, .grid .tabs .inline.small.tabs__header .one-quarter, .grid.inline.small .tabs .tabs__header .one-quarter, .tabs .tabs__header .grid.inline.small .one-quarter, .tabs .inline.small.tabs__header .one-quarter, .grid.inline.small .six-eighths, .tabs .inline.small.tabs__header .grid .six-eighths, .grid .tabs .inline.small.tabs__header .six-eighths, .grid.inline.small .tabs .tabs__header .six-eighths, .tabs .tabs__header .grid.inline.small .six-eighths, .tabs .inline.small.tabs__header .six-eighths, .grid.inline.small .nine-twelfths, .tabs .inline.small.tabs__header .grid .nine-twelfths, .grid .tabs .inline.small.tabs__header .nine-twelfths, .grid.inline.small .tabs .tabs__header .nine-twelfths, .tabs .tabs__header .grid.inline.small .nine-twelfths, .tabs .inline.small.tabs__header .nine-twelfths, .grid.inline.small .three-quarters, .tabs .inline.small.tabs__header .grid .three-quarters, .grid .tabs .inline.small.tabs__header .three-quarters, .grid.inline.small .tabs .tabs__header .three-quarters, .tabs .tabs__header .grid.inline.small .three-quarters, .tabs .inline.small.tabs__header .three-quarters, .grid.inline.small .two-sixths, .tabs .inline.small.tabs__header .grid .two-sixths, .grid .tabs .inline.small.tabs__header .two-sixths, .grid.inline.small .tabs .tabs__header .two-sixths, .tabs .tabs__header .grid.inline.small .two-sixths, .tabs .inline.small.tabs__header .two-sixths, .grid.inline.small .four-twelfths, .tabs .inline.small.tabs__header .grid .four-twelfths, .grid .tabs .inline.small.tabs__header .four-twelfths, .grid.inline.small .tabs .tabs__header .four-twelfths, .tabs .tabs__header .grid.inline.small .four-twelfths, .tabs .inline.small.tabs__header .four-twelfths, .grid.inline.small .one-third, .tabs .inline.small.tabs__header .grid .one-third, .grid .tabs .inline.small.tabs__header .one-third, .grid.inline.small .tabs .tabs__header .one-third, .tabs .tabs__header .grid.inline.small .one-third, .tabs .inline.small.tabs__header .one-third, .grid.inline.small .four-sixths, .tabs .inline.small.tabs__header .grid .four-sixths, .grid .tabs .inline.small.tabs__header .four-sixths, .grid.inline.small .tabs .tabs__header .four-sixths, .tabs .tabs__header .grid.inline.small .four-sixths, .tabs .inline.small.tabs__header .four-sixths, .grid.inline.small .eight-twelfths, .tabs .inline.small.tabs__header .grid .eight-twelfths, .grid .tabs .inline.small.tabs__header .eight-twelfths, .grid.inline.small .tabs .tabs__header .eight-twelfths, .tabs .tabs__header .grid.inline.small .eight-twelfths, .tabs .inline.small.tabs__header .eight-twelfths, .grid.inline.small .two-thirds, .tabs .inline.small.tabs__header .grid .two-thirds, .grid .tabs .inline.small.tabs__header .two-thirds, .grid.inline.small .tabs .tabs__header .two-thirds, .tabs .tabs__header .grid.inline.small .two-thirds, .tabs .inline.small.tabs__header .two-thirds, .grid.inline.small .two-tenths, .tabs .inline.small.tabs__header .grid .two-tenths, .grid .tabs .inline.small.tabs__header .two-tenths, .grid.inline.small .tabs .tabs__header .two-tenths, .tabs .tabs__header .grid.inline.small .two-tenths, .tabs .inline.small.tabs__header .two-tenths, .grid.inline.small .one-fifth, .tabs .inline.small.tabs__header .grid .one-fifth, .grid .tabs .inline.small.tabs__header .one-fifth, .grid.inline.small .tabs .tabs__header .one-fifth, .tabs .tabs__header .grid.inline.small .one-fifth, .tabs .inline.small.tabs__header .one-fifth, .grid.inline.small .four-tenths, .tabs .inline.small.tabs__header .grid .four-tenths, .grid .tabs .inline.small.tabs__header .four-tenths, .grid.inline.small .tabs .tabs__header .four-tenths, .tabs .tabs__header .grid.inline.small .four-tenths, .tabs .inline.small.tabs__header .four-tenths, .grid.inline.small .two-fifths, .tabs .inline.small.tabs__header .grid .two-fifths, .grid .tabs .inline.small.tabs__header .two-fifths, .grid.inline.small .tabs .tabs__header .two-fifths, .tabs .tabs__header .grid.inline.small .two-fifths, .tabs .inline.small.tabs__header .two-fifths, .grid.inline.small .two-twelfths, .tabs .inline.small.tabs__header .grid .two-twelfths, .grid .tabs .inline.small.tabs__header .two-twelfths, .grid.inline.small .tabs .tabs__header .two-twelfths, .tabs .tabs__header .grid.inline.small .two-twelfths, .tabs .inline.small.tabs__header .two-twelfths, .grid.inline.small .one-sixth, .tabs .inline.small.tabs__header .grid .one-sixth, .grid .tabs .inline.small.tabs__header .one-sixth, .grid.inline.small .tabs .tabs__header .one-sixth, .tabs .tabs__header .grid.inline.small .one-sixth, .tabs .inline.small.tabs__header .one-sixth, .grid.inline.small .ten-twelfths, .tabs .inline.small.tabs__header .grid .ten-twelfths, .grid .tabs .inline.small.tabs__header .ten-twelfths, .grid.inline.small .tabs .tabs__header .ten-twelfths, .tabs .tabs__header .grid.inline.small .ten-twelfths, .tabs .inline.small.tabs__header .ten-twelfths, .grid.inline.small .five-sixths, .tabs .inline.small.tabs__header .grid .five-sixths, .grid .tabs .inline.small.tabs__header .five-sixths, .grid.inline.small .tabs .tabs__header .five-sixths, .tabs .tabs__header .grid.inline.small .five-sixths, .tabs .inline.small.tabs__header .five-sixths, .grid.inline.small .three-eighths, .tabs .inline.small.tabs__header .grid .three-eighths, .grid .tabs .inline.small.tabs__header .three-eighths, .grid.inline.small .tabs .tabs__header .three-eighths, .tabs .tabs__header .grid.inline.small .three-eighths, .tabs .inline.small.tabs__header .three-eighths, .grid.inline.small .card.long .card__header .lesson-detail, .card.long .card__header .grid.inline.small .lesson-detail, .tabs .inline.small.tabs__header .card.long .card__header .lesson-detail, .card.long .card__header .tabs .inline.small.tabs__header .lesson-detail {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .grid.inline.small .grid__item a, .tabs .inline.small.tabs__header .grid__item a, .grid.inline.small .one-whole a, .tabs .inline.small.tabs__header .grid .one-whole a, .grid .tabs .inline.small.tabs__header .one-whole a, .grid.inline.small .tabs .tabs__header .one-whole a, .tabs .tabs__header .grid.inline.small .one-whole a, .tabs .inline.small.tabs__header .one-whole a, .grid.inline.small .two-quarters a, .tabs .inline.small.tabs__header .grid .two-quarters a, .grid .tabs .inline.small.tabs__header .two-quarters a, .grid.inline.small .tabs .tabs__header .two-quarters a, .tabs .tabs__header .grid.inline.small .two-quarters a, .tabs .inline.small.tabs__header .two-quarters a, .grid.inline.small .three-sixths a, .tabs .inline.small.tabs__header .grid .three-sixths a, .grid .tabs .inline.small.tabs__header .three-sixths a, .grid.inline.small .tabs .tabs__header .three-sixths a, .tabs .tabs__header .grid.inline.small .three-sixths a, .tabs .inline.small.tabs__header .three-sixths a, .grid.inline.small .four-eighths a, .tabs .inline.small.tabs__header .grid .four-eighths a, .grid .tabs .inline.small.tabs__header .four-eighths a, .grid.inline.small .tabs .tabs__header .four-eighths a, .tabs .tabs__header .grid.inline.small .four-eighths a, .tabs .inline.small.tabs__header .four-eighths a, .grid.inline.small .five-tenths a, .tabs .inline.small.tabs__header .grid .five-tenths a, .grid .tabs .inline.small.tabs__header .five-tenths a, .grid.inline.small .tabs .tabs__header .five-tenths a, .tabs .tabs__header .grid.inline.small .five-tenths a, .tabs .inline.small.tabs__header .five-tenths a, .grid.inline.small .six-twelfths a, .tabs .inline.small.tabs__header .grid .six-twelfths a, .grid .tabs .inline.small.tabs__header .six-twelfths a, .grid.inline.small .tabs .tabs__header .six-twelfths a, .tabs .tabs__header .grid.inline.small .six-twelfths a, .tabs .inline.small.tabs__header .six-twelfths a, .grid.inline.small .one-half a, .tabs .inline.small.tabs__header .grid .one-half a, .grid .tabs .inline.small.tabs__header .one-half a, .grid.inline.small .tabs .tabs__header .one-half a, .tabs .tabs__header .grid.inline.small .one-half a, .tabs .inline.small.tabs__header .one-half a, .grid.inline.small .tabs .tabs__header li a, .tabs .tabs__header .grid.inline.small li a, .tabs .inline.small.tabs__header li a, .grid.inline.small .two-eighths a, .tabs .inline.small.tabs__header .grid .two-eighths a, .grid .tabs .inline.small.tabs__header .two-eighths a, .grid.inline.small .tabs .tabs__header .two-eighths a, .tabs .tabs__header .grid.inline.small .two-eighths a, .tabs .inline.small.tabs__header .two-eighths a, .grid.inline.small .three-twelfths a, .tabs .inline.small.tabs__header .grid .three-twelfths a, .grid .tabs .inline.small.tabs__header .three-twelfths a, .grid.inline.small .tabs .tabs__header .three-twelfths a, .tabs .tabs__header .grid.inline.small .three-twelfths a, .tabs .inline.small.tabs__header .three-twelfths a, .grid.inline.small .one-quarter a, .tabs .inline.small.tabs__header .grid .one-quarter a, .grid .tabs .inline.small.tabs__header .one-quarter a, .grid.inline.small .tabs .tabs__header .one-quarter a, .tabs .tabs__header .grid.inline.small .one-quarter a, .tabs .inline.small.tabs__header .one-quarter a, .grid.inline.small .six-eighths a, .tabs .inline.small.tabs__header .grid .six-eighths a, .grid .tabs .inline.small.tabs__header .six-eighths a, .grid.inline.small .tabs .tabs__header .six-eighths a, .tabs .tabs__header .grid.inline.small .six-eighths a, .tabs .inline.small.tabs__header .six-eighths a, .grid.inline.small .nine-twelfths a, .tabs .inline.small.tabs__header .grid .nine-twelfths a, .grid .tabs .inline.small.tabs__header .nine-twelfths a, .grid.inline.small .tabs .tabs__header .nine-twelfths a, .tabs .tabs__header .grid.inline.small .nine-twelfths a, .tabs .inline.small.tabs__header .nine-twelfths a, .grid.inline.small .three-quarters a, .tabs .inline.small.tabs__header .grid .three-quarters a, .grid .tabs .inline.small.tabs__header .three-quarters a, .grid.inline.small .tabs .tabs__header .three-quarters a, .tabs .tabs__header .grid.inline.small .three-quarters a, .tabs .inline.small.tabs__header .three-quarters a, .grid.inline.small .two-sixths a, .tabs .inline.small.tabs__header .grid .two-sixths a, .grid .tabs .inline.small.tabs__header .two-sixths a, .grid.inline.small .tabs .tabs__header .two-sixths a, .tabs .tabs__header .grid.inline.small .two-sixths a, .tabs .inline.small.tabs__header .two-sixths a, .grid.inline.small .four-twelfths a, .tabs .inline.small.tabs__header .grid .four-twelfths a, .grid .tabs .inline.small.tabs__header .four-twelfths a, .grid.inline.small .tabs .tabs__header .four-twelfths a, .tabs .tabs__header .grid.inline.small .four-twelfths a, .tabs .inline.small.tabs__header .four-twelfths a, .grid.inline.small .one-third a, .tabs .inline.small.tabs__header .grid .one-third a, .grid .tabs .inline.small.tabs__header .one-third a, .grid.inline.small .tabs .tabs__header .one-third a, .tabs .tabs__header .grid.inline.small .one-third a, .tabs .inline.small.tabs__header .one-third a, .grid.inline.small .four-sixths a, .tabs .inline.small.tabs__header .grid .four-sixths a, .grid .tabs .inline.small.tabs__header .four-sixths a, .grid.inline.small .tabs .tabs__header .four-sixths a, .tabs .tabs__header .grid.inline.small .four-sixths a, .tabs .inline.small.tabs__header .four-sixths a, .grid.inline.small .eight-twelfths a, .tabs .inline.small.tabs__header .grid .eight-twelfths a, .grid .tabs .inline.small.tabs__header .eight-twelfths a, .grid.inline.small .tabs .tabs__header .eight-twelfths a, .tabs .tabs__header .grid.inline.small .eight-twelfths a, .tabs .inline.small.tabs__header .eight-twelfths a, .grid.inline.small .two-thirds a, .tabs .inline.small.tabs__header .grid .two-thirds a, .grid .tabs .inline.small.tabs__header .two-thirds a, .grid.inline.small .tabs .tabs__header .two-thirds a, .tabs .tabs__header .grid.inline.small .two-thirds a, .tabs .inline.small.tabs__header .two-thirds a, .grid.inline.small .two-tenths a, .tabs .inline.small.tabs__header .grid .two-tenths a, .grid .tabs .inline.small.tabs__header .two-tenths a, .grid.inline.small .tabs .tabs__header .two-tenths a, .tabs .tabs__header .grid.inline.small .two-tenths a, .tabs .inline.small.tabs__header .two-tenths a, .grid.inline.small .one-fifth a, .tabs .inline.small.tabs__header .grid .one-fifth a, .grid .tabs .inline.small.tabs__header .one-fifth a, .grid.inline.small .tabs .tabs__header .one-fifth a, .tabs .tabs__header .grid.inline.small .one-fifth a, .tabs .inline.small.tabs__header .one-fifth a, .grid.inline.small .four-tenths a, .tabs .inline.small.tabs__header .grid .four-tenths a, .grid .tabs .inline.small.tabs__header .four-tenths a, .grid.inline.small .tabs .tabs__header .four-tenths a, .tabs .tabs__header .grid.inline.small .four-tenths a, .tabs .inline.small.tabs__header .four-tenths a, .grid.inline.small .two-fifths a, .tabs .inline.small.tabs__header .grid .two-fifths a, .grid .tabs .inline.small.tabs__header .two-fifths a, .grid.inline.small .tabs .tabs__header .two-fifths a, .tabs .tabs__header .grid.inline.small .two-fifths a, .tabs .inline.small.tabs__header .two-fifths a, .grid.inline.small .two-twelfths a, .tabs .inline.small.tabs__header .grid .two-twelfths a, .grid .tabs .inline.small.tabs__header .two-twelfths a, .grid.inline.small .tabs .tabs__header .two-twelfths a, .tabs .tabs__header .grid.inline.small .two-twelfths a, .tabs .inline.small.tabs__header .two-twelfths a, .grid.inline.small .one-sixth a, .tabs .inline.small.tabs__header .grid .one-sixth a, .grid .tabs .inline.small.tabs__header .one-sixth a, .grid.inline.small .tabs .tabs__header .one-sixth a, .tabs .tabs__header .grid.inline.small .one-sixth a, .tabs .inline.small.tabs__header .one-sixth a, .grid.inline.small .ten-twelfths a, .tabs .inline.small.tabs__header .grid .ten-twelfths a, .grid .tabs .inline.small.tabs__header .ten-twelfths a, .grid.inline.small .tabs .tabs__header .ten-twelfths a, .tabs .tabs__header .grid.inline.small .ten-twelfths a, .tabs .inline.small.tabs__header .ten-twelfths a, .grid.inline.small .five-sixths a, .tabs .inline.small.tabs__header .grid .five-sixths a, .grid .tabs .inline.small.tabs__header .five-sixths a, .grid.inline.small .tabs .tabs__header .five-sixths a, .tabs .tabs__header .grid.inline.small .five-sixths a, .tabs .inline.small.tabs__header .five-sixths a, .grid.inline.small .three-eighths a, .tabs .inline.small.tabs__header .grid .three-eighths a, .grid .tabs .inline.small.tabs__header .three-eighths a, .grid.inline.small .tabs .tabs__header .three-eighths a, .tabs .tabs__header .grid.inline.small .three-eighths a, .tabs .inline.small.tabs__header .three-eighths a, .grid.inline.small .card.long .card__header .lesson-detail a, .card.long .card__header .grid.inline.small .lesson-detail a, .tabs .inline.small.tabs__header .card.long .card__header .lesson-detail a, .card.long .card__header .tabs .inline.small.tabs__header .lesson-detail a {
+    margin: 0 5px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .grid.inline.small .grid__item:first-child a, .tabs .inline.small.tabs__header .grid__item:first-child a, .grid.inline.small .one-whole:first-child a, .tabs .inline.small.tabs__header .grid .one-whole:first-child a, .grid .tabs .inline.small.tabs__header .one-whole:first-child a, .grid.inline.small .tabs .tabs__header .one-whole:first-child a, .tabs .tabs__header .grid.inline.small .one-whole:first-child a, .tabs .inline.small.tabs__header .one-whole:first-child a, .grid.inline.small .two-quarters:first-child a, .tabs .inline.small.tabs__header .grid .two-quarters:first-child a, .grid .tabs .inline.small.tabs__header .two-quarters:first-child a, .grid.inline.small .tabs .tabs__header .two-quarters:first-child a, .tabs .tabs__header .grid.inline.small .two-quarters:first-child a, .tabs .inline.small.tabs__header .two-quarters:first-child a, .grid.inline.small .three-sixths:first-child a, .tabs .inline.small.tabs__header .grid .three-sixths:first-child a, .grid .tabs .inline.small.tabs__header .three-sixths:first-child a, .grid.inline.small .tabs .tabs__header .three-sixths:first-child a, .tabs .tabs__header .grid.inline.small .three-sixths:first-child a, .tabs .inline.small.tabs__header .three-sixths:first-child a, .grid.inline.small .four-eighths:first-child a, .tabs .inline.small.tabs__header .grid .four-eighths:first-child a, .grid .tabs .inline.small.tabs__header .four-eighths:first-child a, .grid.inline.small .tabs .tabs__header .four-eighths:first-child a, .tabs .tabs__header .grid.inline.small .four-eighths:first-child a, .tabs .inline.small.tabs__header .four-eighths:first-child a, .grid.inline.small .five-tenths:first-child a, .tabs .inline.small.tabs__header .grid .five-tenths:first-child a, .grid .tabs .inline.small.tabs__header .five-tenths:first-child a, .grid.inline.small .tabs .tabs__header .five-tenths:first-child a, .tabs .tabs__header .grid.inline.small .five-tenths:first-child a, .tabs .inline.small.tabs__header .five-tenths:first-child a, .grid.inline.small .six-twelfths:first-child a, .tabs .inline.small.tabs__header .grid .six-twelfths:first-child a, .grid .tabs .inline.small.tabs__header .six-twelfths:first-child a, .grid.inline.small .tabs .tabs__header .six-twelfths:first-child a, .tabs .tabs__header .grid.inline.small .six-twelfths:first-child a, .tabs .inline.small.tabs__header .six-twelfths:first-child a, .grid.inline.small .one-half:first-child a, .tabs .inline.small.tabs__header .grid .one-half:first-child a, .grid .tabs .inline.small.tabs__header .one-half:first-child a, .grid.inline.small .tabs .tabs__header .one-half:first-child a, .tabs .tabs__header .grid.inline.small .one-half:first-child a, .tabs .inline.small.tabs__header .one-half:first-child a, .grid.inline.small .tabs .tabs__header li:first-child a, .tabs .tabs__header .grid.inline.small li:first-child a, .tabs .inline.small.tabs__header li:first-child a, .grid.inline.small .two-eighths:first-child a, .tabs .inline.small.tabs__header .grid .two-eighths:first-child a, .grid .tabs .inline.small.tabs__header .two-eighths:first-child a, .grid.inline.small .tabs .tabs__header .two-eighths:first-child a, .tabs .tabs__header .grid.inline.small .two-eighths:first-child a, .tabs .inline.small.tabs__header .two-eighths:first-child a, .grid.inline.small .three-twelfths:first-child a, .tabs .inline.small.tabs__header .grid .three-twelfths:first-child a, .grid .tabs .inline.small.tabs__header .three-twelfths:first-child a, .grid.inline.small .tabs .tabs__header .three-twelfths:first-child a, .tabs .tabs__header .grid.inline.small .three-twelfths:first-child a, .tabs .inline.small.tabs__header .three-twelfths:first-child a, .grid.inline.small .one-quarter:first-child a, .tabs .inline.small.tabs__header .grid .one-quarter:first-child a, .grid .tabs .inline.small.tabs__header .one-quarter:first-child a, .grid.inline.small .tabs .tabs__header .one-quarter:first-child a, .tabs .tabs__header .grid.inline.small .one-quarter:first-child a, .tabs .inline.small.tabs__header .one-quarter:first-child a, .grid.inline.small .six-eighths:first-child a, .tabs .inline.small.tabs__header .grid .six-eighths:first-child a, .grid .tabs .inline.small.tabs__header .six-eighths:first-child a, .grid.inline.small .tabs .tabs__header .six-eighths:first-child a, .tabs .tabs__header .grid.inline.small .six-eighths:first-child a, .tabs .inline.small.tabs__header .six-eighths:first-child a, .grid.inline.small .nine-twelfths:first-child a, .tabs .inline.small.tabs__header .grid .nine-twelfths:first-child a, .grid .tabs .inline.small.tabs__header .nine-twelfths:first-child a, .grid.inline.small .tabs .tabs__header .nine-twelfths:first-child a, .tabs .tabs__header .grid.inline.small .nine-twelfths:first-child a, .tabs .inline.small.tabs__header .nine-twelfths:first-child a, .grid.inline.small .three-quarters:first-child a, .tabs .inline.small.tabs__header .grid .three-quarters:first-child a, .grid .tabs .inline.small.tabs__header .three-quarters:first-child a, .grid.inline.small .tabs .tabs__header .three-quarters:first-child a, .tabs .tabs__header .grid.inline.small .three-quarters:first-child a, .tabs .inline.small.tabs__header .three-quarters:first-child a, .grid.inline.small .two-sixths:first-child a, .tabs .inline.small.tabs__header .grid .two-sixths:first-child a, .grid .tabs .inline.small.tabs__header .two-sixths:first-child a, .grid.inline.small .tabs .tabs__header .two-sixths:first-child a, .tabs .tabs__header .grid.inline.small .two-sixths:first-child a, .tabs .inline.small.tabs__header .two-sixths:first-child a, .grid.inline.small .four-twelfths:first-child a, .tabs .inline.small.tabs__header .grid .four-twelfths:first-child a, .grid .tabs .inline.small.tabs__header .four-twelfths:first-child a, .grid.inline.small .tabs .tabs__header .four-twelfths:first-child a, .tabs .tabs__header .grid.inline.small .four-twelfths:first-child a, .tabs .inline.small.tabs__header .four-twelfths:first-child a, .grid.inline.small .one-third:first-child a, .tabs .inline.small.tabs__header .grid .one-third:first-child a, .grid .tabs .inline.small.tabs__header .one-third:first-child a, .grid.inline.small .tabs .tabs__header .one-third:first-child a, .tabs .tabs__header .grid.inline.small .one-third:first-child a, .tabs .inline.small.tabs__header .one-third:first-child a, .grid.inline.small .four-sixths:first-child a, .tabs .inline.small.tabs__header .grid .four-sixths:first-child a, .grid .tabs .inline.small.tabs__header .four-sixths:first-child a, .grid.inline.small .tabs .tabs__header .four-sixths:first-child a, .tabs .tabs__header .grid.inline.small .four-sixths:first-child a, .tabs .inline.small.tabs__header .four-sixths:first-child a, .grid.inline.small .eight-twelfths:first-child a, .tabs .inline.small.tabs__header .grid .eight-twelfths:first-child a, .grid .tabs .inline.small.tabs__header .eight-twelfths:first-child a, .grid.inline.small .tabs .tabs__header .eight-twelfths:first-child a, .tabs .tabs__header .grid.inline.small .eight-twelfths:first-child a, .tabs .inline.small.tabs__header .eight-twelfths:first-child a, .grid.inline.small .two-thirds:first-child a, .tabs .inline.small.tabs__header .grid .two-thirds:first-child a, .grid .tabs .inline.small.tabs__header .two-thirds:first-child a, .grid.inline.small .tabs .tabs__header .two-thirds:first-child a, .tabs .tabs__header .grid.inline.small .two-thirds:first-child a, .tabs .inline.small.tabs__header .two-thirds:first-child a, .grid.inline.small .two-tenths:first-child a, .tabs .inline.small.tabs__header .grid .two-tenths:first-child a, .grid .tabs .inline.small.tabs__header .two-tenths:first-child a, .grid.inline.small .tabs .tabs__header .two-tenths:first-child a, .tabs .tabs__header .grid.inline.small .two-tenths:first-child a, .tabs .inline.small.tabs__header .two-tenths:first-child a, .grid.inline.small .one-fifth:first-child a, .tabs .inline.small.tabs__header .grid .one-fifth:first-child a, .grid .tabs .inline.small.tabs__header .one-fifth:first-child a, .grid.inline.small .tabs .tabs__header .one-fifth:first-child a, .tabs .tabs__header .grid.inline.small .one-fifth:first-child a, .tabs .inline.small.tabs__header .one-fifth:first-child a, .grid.inline.small .four-tenths:first-child a, .tabs .inline.small.tabs__header .grid .four-tenths:first-child a, .grid .tabs .inline.small.tabs__header .four-tenths:first-child a, .grid.inline.small .tabs .tabs__header .four-tenths:first-child a, .tabs .tabs__header .grid.inline.small .four-tenths:first-child a, .tabs .inline.small.tabs__header .four-tenths:first-child a, .grid.inline.small .two-fifths:first-child a, .tabs .inline.small.tabs__header .grid .two-fifths:first-child a, .grid .tabs .inline.small.tabs__header .two-fifths:first-child a, .grid.inline.small .tabs .tabs__header .two-fifths:first-child a, .tabs .tabs__header .grid.inline.small .two-fifths:first-child a, .tabs .inline.small.tabs__header .two-fifths:first-child a, .grid.inline.small .two-twelfths:first-child a, .tabs .inline.small.tabs__header .grid .two-twelfths:first-child a, .grid .tabs .inline.small.tabs__header .two-twelfths:first-child a, .grid.inline.small .tabs .tabs__header .two-twelfths:first-child a, .tabs .tabs__header .grid.inline.small .two-twelfths:first-child a, .tabs .inline.small.tabs__header .two-twelfths:first-child a, .grid.inline.small .one-sixth:first-child a, .tabs .inline.small.tabs__header .grid .one-sixth:first-child a, .grid .tabs .inline.small.tabs__header .one-sixth:first-child a, .grid.inline.small .tabs .tabs__header .one-sixth:first-child a, .tabs .tabs__header .grid.inline.small .one-sixth:first-child a, .tabs .inline.small.tabs__header .one-sixth:first-child a, .grid.inline.small .ten-twelfths:first-child a, .tabs .inline.small.tabs__header .grid .ten-twelfths:first-child a, .grid .tabs .inline.small.tabs__header .ten-twelfths:first-child a, .grid.inline.small .tabs .tabs__header .ten-twelfths:first-child a, .tabs .tabs__header .grid.inline.small .ten-twelfths:first-child a, .tabs .inline.small.tabs__header .ten-twelfths:first-child a, .grid.inline.small .five-sixths:first-child a, .tabs .inline.small.tabs__header .grid .five-sixths:first-child a, .grid .tabs .inline.small.tabs__header .five-sixths:first-child a, .grid.inline.small .tabs .tabs__header .five-sixths:first-child a, .tabs .tabs__header .grid.inline.small .five-sixths:first-child a, .tabs .inline.small.tabs__header .five-sixths:first-child a, .grid.inline.small .three-eighths:first-child a, .tabs .inline.small.tabs__header .grid .three-eighths:first-child a, .grid .tabs .inline.small.tabs__header .three-eighths:first-child a, .grid.inline.small .tabs .tabs__header .three-eighths:first-child a, .tabs .tabs__header .grid.inline.small .three-eighths:first-child a, .tabs .inline.small.tabs__header .three-eighths:first-child a, .grid.inline.small .card.long .card__header .lesson-detail:first-child a, .card.long .card__header .grid.inline.small .lesson-detail:first-child a, .tabs .inline.small.tabs__header .card.long .card__header .lesson-detail:first-child a, .card.long .card__header .tabs .inline.small.tabs__header .lesson-detail:first-child a {
+    margin-right: 10px;
+    margin-left: 0; }
+  .grid.inline.small .grid__item:last-child a, .tabs .inline.small.tabs__header .grid__item:last-child a, .grid.inline.small .one-whole:last-child a, .tabs .inline.small.tabs__header .grid .one-whole:last-child a, .grid .tabs .inline.small.tabs__header .one-whole:last-child a, .grid.inline.small .tabs .tabs__header .one-whole:last-child a, .tabs .tabs__header .grid.inline.small .one-whole:last-child a, .tabs .inline.small.tabs__header .one-whole:last-child a, .grid.inline.small .two-quarters:last-child a, .tabs .inline.small.tabs__header .grid .two-quarters:last-child a, .grid .tabs .inline.small.tabs__header .two-quarters:last-child a, .grid.inline.small .tabs .tabs__header .two-quarters:last-child a, .tabs .tabs__header .grid.inline.small .two-quarters:last-child a, .tabs .inline.small.tabs__header .two-quarters:last-child a, .grid.inline.small .three-sixths:last-child a, .tabs .inline.small.tabs__header .grid .three-sixths:last-child a, .grid .tabs .inline.small.tabs__header .three-sixths:last-child a, .grid.inline.small .tabs .tabs__header .three-sixths:last-child a, .tabs .tabs__header .grid.inline.small .three-sixths:last-child a, .tabs .inline.small.tabs__header .three-sixths:last-child a, .grid.inline.small .four-eighths:last-child a, .tabs .inline.small.tabs__header .grid .four-eighths:last-child a, .grid .tabs .inline.small.tabs__header .four-eighths:last-child a, .grid.inline.small .tabs .tabs__header .four-eighths:last-child a, .tabs .tabs__header .grid.inline.small .four-eighths:last-child a, .tabs .inline.small.tabs__header .four-eighths:last-child a, .grid.inline.small .five-tenths:last-child a, .tabs .inline.small.tabs__header .grid .five-tenths:last-child a, .grid .tabs .inline.small.tabs__header .five-tenths:last-child a, .grid.inline.small .tabs .tabs__header .five-tenths:last-child a, .tabs .tabs__header .grid.inline.small .five-tenths:last-child a, .tabs .inline.small.tabs__header .five-tenths:last-child a, .grid.inline.small .six-twelfths:last-child a, .tabs .inline.small.tabs__header .grid .six-twelfths:last-child a, .grid .tabs .inline.small.tabs__header .six-twelfths:last-child a, .grid.inline.small .tabs .tabs__header .six-twelfths:last-child a, .tabs .tabs__header .grid.inline.small .six-twelfths:last-child a, .tabs .inline.small.tabs__header .six-twelfths:last-child a, .grid.inline.small .one-half:last-child a, .tabs .inline.small.tabs__header .grid .one-half:last-child a, .grid .tabs .inline.small.tabs__header .one-half:last-child a, .grid.inline.small .tabs .tabs__header .one-half:last-child a, .tabs .tabs__header .grid.inline.small .one-half:last-child a, .tabs .inline.small.tabs__header .one-half:last-child a, .grid.inline.small .tabs .tabs__header li:last-child a, .tabs .tabs__header .grid.inline.small li:last-child a, .tabs .inline.small.tabs__header li:last-child a, .grid.inline.small .two-eighths:last-child a, .tabs .inline.small.tabs__header .grid .two-eighths:last-child a, .grid .tabs .inline.small.tabs__header .two-eighths:last-child a, .grid.inline.small .tabs .tabs__header .two-eighths:last-child a, .tabs .tabs__header .grid.inline.small .two-eighths:last-child a, .tabs .inline.small.tabs__header .two-eighths:last-child a, .grid.inline.small .three-twelfths:last-child a, .tabs .inline.small.tabs__header .grid .three-twelfths:last-child a, .grid .tabs .inline.small.tabs__header .three-twelfths:last-child a, .grid.inline.small .tabs .tabs__header .three-twelfths:last-child a, .tabs .tabs__header .grid.inline.small .three-twelfths:last-child a, .tabs .inline.small.tabs__header .three-twelfths:last-child a, .grid.inline.small .one-quarter:last-child a, .tabs .inline.small.tabs__header .grid .one-quarter:last-child a, .grid .tabs .inline.small.tabs__header .one-quarter:last-child a, .grid.inline.small .tabs .tabs__header .one-quarter:last-child a, .tabs .tabs__header .grid.inline.small .one-quarter:last-child a, .tabs .inline.small.tabs__header .one-quarter:last-child a, .grid.inline.small .six-eighths:last-child a, .tabs .inline.small.tabs__header .grid .six-eighths:last-child a, .grid .tabs .inline.small.tabs__header .six-eighths:last-child a, .grid.inline.small .tabs .tabs__header .six-eighths:last-child a, .tabs .tabs__header .grid.inline.small .six-eighths:last-child a, .tabs .inline.small.tabs__header .six-eighths:last-child a, .grid.inline.small .nine-twelfths:last-child a, .tabs .inline.small.tabs__header .grid .nine-twelfths:last-child a, .grid .tabs .inline.small.tabs__header .nine-twelfths:last-child a, .grid.inline.small .tabs .tabs__header .nine-twelfths:last-child a, .tabs .tabs__header .grid.inline.small .nine-twelfths:last-child a, .tabs .inline.small.tabs__header .nine-twelfths:last-child a, .grid.inline.small .three-quarters:last-child a, .tabs .inline.small.tabs__header .grid .three-quarters:last-child a, .grid .tabs .inline.small.tabs__header .three-quarters:last-child a, .grid.inline.small .tabs .tabs__header .three-quarters:last-child a, .tabs .tabs__header .grid.inline.small .three-quarters:last-child a, .tabs .inline.small.tabs__header .three-quarters:last-child a, .grid.inline.small .two-sixths:last-child a, .tabs .inline.small.tabs__header .grid .two-sixths:last-child a, .grid .tabs .inline.small.tabs__header .two-sixths:last-child a, .grid.inline.small .tabs .tabs__header .two-sixths:last-child a, .tabs .tabs__header .grid.inline.small .two-sixths:last-child a, .tabs .inline.small.tabs__header .two-sixths:last-child a, .grid.inline.small .four-twelfths:last-child a, .tabs .inline.small.tabs__header .grid .four-twelfths:last-child a, .grid .tabs .inline.small.tabs__header .four-twelfths:last-child a, .grid.inline.small .tabs .tabs__header .four-twelfths:last-child a, .tabs .tabs__header .grid.inline.small .four-twelfths:last-child a, .tabs .inline.small.tabs__header .four-twelfths:last-child a, .grid.inline.small .one-third:last-child a, .tabs .inline.small.tabs__header .grid .one-third:last-child a, .grid .tabs .inline.small.tabs__header .one-third:last-child a, .grid.inline.small .tabs .tabs__header .one-third:last-child a, .tabs .tabs__header .grid.inline.small .one-third:last-child a, .tabs .inline.small.tabs__header .one-third:last-child a, .grid.inline.small .four-sixths:last-child a, .tabs .inline.small.tabs__header .grid .four-sixths:last-child a, .grid .tabs .inline.small.tabs__header .four-sixths:last-child a, .grid.inline.small .tabs .tabs__header .four-sixths:last-child a, .tabs .tabs__header .grid.inline.small .four-sixths:last-child a, .tabs .inline.small.tabs__header .four-sixths:last-child a, .grid.inline.small .eight-twelfths:last-child a, .tabs .inline.small.tabs__header .grid .eight-twelfths:last-child a, .grid .tabs .inline.small.tabs__header .eight-twelfths:last-child a, .grid.inline.small .tabs .tabs__header .eight-twelfths:last-child a, .tabs .tabs__header .grid.inline.small .eight-twelfths:last-child a, .tabs .inline.small.tabs__header .eight-twelfths:last-child a, .grid.inline.small .two-thirds:last-child a, .tabs .inline.small.tabs__header .grid .two-thirds:last-child a, .grid .tabs .inline.small.tabs__header .two-thirds:last-child a, .grid.inline.small .tabs .tabs__header .two-thirds:last-child a, .tabs .tabs__header .grid.inline.small .two-thirds:last-child a, .tabs .inline.small.tabs__header .two-thirds:last-child a, .grid.inline.small .two-tenths:last-child a, .tabs .inline.small.tabs__header .grid .two-tenths:last-child a, .grid .tabs .inline.small.tabs__header .two-tenths:last-child a, .grid.inline.small .tabs .tabs__header .two-tenths:last-child a, .tabs .tabs__header .grid.inline.small .two-tenths:last-child a, .tabs .inline.small.tabs__header .two-tenths:last-child a, .grid.inline.small .one-fifth:last-child a, .tabs .inline.small.tabs__header .grid .one-fifth:last-child a, .grid .tabs .inline.small.tabs__header .one-fifth:last-child a, .grid.inline.small .tabs .tabs__header .one-fifth:last-child a, .tabs .tabs__header .grid.inline.small .one-fifth:last-child a, .tabs .inline.small.tabs__header .one-fifth:last-child a, .grid.inline.small .four-tenths:last-child a, .tabs .inline.small.tabs__header .grid .four-tenths:last-child a, .grid .tabs .inline.small.tabs__header .four-tenths:last-child a, .grid.inline.small .tabs .tabs__header .four-tenths:last-child a, .tabs .tabs__header .grid.inline.small .four-tenths:last-child a, .tabs .inline.small.tabs__header .four-tenths:last-child a, .grid.inline.small .two-fifths:last-child a, .tabs .inline.small.tabs__header .grid .two-fifths:last-child a, .grid .tabs .inline.small.tabs__header .two-fifths:last-child a, .grid.inline.small .tabs .tabs__header .two-fifths:last-child a, .tabs .tabs__header .grid.inline.small .two-fifths:last-child a, .tabs .inline.small.tabs__header .two-fifths:last-child a, .grid.inline.small .two-twelfths:last-child a, .tabs .inline.small.tabs__header .grid .two-twelfths:last-child a, .grid .tabs .inline.small.tabs__header .two-twelfths:last-child a, .grid.inline.small .tabs .tabs__header .two-twelfths:last-child a, .tabs .tabs__header .grid.inline.small .two-twelfths:last-child a, .tabs .inline.small.tabs__header .two-twelfths:last-child a, .grid.inline.small .one-sixth:last-child a, .tabs .inline.small.tabs__header .grid .one-sixth:last-child a, .grid .tabs .inline.small.tabs__header .one-sixth:last-child a, .grid.inline.small .tabs .tabs__header .one-sixth:last-child a, .tabs .tabs__header .grid.inline.small .one-sixth:last-child a, .tabs .inline.small.tabs__header .one-sixth:last-child a, .grid.inline.small .ten-twelfths:last-child a, .tabs .inline.small.tabs__header .grid .ten-twelfths:last-child a, .grid .tabs .inline.small.tabs__header .ten-twelfths:last-child a, .grid.inline.small .tabs .tabs__header .ten-twelfths:last-child a, .tabs .tabs__header .grid.inline.small .ten-twelfths:last-child a, .tabs .inline.small.tabs__header .ten-twelfths:last-child a, .grid.inline.small .five-sixths:last-child a, .tabs .inline.small.tabs__header .grid .five-sixths:last-child a, .grid .tabs .inline.small.tabs__header .five-sixths:last-child a, .grid.inline.small .tabs .tabs__header .five-sixths:last-child a, .tabs .tabs__header .grid.inline.small .five-sixths:last-child a, .tabs .inline.small.tabs__header .five-sixths:last-child a, .grid.inline.small .three-eighths:last-child a, .tabs .inline.small.tabs__header .grid .three-eighths:last-child a, .grid .tabs .inline.small.tabs__header .three-eighths:last-child a, .grid.inline.small .tabs .tabs__header .three-eighths:last-child a, .tabs .tabs__header .grid.inline.small .three-eighths:last-child a, .tabs .inline.small.tabs__header .three-eighths:last-child a, .grid.inline.small .card.long .card__header .lesson-detail:last-child a, .card.long .card__header .grid.inline.small .lesson-detail:last-child a, .tabs .inline.small.tabs__header .card.long .card__header .lesson-detail:last-child a, .card.long .card__header .tabs .inline.small.tabs__header .lesson-detail:last-child a {
+    margin-left: 10px;
+    margin-right: 0; }
+
+@media only screen and (max-width: 320px) {
+  .grid.half li:first-child a, .tabs .half.tabs__header li:first-child a {
+    margin-right: 5px; }
+  .grid.half li:last-child a, .tabs .half.tabs__header li:last-child a {
+    margin-left: 5px; } }
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .grid.half li:first-child a, .tabs .half.tabs__header li:first-child a {
+    margin-right: 10px; }
+  .grid.half li:last-child a, .tabs .half.tabs__header li:last-child a {
+    margin-left: 10px; } }
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  .half li:first-child a {
+    margin-right: 10px; }
+  .half li:last-child a {
+    margin-left: 10px; } }
+
+@media only screen and (min-width: 1024px) {
+  .half li:first-child a {
+    margin-left: 10px; }
+  .half li:last-child a {
+    margin-right: 10px; } }
+
+@media only screen and (min-width: 1200px) {
+  .half li:first-child a {
+    margin-left: 10px; }
+  .half li:last-child a {
+    margin-right: 10px; } }
+
+.button--masthead {
+  background: url("../images/icons/burger.svg");
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 10px;
+  width: 28px;
+  height: 28px; }
+
+.button {
+  font-size: 1.5em;
+  border-radius: 5px;
+  border: 0;
+  -webkit-box-shadow: 0 3px 10px #333333;
+          box-shadow: 0 3px 10px #333333;
+  text-align: center;
+  padding: 10px 0;
+  display: block; }
+  .button.full {
+    display: block;
+    width: 100%; }
+  .button.single {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 1.125em; }
+  .button.small {
+    width: auto;
+    display: inline-block; }
+  .button.green {
+    color: #fff;
+    background: #009688; }
+  .button.red {
+    color: #fff;
+    background: #FF625F; }
+  .button.yellow {
+    color: #000;
+    background: #F6B946; }
+  .button.quiz {
+    display: block;
+    border-radius: 0;
+    background: #F8E43F; }
+  .button .quiz-icon {
+    position: absolute;
+    height: 100% !important;
+    left: 0;
+    background: #E4D23A; }
+  .button .quiz-text {
+    font-weight: bolder;
+    font-size: 1.125em;
+    padding: 10px 0; }
+  .button.icon {
+    min-width: 25px !important;
+    min-height: 25px !important;
+    line-height: 35px;
+    padding: 0 10px; }
+
+select,
+input[type='text'],
+input[type='select'] {
+  width: 100% !important;
+  padding: 10px 0 !important;
+  border: 0;
+  border-radius: 5px;
+  text-indent: 10px; }
+
+.icon {
+  margin: 0;
+  padding: 0; }
+  .icon svg {
+    width: auto;
+    height: 100%; }
+    .icon svg polygon,
+    .icon svg circle,
+    .icon svg rect,
+    .icon svg path {
+      fill: #CCCCCC; }
+
+.icon__bg-none {
+  fill: none; }
+
+.icon-left {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle; }
+  .icon-left svg {
+    width: 100%;
+    height: 100%; }
+    .icon-left svg polygon,
+    .icon-left svg circle,
+    .icon-left svg rect,
+    .icon-left svg path {
+      fill: #fff; }
+
+.icon-right {
+  margin: 0;
+  padding: 0;
+  float: right; }
+  .icon-right svg {
+    width: 100%;
+    height: 100%; }
+    .icon-right svg polygon,
+    .icon-right svg circle,
+    .icon-right svg rect,
+    .icon-right svg path {
+      fill: #fff; }
+
+.icon-thumb {
+  text-align: center;
+  display: block;
+  margin: 0; }
+  .icon-thumb span {
+    color: #AAAAAA; }
+  .icon-thumb .icon {
+    margin: 0;
+    padding: 0; }
+    .icon-thumb .icon svg {
+      width: 100%;
+      height: 100%; }
+      .icon-thumb .icon svg polygon,
+      .icon-thumb .icon svg circle,
+      .icon-thumb .icon svg rect,
+      .icon-thumb .icon svg path {
+        fill: #AAAAAA; }
+
+.photo {
+  margin: 0 auto;
+  display: block; }
+  .photo.image {
+    overflow: hidden;
+    width: 100px;
+    height: 100px; }
+    .photo.image img {
+      width: 100%;
+      height: auto;
+      position: absolute;
+      top: 0;
+      border-radius: 100%; }
+
+.fb {
+  background: #fff;
+  border-radius: 100%; }
+  .fb .icon {
+    margin: 0;
+    padding: 0;
+    margin-bottom: -3px; }
+    .fb .icon svg {
+      width: 40px;
+      height: 40px; }
+      .fb .icon svg polygon,
+      .fb .icon svg circle,
+      .fb .icon svg rect,
+      .fb .icon svg path {
+        fill: #0064cd; }
+
+.google {
+  background: #fff;
+  border-radius: 100%; }
+  .google .icon {
+    margin: 0;
+    padding: 0;
+    margin-bottom: -3px; }
+    .google .icon svg {
+      width: 40px;
+      height: 40px; }
+      .google .icon svg polygon,
+      .google .icon svg circle,
+      .google .icon svg rect,
+      .google .icon svg path {
+        fill: #9d261d; }
+
+.tabs .tabs__header a {
+  display: block !important;
+  background: #fff;
+  padding: 10px !important;
+  text-align: center;
+  border-bottom: solid 6px #fff;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s; }
+  .tabs .tabs__header a.active {
+    -webkit-transition: all 0.3s;
+            transition: all 0.3s; }
+
+.tabs .tabs__content {
+  margin: 10px; }
+  .tabs .tabs__content ul {
+    margin: 0;
+    padding: 0;
+    text-align: left; }
+    .tabs .tabs__content ul li {
+      margin: 0;
+      list-style: none;
+      display: block; }
+      .tabs .tabs__content ul li a {
+        padding: 0 5px;
+        display: block; }
+  .tabs .tabs__content .list-link {
+    padding: 20px 10px !important; }
+    .tabs .tabs__content .list-link .icon {
+      margin: 0 10px 0 0;
+      display: inline-block;
+      vertical-align: middle; }
+      .tabs .tabs__content .list-link .icon svg {
+        width: 32px;
+        height: 32px; }
+
+@media only screen and (max-width: 320px) {
+  .photo.image {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    margin-right: 20px; } }
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .photo.image {
+    position: relative;
+    width: 35%;
+    margin: 20px auto;
+    height: auto; }
+    .photo.image:before {
+      content: "";
+      display: block;
+      padding-top: 100%; } }
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  .photo.image {
+    position: relative;
+    width: 35%;
+    margin: 20px auto;
+    height: auto; }
+    .photo.image:before {
+      content: "";
+      display: block;
+      padding-top: 100%; } }
+
+@media only screen and (min-width: 1024px) {
+  .photo.image {
+    position: relative;
+    width: 15%;
+    margin: 20px auto;
+    height: auto; }
+    .photo.image:before {
+      content: "";
+      display: block;
+      padding-top: 100%; } }
+
+.card.lesson-card {
+  padding-bottom: 27px; }
+  .card.lesson-card h3 {
+    margin-bottom: 10px;
+    color: #fff; }
+  .card.lesson-card p {
+    margin: 0;
+    margin-top: 10px;
+    color: #fff; }
+
+.card.news {
+  position: relative;
+  width: 99%;
+  margin-bottom: 2px; }
+  .card.news:before {
+    content: "";
+    display: block;
+    padding-top: 120%; }
+  .card.news .background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #555555;
+    overflow: hidden; }
+    .card.news .background img {
+      width: auto;
+      height: 100%; }
+  .card.news .news__body {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+    .card.news .news__body h4 {
+      background: rgba(0, 0, 0, 0.7);
+      color: #fff;
+      white-space: normal;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 60%;
+      padding: 10px; }
+    .card.news .news__body p {
+      font-size: 1em;
+      padding: 10px;
+      white-space: normal; }
+
+.card.video {
+  position: relative;
+  width: 100%; }
+  .card.video:before {
+    content: "";
+    display: block;
+    padding-top: 52%; }
+  .card.video .video-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; }
+    .card.video .video-content .video {
+      width: 100% !important;
+      height: 100% !important; }
+
+.flex-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+      -ms-flex-wrap: nowrap;
+          flex-wrap: nowrap; }
+  .flex-container .flex-item {
+    display: inline-block;
+    -webkit-flex-basis: auto;
+        -ms-flex-preferred-size: auto;
+            flex-basis: auto;
+    -webkit-box-flex: 100;
+    -webkit-flex-grow: 100;
+        -ms-flex-positive: 100;
+            flex-grow: 100;
+    -webkit-flex-shrink: 0.5;
+        -ms-flex-negative: 0.5;
+            flex-shrink: 0.5;
+    -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+            flex-wrap: nowrap;
+    margin: 0.2%; }
+
+.static-card.lesson,
+.hscroller-card.lesson {
+  position: relative;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .static-card.lesson:before,
+  .hscroller-card.lesson:before {
+    content: "";
+    display: block;
+    padding-top: 100%; }
+  .static-card.lesson .layer,
+  .hscroller-card.lesson .layer {
+    color: #fff !important; }
+    .static-card.lesson .layer.carousel__item,
+    .hscroller-card.lesson .layer.carousel__item {
+      position: absolute;
+      top: 0.5%;
+      right: 0.5%;
+      bottom: 0.5%;
+      left: 0.5%;
+      font-size: 0.75em;
+      border-radius: 100%;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box; }
+      .static-card.lesson .layer.carousel__item .v-align,
+      .hscroller-card.lesson .layer.carousel__item .v-align {
+        left: 0;
+        right: 0; }
+        .static-card.lesson .layer.carousel__item .v-align .lesson__no,
+        .hscroller-card.lesson .layer.carousel__item .v-align .lesson__no {
+          font-size: 4em;
+          line-height: normal;
+          margin-top: 10px; }
+
+@media only screen and (max-width: 320px) {
+  .static-card.lesson,
+  .hscroller-card.lesson {
+    width: 25%; }
+  .lessons-page .static-card.lesson,
+  .lessons-page .hscroller-card.lesson {
+    width: 32.5%; } }
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .static-card.lesson,
+  .hscroller-card.lesson {
+    width: 25%; }
+  .lessons-page .static-card.lesson,
+  .lessons-page .hscroller-card.lesson {
+    width: 32.5%; } }
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  .static-card.lesson,
+  .hscroller-card.lesson {
+    width: 15%; }
+  .lessons-page .static-card.lesson,
+  .lessons-page .hscroller-card.lesson {
+    width: 19.4%; } }
+
+@media only screen and (min-width: 1024px) {
+  .static-card.lesson,
+  .hscroller-card.lesson {
+    width: 20%; }
+  .lessons-page .static-card.lesson,
+  .lessons-page .hscroller-card.lesson {
+    width: 10.7%; } }
+
+@media only screen and (min-width: 1200px) {
+  .static-card.lesson,
+  .hscroller-card.lesson {
+    width: 15%; }
+  .lessons-page .static-card.lesson,
+  .lessons-page .hscroller-card.lesson {
+    width: 9.7%; } }
+
+.card.small a {
+  display: block;
+  margin: 4px; }
+
+.card.small .card__header .icon {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  text-align: center; }
+  .card.small .card__header .icon svg {
+    width: 35px;
+    height: 35px; }
+    .card.small .card__header .icon svg polygon,
+    .card.small .card__header .icon svg circle,
+    .card.small .card__header .icon svg rect,
+    .card.small .card__header .icon svg path {
+      fill: #333333; }
+  .card.small .card__header .icon .icon {
+    padding: 3px;
+    border: 1px solid #333333;
+    border-radius: 100%; }
+
+.card.small .card__header h3 {
+  color: #333333;
+  text-align: center;
+  font-size: 0.75em;
+  line-height: normal; }
+
+.card.small .card__body {
+  background: #fff; }
+  .card.small .card__body .v-align .title {
+    text-align: center;
+    padding: 5px;
+    color: #555555;
+    font-size: 0.75em; }
+    .card.small .card__body .v-align .title:hover {
+      color: #555555; }
+
+.card.medium a {
+  display: block;
+  margin: 4px; }
+
+.card.medium .card__header .icon {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  padding: 10px 0;
+  text-align: center; }
+  .card.medium .card__header .icon svg {
+    width: 50px;
+    height: 50px; }
+    .card.medium .card__header .icon svg polygon,
+    .card.medium .card__header .icon svg circle,
+    .card.medium .card__header .icon svg rect,
+    .card.medium .card__header .icon svg path {
+      fill: #fff; }
+
+.card.medium .card__body {
+  background: #fff; }
+  .card.medium .card__body .title {
+    text-align: center;
+    color: #555555;
+    font-size: 0.75em;
+    padding: 10px 0; }
+    .card.medium .card__body .title:hover {
+      color: #555555; }
+
+.card.big {
+  background: #DDDDDD;
+  border-radius: 5px;
+  display: inline-block;
+  position: relative; }
+  .card.big span,
+  .card.big p {
+    white-space: normal; }
+
+@media only screen and (max-width: 320px) {
+  .card.big {
+    width: 100%; } }
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .card.big {
+    width: 100%; } }
+
+@media only screen and (min-width: 1200px) {
+  .card.big {
+    width: 20%; }
+    .card.big .card__header .lesson-detail .inner {
+      font-size: 0.75em;
+      line-height: normal; } }
+
+.card.long {
+  margin-bottom: 4px; }
+  .card.long .card__header {
+    overflow: hidden;
+    padding: 0;
+    background: #fff; }
+    .card.long .card__header .icon {
+      margin: 0;
+      padding: 0;
+      position: relative;
+      padding: 10px 0;
+      -webkit-transform: skewX(-30deg);
+          -ms-transform: skewX(-30deg);
+              transform: skewX(-30deg); }
+      .card.long .card__header .icon svg {
+        width: 40px;
+        height: 40px; }
+        .card.long .card__header .icon svg polygon,
+        .card.long .card__header .icon svg circle,
+        .card.long .card__header .icon svg rect,
+        .card.long .card__header .icon svg path {
+          fill: #fff; }
+      .card.long .card__header .icon:after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        content: '';
+        -webkit-transform: translateX(-98%);
+            -ms-transform: translateX(-98%);
+                transform: translateX(-98%);
+        z-index: -1; }
+      .card.long .card__header .icon .discipline {
+        -webkit-transform: skewX(30deg);
+            -ms-transform: skewX(30deg);
+                transform: skewX(30deg); }
+    .card.long .card__header .lesson-detail {
+      position: relative;
+      text-align: left; }
+      .card.long .card__header .lesson-detail .inner {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+        left: 35px;
+        right: 10px;
+        white-space: normal;
+        color: #333333; }
+  .card.long .card__body {
+    padding: 10px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+    .card.long .card__body h6 {
+      color: #333333;
+      line-height: normal;
+      text-transform: capitalize; }
+  @media only screen and (max-width: 320px) {
+    .card.long .card__header .icon .discipline {
+      margin-left: 7px; } }
+  @media only screen and (min-width: 321px) and (max-width: 480px) {
+    .card.long .card__header .icon .discipline {
+      margin: 0 10px;
+      margin-left: 10px; } }
+  @media only screen and (min-width: 481px) and (max-width: 1023px) {
+    .card.long .card__header .icon .discipline {
+      margin: 0 10px;
+      margin-left: 10px; } }
+  @media only screen and (min-width: 1024px) {
+    .card.long .card__header .icon .discipline {
+      margin: 0 10px;
+      margin-left: 20px; } }
+  @media only screen and (min-width: 1200px) {
+    .card.long .card__header .icon {
+      text-align: center; }
+      .card.long .card__header .icon .discipline {
+        margin: 0 10px;
+        margin-right: 20px; } }
+
+.section__header {
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #CCCCCC;
+  z-index: 100; }
+  .section__header .title {
+    line-height: normal; }
+    .section__header .title.big {
+      padding: 20px 10px; }
+  .section__header.image h2 {
+    padding: 10px;
+    text-align: center;
+    line-height: normal;
+    text-transform: uppercase; }
+  .section__header.image .header__image {
+    width: 100%;
+    height: auto; }
+  .section__header .header-link {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: 10px;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    color: #555555; }
+    .section__header .header-link:hover {
+      color: #fff; }
+
+@media only screen and (max-width: 320px) {
+  .section__header .title.small {
+    font-size: 1em;
+    padding: 20px 10px; } }
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .section__header .title.small {
+    font-size: 1em;
+    padding: 20px 10px; } }
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  .section__header .title.small {
+    padding: 20px 10px; } }
+
+@media only screen and (min-width: 1024px) {
+  .section__header .title.small {
+    padding: 20px 10px; } }
+
+@media only screen and (min-width: 1200px) {
+  .section__header .title.small {
+    padding: 20px 10px; } }
+
+.section-entry h1, .section-entry h2 {
+  color: #fff;
+  line-height: normal;
+  margin-bottom: 10px; }
+
+.section-entry p {
+  color: #fff; }
+
+.section-entry label {
+  color: #fff; }
+
+.section-entry input[type='text'] {
+  margin-bottom: 10px; }
+
+.section-entry .form-control.register {
+  margin-top: 20px; }
+
+.section-entry .form-control span {
+  color: #fff; }
+
+.section-entry .forgot {
+  margin: 20px 0;
+  text-align: center;
+  display: block;
+  color: #fff; }
+
+.masthead--entry img {
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 40px; }
+
+.masthead--app {
+  width: 100%;
+  position: relative;
+  background: #333333;
+  height: 60px;
+  -webkit-box-shadow: 0 0 20px #000;
+          box-shadow: 0 0 20px #000;
+  z-index: 1000; }
+  .masthead--app h4 {
+    font-size: 1.5em;
+    text-transform: uppercase;
+    margin: 0;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 70%;
+    text-align: center;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%); }
+  .masthead--app .logo {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    margin: 0;
+    left: 10px; }
+    .masthead--app .logo .logo-image {
+      height: 50px;
+      width: auto; }
+  .masthead--app .image.photo {
+    float: right;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    margin: 0;
+    margin-top: 10px;
+    cursor: pointer; }
+
+.mast--entry {
+  margin: 20px; }
+
+.mast--app {
+  background: #eee;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 60px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch; }
+
+.main-navigation {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%; }
+  .main-navigation ul {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    border-bottom: solid 1px #555555; }
+    .main-navigation ul li {
+      margin: 0;
+      list-style: none;
+      display: block; }
+      .main-navigation ul li a {
+        padding: 0 5px;
+        display: block; }
+    .main-navigation ul a {
+      border-top: solid 1px #555555;
+      color: #AAAAAA;
+      -webkit-transition: all 0.3s;
+              transition: all 0.3s; }
+      .main-navigation ul a.active,
+      .main-navigation ul a:hover {
+        border-left: solid 6px #3A5181;
+        color: #DDDDDD;
+        -webkit-transition: all 0.3s;
+                transition: all 0.3s; }
+  .main-navigation .section__profile {
+    width: 50%;
+    margin-left: 44%;
+    text-align: center;
+    background: none; }
+    .main-navigation .section__profile .icon {
+      width: 100%;
+      display: block; }
+      .main-navigation .section__profile .icon .image {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+        background: #fff;
+        border-radius: 100%;
+        display: block; }
+
+@media only screen and (max-width: 320px) {
+  .main-navigation ul a {
+    padding: 10px !important; } }
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .main-navigation ul a {
+    padding: 20px !important; } }
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  .main-navigation ul a {
+    padding: 20px !important; } }
+
+.page--home .section__news {
+  padding: 0; }
+
+@media only screen and (max-width: 320px) {
+  .page--home .section__profile {
+    display: none; } }
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .page--home .section__profile {
+    display: none; } }
