@@ -2397,6 +2397,28 @@ input[type='select'] {
         margin: 0 10px;
         margin-right: 20px; } }
 
+.nav-social ul li {
+  display: inline-block; }
+
+.nav-social a:hover {
+  opacity: 0.5; }
+
+.nav-social img {
+  width: 40px;
+  height: 40px; }
+
+.nav a {
+  color: #000;
+  text-transform: uppercase; }
+  .nav a:hover, .nav a.active {
+    color: #9d261d; }
+
+.nav.primary li {
+  display: inline-block; }
+
+.nav.nav-social li {
+  display: inline-block; }
+
 .section__header {
   position: relative;
   -webkit-box-sizing: border-box;
