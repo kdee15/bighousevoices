@@ -3,7 +3,7 @@
             <!-- C.1.1. MASTHEAD LOGO -->
 
             <figure class="masthead__logo one-quarter">
-                <img src="../assets/images/site/logo.png" alt="Matt Silver-Vallance" />
+                <img src="../assets/images/site/logo.png" alt="Big House Voices" class="logo" />
             </figure>
 
             <!-- C.1.1. END -->
