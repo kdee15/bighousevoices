@@ -2,105 +2,18 @@
 
 // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-// A.1. ANONYMOUS PAGE ------------------------------------------------------------------------------------------------
+// A.1. MASTHEAD ------------------------------------------------------------------------------------------------------
 
-.masthead--anon {
-
-
+.masthead {
+    
+    .masthead__logo { margin: 0; background: $blue; }
+    .masthead__nav { background: $red; }
+    .newsletter { background: $blue; }
+    
 }
+
 
 // A.1. END -----------------------------------------------------------------------------------------------------------
-
-// A.2. ENTRY PAGE ----------------------------------------------------------------------------------------------------
-
-.masthead--entry {
-    
-    img {
-    
-        max-width: 100%;
-        margin: 0 auto;
-        margin-top: $baseline-medium;
-    
-    }
-}
-
-// A.2. END -----------------------------------------------------------------------------------------------------------
-
-// A.3. APP PAGE ------------------------------------------------------------------------------------------------------
-
-.masthead--app {
-    
-    width: 100%;
-    position: relative;
-    background: $ia-grey90;
-    height: 60px;
-    box-shadow: 0 0 20px $black;
-    z-index: 1000;
-    
-    // A.3.1. PAGE TITLE
-    
-    h4 {
-    
-        font-size: $large;
-        text-transform: uppercase;
-        margin: 0;
-        color: $white;
-        
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        
-        width: 70%;
-        
-        text-align: center;
-        
-        transform: translateX(-50%) translateY(-50%);
-    
-    }
-    
-    // A.3.1. END
-    
-    // A.3.2. LOGO
-    
-    .logo {
-        
-        @include vertical-align (absolute);
-        margin: 0;
-        left: $baseline-small;
-        
-        .logo-image {
-            
-            height: 50px;
-            width: auto;
-            
-        }
-        
-    }
-    
-    // A.3.2. END
-    
-    // A.3.3. USER PROFILE
-    
-    .image {
-        
-        &.photo {
-            
-            float: right;
-            background: $white;
-            width: 40px;
-            height: 40px;
-            margin: 0;
-            margin-top: 10px;
-            cursor: pointer;
-            
-        }
-    }
-    
-    // A.3.3. END
-
-}
-
-// A.3. END -----------------------------------------------------------------------------------------------------------
 
 // A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

@@ -1502,224 +1502,65 @@ a {
   .no-mobile {
     display: block; } }
 
-/**
- * Toggle Switch Globals
- *
- * All switches should take on the class `c-hamburger` as well as their
- * variant that will give them unique properties. This class is an overview
- * class that acts as a reset for all versions of the icon.
- */
-.c-hamburger {
-  display: block;
-  position: relative;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  width: 60px;
-  height: 60px;
-  font-size: 0;
-  text-indent: -9999px;
-  appearance: none;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  border-radius: none;
-  border: none;
-  cursor: pointer;
-  -webkit-transition: background 0.3s;
-          transition: background 0.3s;
-  float: right; }
-
-.c-hamburger:focus {
-  outline: none; }
-
-.c-hamburger span {
-  display: block;
+.burger-button {
+  display: none;
   position: absolute;
-  top: 28px;
-  left: 15px;
-  right: 15px;
-  height: 4px;
-  background: white; }
+  right: 10px;
+  top: -20px;
+  width: 33px;
+  height: 33px;
+  overflow: hidden; }
+  .burger-button .line {
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: #000;
+    -webkit-transition: all 0.3s;
+            transition: all 0.3s; }
+  .burger-button .line-1 {
+    top: 10%;
+    -webkit-transform: translateY(10%) rotate(0deg);
+        -ms-transform: translateY(10%) rotate(0deg);
+            transform: translateY(10%) rotate(0deg); }
+  .burger-button .line-2 {
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(0deg);
+        -ms-transform: translateY(-50%) rotate(0deg);
+            transform: translateY(-50%) rotate(0deg); }
+  .burger-button .line-3 {
+    top: 90%;
+    -webkit-transform: translateY(-90%) rotate(0deg);
+        -ms-transform: translateY(-90%) rotate(0deg);
+            transform: translateY(-90%) rotate(0deg); }
+  .burger-button.close .line {
+    background: #00BFFF;
+    -webkit-transition: all 0.3s;
+            transition: all 0.3s; }
+  .burger-button.close .line-1 {
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(45deg);
+        -ms-transform: translateY(-50%) rotate(45deg);
+            transform: translateY(-50%) rotate(45deg); }
+  .burger-button.close .line-2 {
+    opacity: 0; }
+  .burger-button.close .line-3 {
+    top: 50%;
+    -webkit-transform: translateY(-50%) rotate(-45deg);
+        -ms-transform: translateY(-50%) rotate(-45deg);
+            transform: translateY(-50%) rotate(-45deg); }
 
-.c-hamburger span::before,
-.c-hamburger span::after {
-  position: absolute;
-  display: block;
-  left: 0;
-  width: 100%;
-  height: 4px;
-  background-color: #fff;
-  content: ""; }
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  .burger-button {
+    display: block;
+    top: -16px; } }
 
-.c-hamburger span::before {
-  top: -12px; }
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  .burger-button {
+    display: block; } }
 
-.c-hamburger span::after {
-  bottom: -12px; }
-
-/**
- * Style 1
- *
- * Rotating hamburger icon (rot), that simply rotates 90 degrees when activated.
- * Nothing too fancy, simple transition.
- */
-.c-hamburger--rot span {
-  -webkit-transition: -webkit-transform 0.3s;
-          transition: transform 0.3s; }
-
-/* active state, i.e. menu open */
-.c-hamburger--rot.is-active span {
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg); }
-
-/**
- * Style 2
- * 
- * Hamburger to "x" (htx). Takes on a hamburger shape, bars slide
- * down to center and transform into an "x".
- */
-.c-hamburger--htx span::before,
-.c-hamburger--htx span::after {
-  -webkit-transition-duration: 0.3s, 0.3s;
-          transition-duration: 0.3s, 0.3s;
-  -webkit-transition-delay: 0.3s, 0s;
-          transition-delay: 0.3s, 0s; }
-
-.c-hamburger--htx span::before {
-  -webkit-transition-property: top, -webkit-transform;
-          transition-property: top, transform; }
-
-.c-hamburger--htx span::after {
-  -webkit-transition-property: bottom, -webkit-transform;
-          transition-property: bottom, transform; }
-
-/* active state, i.e. menu open */
-.c-hamburger--htx.is-active span {
-  background: none; }
-
-.c-hamburger--htx.is-active span::before {
-  top: 0;
-  -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
-          transform: rotate(45deg); }
-
-.c-hamburger--htx.is-active span::after {
-  bottom: 0;
-  -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
-          transform: rotate(-45deg); }
-
-.c-hamburger--htx.is-active span::before,
-.c-hamburger--htx.is-active span::after {
-  -webkit-transition-delay: 0s, 0.3s;
-          transition-delay: 0s, 0.3s; }
-
-/**
- * Style 3
- *
- * Hamburger to left-arrow (htla). Hamburger menu transforms to a left-pointing
- * arrow. Usually indicates an off canvas menu sliding in from left that
- * will be close on re-click of the icon.
- */
-.c-hamburger--htla {
-  background-color: #32dc64; }
-
-.c-hamburger--htla span {
-  -webkit-transition: -webkit-transform 0.3s;
-          transition: transform 0.3s; }
-
-.c-hamburger--htla span::before {
-  -webkit-transform-origin: top right;
-      -ms-transform-origin: top right;
-          transform-origin: top right;
-  -webkit-transition: -webkit-transform 0.3s, width 0.3s, top 0.3s;
-          transition: transform 0.3s, width 0.3s, top 0.3s; }
-
-.c-hamburger--htla span::after {
-  -webkit-transform-origin: bottom right;
-      -ms-transform-origin: bottom right;
-          transform-origin: bottom right;
-  -webkit-transition: -webkit-transform 0.3s, width 0.3s, bottom 0.3s;
-          transition: transform 0.3s, width 0.3s, bottom 0.3s; }
-
-/* active state, i.e. menu open */
-.c-hamburger--htla.is-active {
-  background-color: #18903b; }
-
-.c-hamburger--htla.is-active span {
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg); }
-
-.c-hamburger--htla.is-active span::before,
-.c-hamburger--htla.is-active span::after {
-  width: 50%; }
-
-.c-hamburger--htla.is-active span::before {
-  top: 0;
-  -webkit-transform: translateX(19px) translateY(2px) rotate(45deg);
-      -ms-transform: translateX(19px) translateY(2px) rotate(45deg);
-          transform: translateX(19px) translateY(2px) rotate(45deg); }
-
-.c-hamburger--htla.is-active span::after {
-  bottom: 0;
-  -webkit-transform: translateX(19px) translateY(-2px) rotate(-45deg);
-      -ms-transform: translateX(19px) translateY(-2px) rotate(-45deg);
-          transform: translateX(19px) translateY(-2px) rotate(-45deg); }
-
-/**
- * Style 4
- *
- * Hamburger to right-arrow (htra). Hamburger menu transforms to a
- * right-pointing arrow. Usually indicates an off canvas menu sliding in from 
- * right that will be close on re-click of the icon.
- */
-.c-hamburger--htra {
-  background-color: #ff9650; }
-
-.c-hamburger--htra span {
-  -webkit-transition: -webkit-transform 0.3s;
-          transition: transform 0.3s; }
-
-.c-hamburger--htra span::before {
-  -webkit-transform-origin: top left;
-      -ms-transform-origin: top left;
-          transform-origin: top left;
-  -webkit-transition: -webkit-transform 0.3s, width 0.3s, top 0.3s;
-          transition: transform 0.3s, width 0.3s, top 0.3s; }
-
-.c-hamburger--htra span::after {
-  -webkit-transform-origin: bottom left;
-      -ms-transform-origin: bottom left;
-          transform-origin: bottom left;
-  -webkit-transition: -webkit-transform 0.3s, width 0.3s, bottom 0.3s;
-          transition: transform 0.3s, width 0.3s, bottom 0.3s; }
-
-/* active state, i.e. menu open */
-.c-hamburger--htra.is-active {
-  background-color: #e95d00; }
-
-.c-hamburger--htra.is-active span {
-  -webkit-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-          transform: rotate(180deg); }
-
-.c-hamburger--htra.is-active span::before,
-.c-hamburger--htra.is-active span::after {
-  width: 50%; }
-
-.c-hamburger--htra.is-active span::before {
-  top: 0;
-  -webkit-transform: translateX(-4px) translateY(2px) rotate(-45deg);
-      -ms-transform: translateX(-4px) translateY(2px) rotate(-45deg);
-          transform: translateX(-4px) translateY(2px) rotate(-45deg); }
-
-.c-hamburger--htra.is-active span::after {
-  bottom: 0;
-  -webkit-transform: translateX(-4px) translateY(-2px) rotate(45deg);
-      -ms-transform: translateX(-4px) translateY(-2px) rotate(45deg);
-          transform: translateX(-4px) translateY(-2px) rotate(45deg); }
+@media only screen and (min-width: 1024px) {
+  .burger-button {
+    display: none !important; } }
 
 @font-face {
   font-family: 'alarmClock';
@@ -2498,66 +2339,18 @@ input[type='select'] {
   display: block;
   color: #fff; }
 
-.masthead--entry img {
-  max-width: 100%;
-  margin: 0 auto;
-  margin-top: 40px; }
+.masthead .masthead__logo {
+  margin: 0;
+  background: #00BFFF; }
 
-.masthead--app {
-  width: 100%;
-  position: relative;
-  background: #333333;
-  height: 60px;
-  -webkit-box-shadow: 0 0 20px #000;
-          box-shadow: 0 0 20px #000;
-  z-index: 1000; }
-  .masthead--app h4 {
-    font-size: 1.5em;
-    text-transform: uppercase;
-    margin: 0;
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 70%;
-    text-align: center;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-        -ms-transform: translateX(-50%) translateY(-50%);
-            transform: translateX(-50%) translateY(-50%); }
-  .masthead--app .logo {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-    margin: 0;
-    left: 10px; }
-    .masthead--app .logo .logo-image {
-      height: 50px;
-      width: auto; }
-  .masthead--app .image.photo {
-    float: right;
-    background: #fff;
-    width: 40px;
-    height: 40px;
-    margin: 0;
-    margin-top: 10px;
-    cursor: pointer; }
+.masthead .masthead__nav {
+  background: #9d261d; }
 
-.mast--entry {
+.masthead .newsletter {
+  background: #00BFFF; }
+
+.mast {
   margin: 20px; }
-
-.mast--app {
-  background: #eee;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  top: 60px;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch; }
 
 .main-navigation {
   position: absolute;
@@ -2616,6 +2409,15 @@ input[type='select'] {
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
   .main-navigation ul a {
     padding: 20px !important; } }
+
+.footend .logo {
+  background: #9d261d; }
+
+.footend .info {
+  background: #00BFFF; }
+
+.footend .nav {
+  background: #ffc40d; }
 
 .page--home .section__news {
   padding: 0; }
