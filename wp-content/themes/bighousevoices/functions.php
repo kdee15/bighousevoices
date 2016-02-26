@@ -1,11 +1,11 @@
 <?php
 /**
- * crio-msv functions and definitions
+ * bighousevoices functions and definitions
  *
- * @package crio-msv
+ * @package bighousevoices
  */
 
-// crio-msv functions and definitions ##############################################################################
+// bighousevoices functions and definitions ##############################################################################
 
 // A.1 CUSTOM FUNCIONS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -19,7 +19,7 @@
         $content_width = 640; /* pixels */
     }
 
-    if ( ! function_exists( 'crio_msv_setup' ) ) :
+    if ( ! function_exists( 'bighousevoices_setup' ) ) :
     /**
      * Sets up theme defaults and registers support for various WordPress features.
      *
@@ -27,15 +27,15 @@
      * runs before the init hook. The init hook is too late for some features, such
      * as indicating support for post thumbnails.
      */
-    function crio_msv_setup() {
+    function bighousevoices_setup() {
 
         /*
          * Make theme available for translation.
          * Translations can be filed in the /languages/ directory.
-         * If you're building a theme based on crio-msv, use a find and replace
-         * to change 'crio-msv' to the name of your theme in all the template files
+         * If you're building a theme based on bighousevoices, use a find and replace
+         * to change 'bighousevoices' to the name of your theme in all the template files
          */
-        load_theme_textdomain( 'crio-msv', get_template_directory() . '/languages' );
+        load_theme_textdomain( 'bighousevoices', get_template_directory() . '/languages' );
 
         // Add default posts and comments RSS feed links to head.
         add_theme_support( 'automatic-feed-links' );
@@ -57,7 +57,7 @@
 
         // This theme uses wp_nav_menu() in one location.
         register_nav_menus( array(
-            'primary' => __( 'Primary Menu', 'crio-msv' ),
+            'primary' => __( 'Primary Menu', 'bighousevoices' ),
         ) );
 
         /*
@@ -77,29 +77,29 @@
         ) );
 
         // Set up the WordPress core custom background feature.
-        add_theme_support( 'custom-background', apply_filters( 'crio_msv_custom_background_args', array(
+        add_theme_support( 'custom-background', apply_filters( 'bighousevoices_custom_background_args', array(
             'default-color' => 'ffffff',
             'default-image' => '',
         ) ) );
     }
-    endif; // crio_msv_setup
-    add_action( 'after_setup_theme', 'crio_msv_setup' );
+    endif; // bighousevoices_setup
+    add_action( 'after_setup_theme', 'bighousevoices_setup' );
 
     /**
      * Enqueue scripts and styles.
      */
-    function crio_msv_scripts() {
-        wp_enqueue_style( 'crio-msv-style', get_stylesheet_uri() );
+    function bighousevoices_scripts() {
+        wp_enqueue_style( 'bighousevoices-style', get_stylesheet_uri() );
 
-        wp_enqueue_script( 'crio-msv-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
+        wp_enqueue_script( 'bighousevoices-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
-        wp_enqueue_script( 'crio-msv-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
+        wp_enqueue_script( 'bighousevoices-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
         if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
             wp_enqueue_script( 'comment-reply' );
         }
     }
-    add_action( 'wp_enqueue_scripts', 'crio_msv_scripts' );
+    add_action( 'wp_enqueue_scripts', 'bighousevoices_scripts' );
 
 
 
@@ -144,23 +144,23 @@
 
     // A.2.1. PROJECTS ---------------------------------------------------------------------------------------------
 
-    function projects() {
+    function artists() {
       $labels = array(
-        'Title'              => _x( 'Projects', 'post type general name' ),
-        'singular_name'      => _x( 'Project', 'post type singular name' ),
-        'add_new'            => _x( 'Add New', 'Project' ),
-        'add_new_item'       => __( 'Add New Project' ),
-        'edit_item'          => __( 'Edit Project' ),
-        'new_item'           => __( 'New Project' ),
-        'all_items'          => __( 'All Projects' ),
-        'view_item'          => __( 'View Project' ),
+        'Title'              => _x( 'Artists', 'post type general name' ),
+        'singular_name'      => _x( 'Artist', 'post type singular name' ),
+        'add_new'            => _x( 'Add New', 'Artist' ),
+        'add_new_item'       => __( 'Add New Artist' ),
+        'edit_item'          => __( 'Edit Artist' ),
+        'new_item'           => __( 'New Artist' ),
+        'all_items'          => __( 'All Artists' ),
+        'view_item'          => __( 'View Artist' ),
         'parent_item_colon'  => '',
-        'menu_name'          => 'Projects'
+        'menu_name'          => 'Artists'
       );
 
       $args = array(
         'labels'         => $labels,
-        'description'   => 'A list of Projects',
+        'description'   => 'A list of Artists',
         'public'        => true,
         'menu_position' => 4,
         'supports'      => array( 'title', 'editor', 'thumbnail', 'taxonomies', 'categories' ),
@@ -168,85 +168,18 @@
 
       );
         
-      register_post_type( 'projects', $args ); 
+      register_post_type( 'artists', $args ); 
     }
 
-    add_action( 'init', 'projects' );
+    add_action( 'init', 'artists' );
 
     // A.2.1. End --------------------------------------------------------------------------------------------------
-
-    // A.2.2. PRESS RELEASES ---------------------------------------------------------------------------------------
-
-    function press() {
-      $labels = array(
-        'Title'              => _x( 'Press Releases', 'post type general name' ),
-        'singular_name'      => _x( 'Press Release', 'post type singular name' ),
-        'add_new'            => _x( 'Add New', 'Press Release' ),
-        'add_new_item'       => __( 'Add New Press Release' ),
-        'edit_item'          => __( 'Edit Press Release' ),
-        'new_item'           => __( 'New Press Release' ),
-        'all_items'          => __( 'All Press Releases' ),
-        'view_item'          => __( 'View Press Release' ),
-        'parent_item_colon'  => '',
-        'menu_name'          => 'Press'
-      );
-
-      $args = array(
-        'labels'         => $labels,
-        'description'   => 'A list of Press Releases',
-        'public'        => true,
-        'menu_position' => 5,
-        'supports'      => array( 'title', 'editor', 'thumbnail', 'taxonomies' ),
-        'has_archive'   => true,
-
-      );
-        
-      register_post_type( 'press', $args );
-    }
-
-    add_action( 'init', 'press' );
-
-    // hook into the init action and call create_book_taxonomies when it fires
-    add_action( 'init', 'create_book_taxonomies', 0 );
-
-    // create two taxonomies, genres and writers for the post type "book"
-    function create_book_taxonomies() {
-        // Add new taxonomy, make it hierarchical (like categories)
-        $labels = array(
-            'name'              => _x( 'Press Categories', 'taxonomy general name' ),
-            'singular_name'     => _x( 'Press Category', 'taxonomy singular name' ),
-            'search_items'      => __( 'Search Press Categories' ),
-            'all_items'         => __( 'All Press Categories' ),
-            'parent_item'       => __( 'Parent Press Category' ),
-            'parent_item_colon' => __( 'Parent Press Category:' ),
-            'edit_item'         => __( 'Edit Press Category' ),
-            'update_item'       => __( 'Update Press Category' ),
-            'add_new_item'      => __( 'Add New Press Category' ),
-            'new_item_name'     => __( 'New Press Category Name' ),
-            'menu_name'         => __( 'Press Category' ),
-        );
-
-        $args = array(
-            'hierarchical'      => true,
-            'labels'            => $labels,
-            'show_ui'           => true,
-            'show_admin_column' => true,
-            'query_var'         => true,
-            'rewrite'           => true,
-        );
-
-        register_taxonomy( 'presscat', array( 'press' ), $args );
-
-    }
-
-    // A.2.2. End --------------------------------------------------------------------------------------------------
-
 
 // A.2 END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // A.3 WIDGETS & SIDEBARS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-function crio_msv_widgets_init() {
+function bighousevoices_widgets_init() {
 
 	register_sidebar( array(
 		'name'          => 'Homepage Widgets',
@@ -285,7 +218,7 @@ function crio_msv_widgets_init() {
 	) );
 
 }
-add_action( 'widgets_init', 'crio_msv_widgets_init' );
+add_action( 'widgets_init', 'bighousevoices_widgets_init' );
 
 // A.3 END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
