@@ -133,3 +133,25 @@
             <!-- C.1.3. END -->
 
     </header>
+        
+
+    <!-- C.1.2.2. BURGER Navigation -->
+
+    <nav id="burger-menu" class="hidden">
+
+        <ul>
+            <li><a href="#" class="active"><span>Home</span></a></li>
+            <li><a href="#"><span>Bio</span></a></li>
+            <li><a href="#"><span>Projects</span></a></li>
+            <li><a href="#"><span>Press</span></a></li>
+            <li><a href="#"><span>Blog</span></a></li>
+            <li><a href="#"><span>Speaker</span></a></li>
+            <li><a href="#"><span>Contact</span></a></li>
+        </ul>
+
+    </nav>
+
+    <!-- C.1.2.2. End -->
+
+        
+        

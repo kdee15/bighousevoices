@@ -8,17 +8,30 @@
 
     &.section {
         
-        .card__body {
+        .artist__item {
             
-            padding: $baseline-small;
-            text-align: center;
+            @extend .feature--one-whole;   
+            @extend .mobile--one-half;
+            padding: 3px;
+            box-sizing: border-box;
             
-            .grid {
+            .card {
                 
-                .one-quarter {
-                    
-                    font-size: $small;   
-                    
+                .card__body {
+
+                    padding: $baseline-small;
+                    text-align: center;
+
+                    .card__nav {
+                        
+                        .one-quarter {
+
+                            font-size: $small;   
+                            @extend .mobile--one-half;
+
+                            .button { display: inline-block; font-size: $small; }
+                        }
+                    }
                 }
             }
         }

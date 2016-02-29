@@ -6,11 +6,27 @@
 
 .masthead {
     
-    .masthead__logo { margin: 0; background: $blue; }
-    .masthead__nav { background: $red; }
+    .masthead__logo {
+        
+        @extend .feature--three-quarters;
+        @extend .mobile--three-quarters;
+        height: 100%;
+        margin: 0; 
+        background: $blue;
+        
+        .logo { height: 90%; width: auto; }
+    }
+    
+    .masthead__nav { 
+        
+        @extend .feature--one-quarter;
+        @extend .mobile--one-quarter;
+        background: $red; 
+    
+    }
     .newsletter { background: $blue; }
     
-}
+
 
 
 // A.1. END -----------------------------------------------------------------------------------------------------------
@@ -19,38 +35,95 @@
 
 // B. MOBILE STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@include media-query(feature) {
+    @include media-query(feature) {
+        
+        height: 40px;
 
-
-}
+        .newsletter { display: none; }
+        
+        .masthead__nav {
+            
+            .burger-button { display: block; }
+            .primary,
+            .nav-social {display: none; }
+        }
+        
+    }
 
 // B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // C. TABLET STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@include media-query(mobile) {
+    @include media-query(mobile) {
+        
+        height: 60px;
 
-
-}
+        .newsletter { display: none; }
+        
+        .masthead__nav {
+            
+            .burger-button { display: block; }
+            .primary,
+            .nav-social {display: none; }
+        }
+    }
 
 // C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // D. DESKTOP STYLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@include media-query(tablet) {
+    @include media-query(tablet) {
+        
+        height: 80px;
 
-
-}
+        .newsletter { display: none; }
+        
+        .masthead__nav {
+            
+            .burger-button { display: block; }
+            .primary,
+            .nav-social {display: none; }
+        }
+    }
 
 // D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@include media-query(desk) {
+    @include media-query(desk) {
+        
+        height: 100px;
 
-
-}
+        .newsletter { display: block; }
+        
+        .masthead__nav {
+            
+            .burger-button { display: none; }
+            .primary,
+            .nav-social {display: block; }
+        }
+    }
 
 // E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// F. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    @include media-query(desk-wide) {
+        
+        height: 100px;
+
+        .newsletter { display: block; }
+        
+        .masthead__nav {
+            
+            .burger-button { display: none; }
+            .primary,
+            .nav-social {display: block; }
+        }
+    }
+
+// F. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+}
 
 // END OF FILE ########################################################################################################
