@@ -2383,8 +2383,7 @@ input[type='select'] {
       color: #AAAAAA;
       -webkit-transition: all 0.3s;
               transition: all 0.3s; }
-      .main-navigation ul a.active,
-      .main-navigation ul a:hover {
+      .main-navigation ul a.active, .main-navigation ul a:hover {
         border-left: solid 6px #3A5181;
         color: #DDDDDD;
         -webkit-transition: all 0.3s;
