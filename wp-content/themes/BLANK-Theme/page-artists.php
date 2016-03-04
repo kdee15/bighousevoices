@@ -6,6 +6,8 @@ Template Name: artists template
 
 get_header(); ?>
 
+<p>custom page</p>
+
     <?php
         $args = array(
             'post_type' => 'artists',
