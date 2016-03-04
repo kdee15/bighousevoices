@@ -8,9 +8,6 @@
     right: $baseline/2;
     top: $baseline/4;
     
-    width: 33px;
-    height: 33px;
-    
     overflow: hidden;
     
     // A.1. LINES -----------------------------------------------------------------------------------------------------
@@ -19,9 +16,8 @@
         
         position: absolute;
     
-        width: 30px;
         height: 3px;
-        background: $black;
+        background: $white;
         
         @include hover-effect();
     
@@ -111,6 +107,14 @@
         &.hidden { display: none;}
     
     }
+    
+    .burger-button {
+
+        width: 25px;
+        height: 25px;
+        
+        .line { width: 25px; }
+    }
 
 }
 
@@ -128,6 +132,15 @@
         &.hidden { display: none;}
     
     }
+        
+    .burger-button {
+
+        width: 33px;
+        height: 33px;
+        
+        .line { width: 30px; }
+    }
+    
 }
 
 // B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -143,6 +156,15 @@
         &.hidden { display: none;}
     
     }
+    
+    .burger-button {
+
+        width: 33px;
+        height: 33px;
+        
+        .line { width: 30px; }
+    }
+    
 }
 
 // C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -158,6 +180,15 @@
         &.hidden { display: none;}
     
     }
+    
+    .burger-button {
+
+        width: 33px;
+        height: 33px;
+        
+        .line { width: 30px; }
+    }
+    
 }
 
 // D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -173,6 +204,15 @@
         &.hidden { display: none;}
     
     }
+    
+    .burger-button {
+
+        width: 33px;
+        height: 33px;
+        
+        .line { width: 30px; }
+    }
+    
 }
 
 // D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

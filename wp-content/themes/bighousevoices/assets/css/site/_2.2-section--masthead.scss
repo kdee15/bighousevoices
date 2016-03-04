@@ -6,13 +6,14 @@
 
 .masthead {
     
+    background: $ia-grey90;
+    
     .masthead__logo {
         
         @extend .feature--three-quarters;
         @extend .mobile--three-quarters;
         height: 100%;
         margin: 0; 
-        background: $blue;
         
         .logo { height: 90%; width: auto; }
     }
@@ -21,10 +22,10 @@
         
         @extend .feature--one-quarter;
         @extend .mobile--one-quarter;
-        background: $red; 
+         
     
     }
-    .newsletter { background: $blue; }
+    .newsletter {}
     
 
 
@@ -37,7 +38,7 @@
 
     @include media-query(feature) {
         
-        height: 40px;
+        height: 50px;
 
         .newsletter { display: none; }
         
@@ -56,7 +57,7 @@
 
     @include media-query(mobile) {
         
-        height: 60px;
+        height: 50px;
 
         .newsletter { display: none; }
         
