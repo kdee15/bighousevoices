@@ -17,6 +17,9 @@
             
             .card {
                 
+                width: 100%;
+                cursor: pointer;
+                
                 .card__body {
 
                     padding: $baseline-small;

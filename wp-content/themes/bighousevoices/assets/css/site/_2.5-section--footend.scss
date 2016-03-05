@@ -6,6 +6,12 @@
 
 .footend {
 
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 40px;
+    
     .logo { background: $red; }
     .info { background: $blue; }
     .nav { background: $yellow; }

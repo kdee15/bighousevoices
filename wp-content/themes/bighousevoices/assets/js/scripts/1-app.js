@@ -62,10 +62,9 @@ $('.showhide').click(function(e) {
 // A.2. END -----------------------------------------------------------------------------------------------------------
     
 var currentContent = '';	
-	$(".div-toggle").on('click', function(){
+	$(".toggle-div").on('click', function(){
 		currentContent = $(this).attr('name');
 		if($('#'+currentContent).hasClass('on')){
-			$('#'+currentContent).hide(0);
 			$('#'+currentContent).removeClass('on');			
 		}else{
 			hideAllContent();
@@ -74,13 +73,11 @@ var currentContent = '';
 	});
 
 	function hideAllContent(){
-		$('.toggle-content').hide();
 		$('.toggle-content').removeClass('on');
 	};
 	
 	function showCurrentContent(currentContentDiv){
 		$('#'+currentContentDiv).addClass('on');
-		$('#'+currentContentDiv).show(1000,'left', 1000);
 	};	
 			 
 // A.2. END -----------------------------------------------------------------------------------------------------------

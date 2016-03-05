@@ -136,13 +136,14 @@
     .card__flyout {
         
         @include position (absolute, 0);
-        transform: translateY(0%);
+        transform: translateY(-100%);
         background: #000;
+        @include hover-on (0.3s, 0.1s);
         
-        &.hidden {
+        &.on {
             
-            transform: translateY(-100%);
-            
+            transform: translateY(0%);
+            @include hover-off (0.5s, 0.1s);
         }
         
         

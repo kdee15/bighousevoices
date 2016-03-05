@@ -6,39 +6,54 @@ Template Name: artists template
 
 get_header(); ?>
 
-<section class="artist section grid">
 
-    <?php
-        $args = array(
-            'post_type' => 'artists',
-        );
-        $artists = new WP_Query( $args );
-        if( $artists->have_posts() ) {
-          while( $artists->have_posts() ) {
-            $artists->the_post();
-            ?>
-    
-            <article id="post-<?php the_ID(); ?>" class="one-quarter artist__item">
-                <a class="big card showhide" href="#card__flyout">
-                    <section class="card__header">
-                        <figure class="figure">
-                            <img class="image" src="<?php the_field('photo') ?>" />
-                        </figure>
-                    </section>
-                    <section class="card__body">
-                        <h3 class="title"><?php the_field('name') ?> <?php the_field('surname') ?></h3>
-                    </section>
-                    <section class="card__flyout hidden" id="card__flyout">
-                        HELLO
-                    </section>
-                </a>
-            </article>
+<!-- C. WORK AREA +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
-            <?php
-          }
-        }
-    ?>
+    <!-- C.2. SITE MAST ------------------------------------------------------------------------------------------- -->
 
-</section>
+    <section class="mast">
+
+            <div class="container">
+
+                <section class="artist section grid">
+
+                    <?php
+                        $args = array(
+                            'post_type' => 'artists',
+                        );
+                        $artists = new WP_Query( $args );
+                        if( $artists->have_posts() ) {
+                          while( $artists->have_posts() ) {
+                            $artists->the_post();
+                            ?>
+
+                            <article id="post-<?php the_ID(); ?>" class="one-quarter artist__item">
+                                <div class="big card toggle-div" name="toggle-<?php the_ID(); ?>">
+                                    <section class="card__header">
+                                        <figure class="figure">
+                                            <img class="image" src="<?php the_field('photo') ?>" />
+                                        </figure>
+                                    </section>
+                                    <section class="card__body">
+                                        <h3 class="title"><?php the_field('name') ?> <?php the_field('surname') ?></h3>
+                                    </section>
+                                    <section class="card__flyout toggle-content" id="toggle-<?php the_ID(); ?>">
+                                        HELLO ... from the other side
+                                    </section>
+                                </div>
+                            </article>
+
+                            <?php
+                          }
+                        }
+                    ?>
+
+                </section>
+                
+            </div>
+        
+    </section>
+
+    <!-- C.2. END ------------------------------------------------------------------------------------------------- -->
 
 <?php get_footer(); ?>
