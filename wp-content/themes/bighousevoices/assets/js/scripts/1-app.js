@@ -9,7 +9,9 @@
 
 jQuery(document).ready(function($) {
 
-// A. BURGER MENU +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// A. SHOW/HIDE +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    
+// A.1. BURGER MENU --------------------------------------------------------------------------------------------------- 
     
 $('.reveal').click(function(e) {
     
@@ -30,6 +32,58 @@ $('.reveal').click(function(e) {
     e.preventDefault();
     
   });
+    
+// A.1. END -----------------------------------------------------------------------------------------------------------
+    
+// A.2. GENERAL SHOW --------------------------------------------------------------------------------------------------
+    
+$('.showhide').click(function(e) {
+    
+    var target = $(this).attr('href');
+    
+    if ($(target).hasClass('hidden') ) {
+        
+        $(target).removeClass('hidden');
+        $('.showhide').addClass('close');
+        
+    } else {
+        
+        $(target).addClass('hidden');
+        $('.showhide').removeClass('close');
+        
+    }
+    
+    e.preventDefault();
+    
+  });
+    
+// A.2. END -----------------------------------------------------------------------------------------------------------
+    
+// A.2. END -----------------------------------------------------------------------------------------------------------
+    
+var currentContent = '';	
+	$(".div-toggle").on('click', function(){
+		currentContent = $(this).attr('name');
+		if($('#'+currentContent).hasClass('on')){
+			$('#'+currentContent).hide(0);
+			$('#'+currentContent).removeClass('on');			
+		}else{
+			hideAllContent();
+			showCurrentContent(currentContent);
+		}
+	});
+
+	function hideAllContent(){
+		$('.toggle-content').hide();
+		$('.toggle-content').removeClass('on');
+	};
+	
+	function showCurrentContent(currentContentDiv){
+		$('#'+currentContentDiv).addClass('on');
+		$('#'+currentContentDiv).show(1000,'left', 1000);
+	};	
+			 
+// A.2. END -----------------------------------------------------------------------------------------------------------
 
 // A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

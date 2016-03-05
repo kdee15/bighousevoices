@@ -50,7 +50,9 @@
             <!-- C.1.1. MASTHEAD LOGO -->
 
             <figure class="masthead__logo one-quarter">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/logo.png" alt="Big House Voices" class="logo" />
+                <a href="<?php echo get_option('home'); ?>">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/logo.png" alt="Big House Voices" class="logo" />
+                </a>
             </figure>
 
             <!-- C.1.1. END -->
