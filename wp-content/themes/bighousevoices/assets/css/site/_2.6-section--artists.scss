@@ -11,7 +11,7 @@
         .artist__item {
             
             @extend .feature--one-whole;   
-            @extend .mobile--one-half;
+            @extend .mobile--one-whole;
             padding: 3px;
             box-sizing: border-box;
             
@@ -35,6 +35,18 @@
                             .button { display: inline-block; font-size: $small; }
                         }
                     }
+                }
+                
+                .card__flyout { 
+                    
+                    padding: $baseline-small; 
+                    background: $ia-red; 
+                    box-sizing: border-box; 
+                
+                    .wp-audio-shortcode { visibility: visible!important; }
+                    
+                    .media-title { margin: 0; font-size: $small; font-weight: bold;}
+                
                 }
             }
         }

@@ -11,10 +11,10 @@
     right: 0;
     bottom: 0;
     height: 40px;
+    background: $black;
     
-    .logo { background: $red; }
-    .info { background: $blue; }
-    .nav { background: $yellow; }
+    text-align: center;
+
 }
 
 // A.1. END -----------------------------------------------------------------------------------------------------------

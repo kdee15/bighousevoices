@@ -38,7 +38,15 @@ get_header(); ?>
                                         <h3 class="title"><?php the_field('name') ?> <?php the_field('surname') ?></h3>
                                     </section>
                                     <section class="card__flyout toggle-content" id="toggle-<?php the_ID(); ?>">
-                                        HELLO ... from the other side
+                                        <p class="media-title">CORPORATE</p>
+                                        <?php the_field('audio_1') ?>
+                                        <p class="media-title">GREETING</p>
+                                        <?php the_field('audio_2') ?>
+                                        <p class="media-title">HAPPY</p>
+                                        <?php the_field('audio_3') ?>
+                                        <p class="media-title">SAD</p>
+                                        <?php the_field('audio_4') ?>
+                                        
                                     </section>
                                 </div>
                             </article>

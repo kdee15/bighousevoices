@@ -15,7 +15,6 @@
         height: 100%;
         margin: 0; 
         
-        .logo { height: 90%; width: auto; }
     }
     
     .masthead__nav { 
@@ -39,7 +38,12 @@
     @include media-query(feature) {
         
         height: 50px;
+    
+        .masthead__logo {
 
+            .logo { height: 90%; width: auto; }
+        }
+        
         .newsletter { display: none; }
         
         .masthead__nav {
@@ -58,7 +62,12 @@
     @include media-query(mobile) {
         
         height: 50px;
+    
+        .masthead__logo {
 
+            .logo { height: 90%; width: auto; }
+        }
+        
         .newsletter { display: none; }
         
         .masthead__nav {
@@ -76,7 +85,12 @@
     @include media-query(tablet) {
         
         height: 80px;
+    
+        .masthead__logo {
 
+            .logo { height: 90%; width: auto; }
+        }
+        
         .newsletter { display: none; }
         
         .masthead__nav {
@@ -94,7 +108,12 @@
     @include media-query(desk) {
         
         height: 100px;
-
+    
+        .masthead__logo {
+            text-align:  center;
+            .logo { height: auto; width: 90%; margin-top: $baseline; margin-left: $baseline-small; }
+        }
+        
         .newsletter { display: block; }
         
         .masthead__nav {
@@ -112,7 +131,12 @@
     @include media-query(desk-wide) {
         
         height: 100px;
-
+    
+        .masthead__logo {
+            text-align:  center;
+            .logo { height: auto; width: 90%; margin-top: $baseline-small; margin-left: $baseline-small; }
+        }
+        
         .newsletter { display: block; }
         
         .masthead__nav {
