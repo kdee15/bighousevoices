@@ -1,0 +1,403 @@
+// PAGES LAYER ##############################################
+
+    // A. FRONT PANEL ++++++++++++++++++++++++++++++++++++++++++++++++    	
+
+    	.section-home {
+    	
+    	    .wrap-content { 
+    	    
+    	        top: 40%;
+    	    
+    	    }
+    	    
+    	    h1 {
+    	        line-height: normal;
+    	    }
+			
+    		
+    		// A.1. Components
+			
+				//A.1.1. page header
+				
+				.section-header {
+					
+					padding: 0 0 0px 0;	
+				}
+				
+				//A.1.2. request info button
+				
+				.front-requestLink {					
+				display: none;	
+				}
+			
+    			//A.1.3. down arrow button
+				
+				.figure-downArrow {
+					display: none;
+				}
+				
+				//A.1.4. logo
+				
+				.figure-logo {
+					width: 150px;
+					margin: 0 auto;
+					
+					img {
+						width: 100%;
+					}
+				}
+				
+						   		
+    		// A.1. End
+    		
+    	}    	
+
+    	
+    // A. END ++++++++++++++++++++++++++++++++++++++++++++++++
+	
+	
+    // B. SECTION - DIFFERENT ++++++++++++++++++++++++++++++++++++++++++++++++    	
+    	
+    	
+    	#section-different {	
+			
+			// RESPONSIVE
+			padding: 0 0 40px 0;
+			// RESPONSIVE
+			
+			// B.1. Components
+			
+			//B.1.1. page header
+			
+			.section-header {
+				
+				h2 {
+				    // RESPONSIVE
+				    margin: 0 0 35px 0;
+				    // RESPONSIVE
+				}				
+			}
+			
+			//B.1.2. Objective Icon
+			
+			//B.1.3. Objective Grid
+			
+			.attributes-group	{
+			
+				// RESPONSIVE
+				margin: 60px auto 0 auto;
+				// RESPONSIVE
+				
+				//B.1.3.1. Objective Grid Item Details
+				
+				.attributes-item	{
+					// RESPONSIVE
+					margin-bottom: 20px;
+					// RESPONSIVE
+				}
+					
+			}			
+			
+    		// B.1. End
+			
+    	}
+    	
+    // B. END ++++++++++++++++++++++++++++++++++++++++++++++++
+	
+	
+    // C. SECTION - COLLABORATORS ++++++++++++++++++++++++++++++++++++++++++++++++  
+	
+	
+		#section-collaborators {
+			
+			.section-header {
+				
+				h2 {
+				    // RESPONSIVE
+				    margin-bottom: 35px;
+				    // RESPONSIVE
+				}
+				
+				p {
+				    // RESPONSIVE
+				    margin-bottom: 65px;
+				    // RESPONSIVE
+				}					
+			}
+			
+			// C.1. Components
+			
+			.companies-group {		
+				
+				.companies-item	{
+					
+					.bob-collabHover {
+					    // RESPONSIVE
+						padding: 10px 0 20px;
+						// RESPONSIVE
+					}
+					
+				}
+					
+			}
+			
+			
+    		// C.1. End			
+		}
+	
+	
+    // C. END ++++++++++++++++++++++++++++++++++++++++++++++++
+	
+	
+	// D. SECTION - THE TEAM ++++++++++++++++++++++++++++++++++++++++++++++++  
+	
+	
+		#section-team {			
+			
+			// D.1. Components
+			
+			// D.1.1. Page Header
+			
+			.section-header {
+				
+				h2 {
+				    
+				    // RESPONSIVE
+				    margin-bottom: 35px;
+				    // RESPONSIVE
+				    
+				}
+				
+				p {
+				    
+				    // RESPONSIVE
+				    margin: 65px 0;
+				    // RESPONSIVE
+				}
+				
+			}
+			//
+			
+			.team-group	{
+				
+				.aside-team {
+				    
+				    .wrapping {
+				    
+				        // RESPONSIVE
+				        margin: 10px;
+				        // RESPONSIVE
+				    }
+				    
+				    h3 {
+				        
+				        // RESPONSIVE
+				        margin: 10px 50px 10px 0;
+				        font-size: $x-large;
+				        // RESPONSIVE
+				    }
+				    
+				    p {
+				        
+				        // RESPONSIVE
+				        margin: 10px 0;
+				        // RESPONSIVE
+				    }
+				    
+				    .reveal {
+				        
+				        // RESPONSIVE
+				        top: 5px;
+				        right: 5px;
+				        // RESPONSIVE
+				        padding: 8px 15px;
+				    }
+				    
+				}
+					  
+			}
+			
+			//
+			
+			.figure-teamBottom {
+				
+				// RESPONSIVE
+				padding: 30px 0;
+				margin: 60px 0 -60px 0;
+				// RESPONSIVE
+				
+			}
+						
+    		// D.1. End			
+		}
+	
+	
+    // D. END ++++++++++++++++++++++++++++++++++++++++++++++++
+	
+	
+	// E. SECTION - SERVICES ++++++++++++++++++++++++++++++++++++++++++++++++  
+	
+	
+		// E.1. anchor padding to align screen top
+		
+		#top-services {
+			padding: 55px 0;	
+		}
+		
+		
+		// E.2. containing div elements
+		
+		#section-services {
+		
+		    .section-header {
+		    	
+		    	h2 {
+		    	    // RESPONSIVE
+		    	    margin-bottom: 35px;
+		    	    // RESPONSIVE
+		    	}
+		    	
+		    	p {
+		    	    // RESPONSIVE
+		    	    margin-bottom: 65px;
+		    	    // RESPONSIVE
+		    	}					
+		    }
+			
+			// RESPONSIVE
+			padding: 0 0 40px;
+			// RESPONSIVE
+			
+			// E.2.1. Components
+			
+			
+			//
+			
+			.figure-servicesTop {
+			
+				// RESPONSIVE
+				margin-top: -60px;
+    			padding: 90px 0;
+    			// RESPONSIVE
+			}			
+			
+			//
+			
+			.services-group	{
+				
+				.services-item	{
+					// RESPONSIVE
+					margin: 20px 0 0 0;
+					// RESPONSIVE
+					
+				}
+					
+			}
+			
+			
+    		// E.1. End			
+		}
+	
+	
+    // E. END ++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+	// F. SECTION - CLIENTS ++++++++++++++++++++++++++++++++++++++++++++++++  
+	
+	
+		#section-clients {
+			
+			// F.1. Components
+			
+			//
+			
+			.section-header {
+				
+				//
+				
+				span {
+					padding: 0 40px;
+				}
+			}
+			
+			
+    		// F.1. End			
+		}
+	
+	
+    // F. END ++++++++++++++++++++++++++++++++++++++++++++++++	
+	
+	
+	// G. SECTION - CASE STUDIES ++++++++++++++++++++++++++++++++++++++++++++++++  
+	
+    	#section-casestudies {
+			
+			// F.1. Components
+			
+			//
+			
+			.section-header {
+				
+				span {
+					padding: 0 40px;
+				}
+			}
+			
+			//
+			
+			.casestudies-group	{
+				
+				.casestudies-item	{
+					
+					.bob-caseHover {
+						padding: 20px 0 40px;
+					}
+															
+				}
+					
+			}
+			
+		}
+	
+	// G. END ++++++++++++++++++++++++++++++++++++++++++++++++	
+	
+		
+	// H. SECTION - CONTACT US ++++++++++++++++++++++++++++++++++++++++++++++++  
+	
+	
+		#section-contact {
+			
+			// RESPONSIVE
+			padding: 0 0 40px;
+			// RESPONSIVE
+			
+			.figure-map {
+			    
+			    // RESPONSIVE
+				padding: 0 0 60px 0;
+				// RESPONSIVE
+				
+			}
+			
+			.contact-group	{
+				
+				.contact-item	{
+					
+					margin-bottom: 20px;
+				}
+					
+			}
+			
+    		// H.1. End			
+		}
+	
+	
+    // H. END ++++++++++++++++++++++++++++++++++++++++++++++++	
+    
+    // I. END ++++++++++++++++++++++++++++++++++++++++++++++++
+    
+    #footend {
+        padding: 60px 0;
+    }
+    
+    // I. END ++++++++++++++++++++++++++++++++++++++++++++++++

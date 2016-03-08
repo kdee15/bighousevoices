@@ -1,0 +1,80 @@
+// SITE LAYER  ##############################################
+    
+    // A. GENERAL SITEWIDE STYLE ++++++++++++++++++++++++++++++++++++++++++++
+
+    	
+        // A.1. END
+        
+        // A.2. TYPOGRAPHY SETUP
+            img {
+                //display: block;
+            }
+            
+            h4, h6, ul, li, p {
+                @include source-light();
+            }
+            
+            h1, h2 {
+                @include libre-header();
+                font-size: 33px;
+            }
+            
+            h1 {
+                margin: 0 0 0 0;
+            }
+        // A.2. END
+    
+    // A. END ++++++++++++++++++++++++++++++++++++++++++++
+    
+	// B. MASTHEAD ++++++++++++++++++++++++++++++++++++++++++++
+	
+	    #masthead {
+			    display: none;
+			    .container {
+			    }
+			    
+			    .logo {
+			    }
+				
+				nav {
+					display: none;
+						
+					
+					ul {					
+						
+						li {
+											
+							a {
+								
+								&:hover {
+								}
+							}
+							
+							a:link {
+							
+								img { 
+								}
+								
+							}
+						}
+					}
+				}
+	        
+	    }
+	
+	// B. END ++++++++++++++++++++++++++++++++++++++++++++
+	
+	// C. MAST ++++++++++++++++++++++++++++++++++++++++++++
+	
+	    #mast {
+	        
+	        .section {
+	            padding: 60px 0;
+	        }
+	        
+	        
+	    }
+	
+	// C. END ++++++++++++++++++++++++++++++++++++++++++++
+
+// END OF FILE ##############################################
