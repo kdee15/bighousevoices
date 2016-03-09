@@ -1,34 +1,18 @@
-    <footer class="footend">
+<!-- C.2.8. FOOTEND OF PAGE -->
 
-        <!-- C.3.3.1. Social Navigation -->
+<footer id="footend">
+    
+    <div class="container">
+        
+        <a href="#page-home" class="bob-backUp">
+            <figure>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/footer/bob-footerArrow.png" alt="back to top" class="bob-footerArrow">
+            </figure>
+        </a>
+        <h6>&copy; Copyright 2014 weareBOB. Site by <a href="http://crio.ninja" target="_blank">CRIO</a>.</h6>
+        
+    </div>
+    
+</footer>
 
-        <nav class="nav-social nav">
-
-            <ul>
-                <li>
-                    <a href="#" target="_blank">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-linkedIn.svg" alt="LinkedIn" />
-                    </a>
-                </li>
-                <li>
-                    <a href="#" target="_blank">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-facebook.svg" alt="FB" />
-                    </a>
-                </li>
-                <li>
-                    <a href="#" target="_blank">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-twitter.svg" alt="Twitter" />
-                    </a>
-                </li>
-                <li>
-                    <a href="#" target="_blank">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-youtube.svg" alt="Youtube" />
-                    </a>
-                </li>
-            </ul>
-
-        </nav>
-
-        <!-- C.3.3.1. End -->
-
-    </footer>
+<!-- C.2.8. END --> 

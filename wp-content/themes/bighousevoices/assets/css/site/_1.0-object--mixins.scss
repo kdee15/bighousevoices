@@ -23,6 +23,18 @@
 
 }
 
+@mixin source-light () {
+    
+    font-family: source-serif-pro, arial, sans-serif;   
+    
+}
+
+@mixin libre-header () {
+    
+    font-family: averia-libre, arial, sans-serif;   
+    
+}
+
 // A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // C.1. ABSOLUTE EQUAL SIDES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

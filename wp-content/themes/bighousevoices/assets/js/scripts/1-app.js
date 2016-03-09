@@ -13,7 +13,7 @@ jQuery(document).ready(function($) {
     
 // A.1. BURGER MENU --------------------------------------------------------------------------------------------------- 
     
-$('.reveal').click(function(e) {
+$(.reveal).on('click touchstart', function (e) {
     
     var target = $(this).attr('href');
     

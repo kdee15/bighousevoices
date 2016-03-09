@@ -31,8 +31,9 @@
 
         <!-- B.1. Components -->
         <script src="<?php echo get_template_directory_uri(); ?>/assets/js/components.js"></script>
-        
-        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/components/jcarousel/jquery.jcarousel.min.js"></script>
+        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/components/grid.js"></script>
+        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/components/jquery.cbpFWSlider.min.js"></script> 
+
         
         <!-- B.2. Your App -->
         <script src="<?php echo get_template_directory_uri(); ?>/assets/js/app.js"></script>
@@ -43,117 +44,35 @@
 
     </head>
 
-    <body <?php body_class(); ?>>  
-        
-    <header class="masthead grid">
+    <body <?php body_class(); ?> class="page-home" id="page-home" >
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+		
+		<!-- C. WORK AREA ++++++++++++++++++++++++++++++++++++++ -->
 
-            <!-- C.1.1. MASTHEAD LOGO -->
-
-            <figure class="masthead__logo one-quarter">
-                <a href="<?php echo get_option('home'); ?>">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/logo.png" alt="Big House Voices" class="logo" />
-                </a>
-            </figure>
-
-            <!-- C.1.1. END -->
-
-            <!-- C.1.2. NAVIGATION -->
-
-            <div class="masthead__nav one-half">
-
-                <!-- C.1.2.1. Burger Button -->
-
-                <a href="#burger-menu" class="reveal burger-button">
-
-                    <div class="line line-1"></div>
-                    <div class="line line-2"></div>
-                    <div class="line line-3"></div>
-
-                </a>
-
-                <!-- C.1.2.1. End -->
-
-                <!-- C.1.2.2. Main Navigation -->
-
-                <nav class="primary nav">
-
-                    <ul>
-                        <li><a href="#" class="active"><span>Home</span></a></li>
-                        <li><a href="#"><span>Bio</span></a></li>
-                        <li><a href="#"><span>Projects</span></a></li>
-                        <li><a href="#"><span>Press</span></a></li>
-                        <li><a href="#"><span>Blog</span></a></li>
-                        <li><a href="#"><span>Speaker</span></a></li>
-                        <li><a href="#"><span>Contact</span></a></li>
-                    </ul>
-
-                </nav>
-
-                <!-- C.1.2.2. End -->
-
-                <!-- C.1.2.3. Social Navigation -->
-
-                <nav class="nav-social nav">
-
-                    <ul>
-                        <li>
-                            <a href="#" target="_blank">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-linkedIn.svg" alt="LinkedIn" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-facebook.svg" alt="FB" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-twitter.svg" alt="Twitter" />
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" target="_blank">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-youtube.svg" alt="Youtube" />
-                            </a>
-                        </li>
-                    </ul>
-
-                </nav>
-
-                <!-- C.1.2.3. End -->
-
-            </div>
-
-            <!-- C.1.2. END -->
-
-            <!-- C.1.3. NEWSLETTER SIGN-UP -->
-            <nav class="newsletter one-quarter">
-
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/button-newsletter.png" alt="Sign Up" />
-
-            </nav>
-            <!-- C.1.3. END -->
-
-    </header>
-        
-
-    <!-- C.1.2.2. BURGER Navigation -->
-
-    <nav id="burger-menu" class="hidden">
-
-        <ul>
-            <li><a href="#" class="active"><span>Home</span></a></li>
-            <li><a href="#"><span>Bio</span></a></li>
-            <li><a href="#"><span>Projects</span></a></li>
-            <li><a href="#"><span>Press</span></a></li>
-            <li><a href="#"><span>Blog</span></a></li>
-            <li><a href="#"><span>Speaker</span></a></li>
-            <li><a href="#"><span>Contact</span></a></li>
-        </ul>
-
-    </nav>
-
-    <!-- C.1.2.2. End -->
-
-        
-        
+            <!-- C.1. MASTHEAD -->
+            
+            <header id="masthead">
+            
+                <div class="container">
+                
+                    <!-- C.1.1. Logo -->
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/logo.png" alt="" class="logo" id="bob-siteLogo" />
+                    
+                    <!-- C.1.2. Navigation -->
+                    <nav class="nav-main">
+                        <ul>
+                            <li><a class="bob-textLink" href="#section-different">About Us</a></li>
+                            <li><a class="bob-textLink" href="#section-services">Our Services</a></li>
+                            <li><a class="bob-textLink" href="#section-casestudies">Our Artists</a></li>
+                            <li><a class="bob-textLink" href="#section-contact">Contact</a></li>
+                            <li><a class="bob-imgLink" href="http://www.facebook.com/bighousevoices" target="_blank"><img src="assets/images/site/icon-facebook.svg" alt="Facebook"></a></li>
+                        </ul>
+                    </nav>
+                
+                </div>
+            
+            </header>
+            
+            <!-- C.1. END -->
