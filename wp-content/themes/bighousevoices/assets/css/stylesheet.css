@@ -2182,13 +2182,12 @@ p {
 #section-contact {
   background: #000 url(../images/contact/bg-contact.jpg) no-repeat fixed;
   background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
+  background-size: cover;
   padding: 0 0 40px;
   color: #818181; }
   #section-contact .figure-map {
-    padding: 0 0 60px 0; }
+    padding: 0 0 60px 0;
+    display: none; }
     #section-contact .figure-map img {
       max-width: 100%; }
   #section-contact .contact-group {

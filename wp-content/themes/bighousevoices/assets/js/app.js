@@ -13,7 +13,7 @@ jQuery(document).ready(function($) {
     
 // A.1. BURGER MENU --------------------------------------------------------------------------------------------------- 
     
-$('.reveal').click(function(e) {
+$(.reveal).on('click touchstart', function (e) {
     
     var target = $(this).attr('href');
     
@@ -81,6 +81,48 @@ var currentContent = '';
 	};	
 			 
 // A.2. END -----------------------------------------------------------------------------------------------------------
+    
+// A.3. SCROLL TO LINK ------------------------------------------------------------------------------------------------
+    
+    $(".bob-textLink, .bob-backUp").click(function(event){
+         event.preventDefault();
+         //calculate destination place
+         var dest=0;
+         if($(this.hash).offset().top > $(document).height()-$(window).height()){
+              dest=$(document).height()-$(window).height();
+         }else{
+              dest=$(this.hash).offset().top;
+         }
+         //go to destination
+         $('html,body').animate({scrollTop:dest}, 1000,'swing');
+    });
+    
+// A.3. END -----------------------------------------------------------------------------------------------------------
+    
+// A.4. SHOW HIDE LOGO ------------------------------------------------------------------------------------------------
+
+    var t = $(".wrapper").offset().top;
+
+    $(document).scroll(function(){
+
+        if (document.documentElement.clientWidth > 640) {
+
+            // Hide the logo, and show as you scroll
+            if($(this).scrollTop() > t)
+            {   
+                $('.logo').css({"display":"block"});
+
+            }else{
+                $('.logo').css({"display":"none"});
+            }
+
+
+        } else {}
+
+
+    });
+    
+// A.4. END -----------------------------------------------------------------------------------------------------------
 
 // A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -152,7 +194,7 @@ var currentContent = '';
 
 // B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     
-});
+
 
 // B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     
@@ -189,19 +231,29 @@ var currentContent = '';
     
     // B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+// C. SLIDERS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+    $( function() {
+
+		$( '#cs-mtn' ).cbpFWSlider();
+		
+		$( '#cs-old-mutual' ).cbpFWSlider();
+		
+		$( '#cs-colourworks' ).cbpFWSlider();
+		
+		$( '#cs-spree' ).cbpFWSlider();
+		
+		$( '#cs-gopro' ).cbpFWSlider();
+		
+		$( '#cs-mama-mio' ).cbpFWSlider();
+		
+		$( '#cs-bookmarks' ).cbpFWSlider();
+		
+		$( '#cs-loeries' ).cbpFWSlider();
+
+	} );
+
+// C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    
+});
 // END OF FILE ========================================================================================================
-// FACEBOOK
-
-//<div id="fb-root"></div>
-
-(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.3&appId=354705318018129";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-
-
-
-window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));

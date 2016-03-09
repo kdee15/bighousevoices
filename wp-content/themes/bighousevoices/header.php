@@ -30,7 +30,8 @@
         <!-- B. HEAD JS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ --> 
 
         <!-- B.1. Components -->
-        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/components.js"></script>
+        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery/jquery-1.9.1.min.js"></script>
+        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/components/modernizr.js"></script>
         <script src="<?php echo get_template_directory_uri(); ?>/assets/js/components/grid.js"></script>
         <script src="<?php echo get_template_directory_uri(); ?>/assets/js/components/jquery.cbpFWSlider.min.js"></script> 
 
@@ -67,7 +68,7 @@
                             <li><a class="bob-textLink" href="#section-services">Our Services</a></li>
                             <li><a class="bob-textLink" href="#section-casestudies">Our Artists</a></li>
                             <li><a class="bob-textLink" href="#section-contact">Contact</a></li>
-                            <li><a class="bob-imgLink" href="http://www.facebook.com/bighousevoices" target="_blank"><img src="assets/images/site/icon-facebook.svg" alt="Facebook"></a></li>
+                            <li><a class="bob-imgLink" href="http://www.facebook.com/bighousevoices" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-facebook.svg" alt="Facebook"></a></li>
                         </ul>
                     </nav>
                 

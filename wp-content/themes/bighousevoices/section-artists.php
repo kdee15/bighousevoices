@@ -36,7 +36,8 @@
                         <div class="foil">
                             
                             <p class="media-title bob-caseHover">CORPORATE</p>
-                            <?php the_field('audio_1') ?>
+                            
+                            <? php the_content(); ?>
                             
                             <a href="#cs-1" class="reveal button">
                                 <span>VIEW CASE STUDY</span>

@@ -593,9 +593,7 @@
 			
 			background: $black url(../images/contact/bg-contact.jpg) no-repeat fixed;
 			background-size: cover;
-			-moz-background-size: cover;
-			-o-background-size: cover;
-			-webkit-background-size: cover;	
+			background-size: cover;
 			
 			// RESPONSIVE
 			padding: 0 0 40px;
@@ -614,6 +612,7 @@
 			    
 			    // RESPONSIVE
 				padding: 0 0 60px 0;
+                display: none;
 				// RESPONSIVE
 				
 				//
