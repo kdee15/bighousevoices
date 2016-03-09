@@ -1,6 +1,6 @@
 <!-- C.3. CASE STUDY MODAL WINDOWS -->
 
-<section class="toggle-content" id="<?php the_title(); ?>">
+<section class="toggle-content bob-modal" id="<?php the_title(); ?>">
     <div class="container">
         <a href="#cs-1" class="reveal bob-modalClose"><span class="og-close">X</span></a>
         <div id="cs-mtn" class="cbp-fwslider">
