@@ -1,0 +1,40 @@
+// SITE GROUP  ##############################################
+
+	// This file is a group file containing your layers
+
+    // 0.1. Variables
+    @import	"_0.1-config--variables";
+
+    // 1.0. MIXINS
+    @import	"_1.0-object--mixins";
+
+        // 1.0.1. MIXINS
+        @import	"_1.0.1-object--custom-mixins";
+
+    // 1.1. Global CSS
+    @import	"_1.1-object--global";
+
+	// A. BASE STYLING ++++++++++++++++++++++++++++++++++++
+	@import	"base/base";
+	
+	// B. MOBILE STYLING ++++++++++++++++++++++++++++++++++++
+	@media only screen and (max-width: 480px) {
+	    @import	"mobile/mobile";
+	}
+	
+	// C. TABLET STYLING ++++++++++++++++++++++++++++++++++++
+	@media only screen and (min-width: 481px) and (max-width: 1023px) {
+	    @import	"tablets/tablets";
+	}
+	
+	// D. DESK STYLING ++++++++++++++++++++++++++++++++++++
+	@media only screen and (min-width: 1024px) {
+	    @import	"desk/desk";
+	}
+	
+	// E. WIDE DESK STYLING ++++++++++++++++++++++++++++++++++++
+	@media only screen and (min-width: 1200px) {
+	    //@import	"mobile/mobile";
+	}
+
+// END OF FILE ##############################################

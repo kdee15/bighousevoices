@@ -1,0 +1,686 @@
+// PAGES LAYER ##############################################
+
+    // A. FRONT PANEL ++++++++++++++++++++++++++++++++++++++++++++++++    	
+
+    	.section-home {
+    	
+    	    text-align: center;
+    	    position: fixed;
+    	    top: 0;
+    	    left: 0;
+    	    right: 0;
+    	    bottom: 0;
+    	    
+    	    .wrap-content { 
+    	    
+    	        @include vertical-align(relative);
+    	    
+    	    }
+			
+    		
+    		// A.1. Components
+			
+				//A.1.1. page header
+				
+				.section-header {
+					
+					padding: 0 0 20px 0;
+					
+					//A.1.1.1 page slogan
+					.bob-slogan {
+						text-transform: uppercase;
+						padding: 0; 
+						font-size: 1.6em;
+    					margin: 40px 0 10px;
+					}
+				}
+				
+				//A.1.2. request info button
+				
+				.front-requestLink {					
+				width: 250px;
+				border: 2px solid #FFF;
+				padding: 15px 5px;
+				margin: 50px auto;
+				font-size: 0.85em;
+				color: #FFF;
+				
+				    a {
+				        color: $black;
+				        text-decoration: none;
+				    }
+				    	
+				}
+			
+    			//A.1.3. down arrow button
+				
+				.figure-downArrow {
+					clear: both;
+					width: 100%;
+					margin: 0 0 40px 0;
+					
+					img {
+						display: inline-block;
+					}
+				}
+				
+				//A.1.4. logo
+				
+				.figure-logo {
+					width: 225px;
+					margin: 0 auto;
+					
+					img {
+						width: 100%;
+					}
+				}
+				
+						   		
+    		// A.1. End
+    		
+    	}    	
+
+    	
+    // A. END ++++++++++++++++++++++++++++++++++++++++++++++++
+	
+	
+    // B. SECTION - DIFFERENT ++++++++++++++++++++++++++++++++++++++++++++++++    	
+    	
+    	
+    	#section-different {
+			
+			background: $ia-grey20;
+			background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			-webkit-background-size: cover;	
+			
+			// RESPONSIVE
+			padding: 0 0 40px 0;
+			// RESPONSIVE
+			
+			color: #818181;
+			
+			// B.1. Components
+			
+			//B.1.1. page header
+			
+			.section-header {
+				
+				h2 {
+				    color: $white;
+				    // RESPONSIVE
+				    margin: 0 0 35px 0;
+				    // RESPONSIVE
+				    line-height: normal;
+				}
+				
+				p {
+				    color: #929497;
+				}					
+			}
+			
+			//B.1.2. Objective Icon
+			
+			figure {
+				text-align: center;
+			}
+			
+			//B.1.3. Objective Grid
+			
+			.attributes-group	{
+				@extend .grid;
+				// RESPONSIVE
+				margin-top: 60px;
+				// RESPONSIVE
+				
+				text-align: center;
+				color: #D0D0D0;
+				
+				//B.1.3.1. Objective Grid Item Details
+				
+				.attributes-item	{
+					@extend .mobile--one-half;
+					@extend .one-third;
+					// RESPONSIVE
+					margin-bottom: 20px;
+					// RESPONSIVE
+					h4 {
+						text-transform: uppercase;
+					}
+					
+					span {
+						color: #929497;
+						font-size: 0.85em;
+						
+					}
+				}
+					
+			}			
+			
+			
+			.figure-teamBottom {
+				background: url(../images/site/staff-footer.png) top center no-repeat;
+				
+				// RESPONSIVE
+				padding: 30px 0;
+				margin: 60px 0 -60px 0;
+				// RESPONSIVE
+				
+			}
+            
+            
+    		// B.1. End
+			
+    	}
+    	
+    // B. END ++++++++++++++++++++++++++++++++++++++++++++++++
+	
+	
+    // C. SECTION - COLLABORATORS ++++++++++++++++++++++++++++++++++++++++++++++++  
+	
+	
+		#section-collaborators {
+		
+		    background: $white;
+			
+			.section-header {
+				
+				h2 {
+				    color: #818181;
+				    // RESPONSIVE
+				    margin-bottom: 35px;
+				    // RESPONSIVE
+				    line-height: normal;
+				}
+				
+				p {
+				    color: #bbbdbf;
+				    // RESPONSIVE
+				    margin-bottom: 65px;
+				    // RESPONSIVE
+				}					
+			}
+			
+			// C.1. Components
+			
+			.companies-group {		
+				
+				.companies-item	{
+					@extend .one-half;
+					@extend .tablet--one-quarter;
+					@extend .desk--one-quarter;
+					padding: 0;
+					margin: 0;
+					border: 0;
+					
+					.bob-collabHover {
+					    // RESPONSIVE
+						padding: 10px 0 20px;
+						// RESPONSIVE
+					}
+					
+				}
+					
+			}
+			
+			
+    		// C.1. End			
+		}
+	
+	
+    // C. END ++++++++++++++++++++++++++++++++++++++++++++++++
+	
+	
+	// D. SECTION - THE TEAM ++++++++++++++++++++++++++++++++++++++++++++++++  
+	
+	
+		#section-team {
+			
+			background: #e2e2e2;
+			
+			// D.1. Components
+			
+			// D.1.1. Page Header
+			
+			.section-header {
+				//margin: 0 0 40px;
+				
+				h2 {
+				    color: #404040;
+				    
+				    // RESPONSIVE
+				    margin-bottom: 35px;
+				    // RESPONSIVE
+				    
+				}
+				
+				p {
+				    color: #818181;
+				    
+				    // RESPONSIVE
+				    margin: 65px 0;
+				    // RESPONSIVE
+				}
+				
+			}
+			//
+			
+			.team-group	{
+				
+				.team-item	{
+					@extend .one-third;
+					//@extend .tablet--one-third;
+					//@extend .desk--one-third;
+					padding: 0;
+					
+					.bob-teamImg {
+						width: 100%;
+						display: block;	
+					}
+					
+					a:hover {
+					
+					    .figure-teamBottom {
+					        
+					        opacity: 0.4;
+					        
+					    }
+					
+					}
+					
+					
+				}
+				
+				.aside-team {
+				    
+				    @extend .one-whole;
+				    background: $bob-blue;
+				    
+				    position: relative;
+				    
+				    
+				    
+				    .wrapping {
+				    
+				        // RESPONSIVE
+				        margin: 40px;
+				        // RESPONSIVE
+				    }
+				    
+				    h3 {
+				        color: #3b3b3b;
+				        
+				        // RESPONSIVE
+				        margin: 20px 0;
+				        font-size: $x-large;
+				        // RESPONSIVE
+				        
+				        text-transform: uppercase;
+				        line-height: normal;
+				        span {
+				            color: $white;
+				        }
+				    }
+				    
+				    p {
+				        color: $white;
+				        
+				        // RESPONSIVE
+				        margin: 20px 0;
+				        // RESPONSIVE
+				    }
+				    
+				    .reveal {
+				    
+				        color: $white;
+				        position: absolute;
+				        
+				        // RESPONSIVE
+				        top: 20px;
+				        right: 20px;
+				        // RESPONSIVE
+				        
+				        border: solid 1px $white;
+				        padding: 8px 15px;
+				        border-radius: 100%;
+				        
+				        &:hover {
+				        
+				            border-color: #3b3b3b;
+				            color: #3b3b3b;
+				            text-decoration: none;
+				        
+				        }
+				    }
+					
+					.video-frame {
+						
+						@include aspect-ratio(40%, 80%);
+						margin:0 auto;
+						
+						.video-frame-inner {
+							
+							@include position(absolute, 0);	
+							
+						}
+					}
+					
+					.audio-frame {
+						
+						@include aspect-ratio(40%, 50%);
+						margin:0 auto;
+						
+						.audio-frame-inner {
+							
+							@include position(absolute, 0);	
+							
+						}
+					}
+				} 
+			}
+			
+			//
+			
+			.figure-teamBottom {
+				background: url(../images/team/staff-footer.png) top center no-repeat;
+				
+				// RESPONSIVE
+				padding: 30px 0;
+				margin: 60px 0 -60px 0;
+				// RESPONSIVE
+				
+			}
+						
+    		// D.1. End			
+		}
+	
+	
+    // D. END ++++++++++++++++++++++++++++++++++++++++++++++++
+	
+	
+	// E. SECTION - SERVICES ++++++++++++++++++++++++++++++++++++++++++++++++  
+	
+	
+		// E.1. anchor padding to align screen top
+		
+		#top-services {
+			padding: 55px 0;	
+		}
+		
+		
+		// E.2. containing div elements
+		
+		#section-services {
+		
+		    .section-header {
+		    	
+		    	h2 {
+		    	    color: $white;
+		    	    // RESPONSIVE
+		    	    margin-bottom: 35px;
+		    	    // RESPONSIVE
+		    	    line-height: normal;
+		    	}
+		    	
+		    	p {
+		    	    color: #929497;
+		    	    // RESPONSIVE
+		    	    margin-bottom: 65px;
+		    	    // RESPONSIVE
+		    	}					
+		    }
+			
+			//
+			
+			background: $black;
+			background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			-webkit-background-size: cover;	
+			color: #818181;
+			
+			// RESPONSIVE
+			padding: 0 0 40px;
+			// RESPONSIVE
+			
+			// E.2.1. Components
+			
+			
+			//
+			
+			.figure-servicesTop {
+				background: url(../images/services/services-top-icon.png) top center no-repeat;
+				
+				// RESPONSIVE
+				margin-top: -60px;
+    			padding: 90px 0;
+    			// RESPONSIVE
+			}			
+			
+			//
+			
+			.services-group	{
+			
+			    text-align: center;
+				
+				.services-item	{
+					@extend .one-half;
+					@extend .tablet--one-quarter;
+					@extend .desk--one-quarter;
+					text-align: center;
+					
+					// RESPONSIVE
+					margin: 20px 0 0 0;
+					// RESPONSIVE
+					
+					h4 {
+					    color: $white;
+					}
+					
+					span {
+						font-size: 0.85em;
+						color: #929497;
+					}
+					
+				}
+					
+			}
+			
+			
+    		// E.1. End			
+		}
+	
+	
+    // E. END ++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+	// F. SECTION - CLIENTS ++++++++++++++++++++++++++++++++++++++++++++++++  
+	
+	
+		#section-clients {
+		
+		    background: $white;
+			
+			// F.1. Components
+			
+			//
+			
+			.section-header {
+				
+				//
+				
+				span {
+					border-top: 3px solid #1B9DDF;
+					padding: 0 40px;
+				}
+			}
+			
+			.clients-group	{
+				
+				.clients-item	{
+					@extend .one-quarter;
+					@extend .mobile--one-half;
+					padding: 0;					
+				}
+					
+			}
+			
+			
+    		// F.1. End			
+		}
+	
+	
+    // F. END ++++++++++++++++++++++++++++++++++++++++++++++++	
+	
+	
+	// G. SECTION - CASE STUDIES ++++++++++++++++++++++++++++++++++++++++++++++++  
+	
+    	#section-casestudies {
+    	
+    	    background: #ecf0f1;
+			
+			// F.1. Components
+			
+			//
+			
+			.section-header {
+				
+				//
+				
+				span {
+					border-top: 5px dotted #1B9DDF;
+					padding: 0 40px;
+				}
+			}
+			
+			//
+			
+			.casestudies-group	{
+			
+			    @include clearfix();
+				text-align: center; 
+				
+				.casestudies-item	{
+					@extend .one-quarter;
+					@extend .mobile--one-half;
+					padding: 0;
+					position: relative;
+					
+					.bob-caseHover {
+						padding: 20px 0 40px;
+					}
+															
+				}
+					
+			}
+			
+			//
+			
+			#cs-1,#cs-2,#cs-3,#cs-4,#cs-5 {
+				
+			}
+			
+		}
+	
+	// G. END ++++++++++++++++++++++++++++++++++++++++++++++++	
+	
+		
+	// H. SECTION - CONTACT US ++++++++++++++++++++++++++++++++++++++++++++++++  
+	
+	
+		#section-contact {
+			
+			background: $black url(../images/contact/bg-contact.jpg) no-repeat fixed;
+			background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			-webkit-background-size: cover;	
+			
+			// RESPONSIVE
+			padding: 0 0 40px;
+			// RESPONSIVE
+			
+			color: #818181;
+			
+			// H.1. Components
+			
+			//
+			
+			.section-header {			
+			}
+			
+			.figure-map {
+			    
+			    // RESPONSIVE
+				padding: 0 0 60px 0;
+				// RESPONSIVE
+				
+				//
+				
+				img {
+					max-width: 100%;
+				}
+				
+			}
+			
+			.contact-group	{
+				
+				text-align: center;
+				color: #D0D0D0;
+				
+				.contact-item	{
+					@extend .one-quarter;
+					@extend .mobile--one-half;
+					
+					margin-bottom: 20px;
+					
+					h4 {
+						text-transform: uppercase;
+					}
+					
+					span {
+						
+						font-size: 0.85em;
+						
+					}
+				}
+					
+			}
+			
+			
+    		// H.1. End			
+		}
+	
+	
+    // H. END ++++++++++++++++++++++++++++++++++++++++++++++++	
+    
+    // I. END ++++++++++++++++++++++++++++++++++++++++++++++++
+    
+    #footend {
+        
+        background: $ia-red;
+        padding: 60px 0;
+        
+        h6 {
+            text-align: center;
+            color: $white;
+            margin: 0;
+            
+            a {
+                color: $black;
+            }		       
+        }
+		
+		figure {
+			text-align: center;
+            
+            img {
+                
+                display: inline-block;
+                
+            }
+		}
+    }
+    
+    // I. END ++++++++++++++++++++++++++++++++++++++++++++++++
