@@ -28,7 +28,7 @@
         'description'   => 'A list of Artists',
         'public'        => true,
         'menu_position' => 4,
-        'supports'      => array( 'title', 'editor', 'thumbnail', 'taxonomies', 'categories', 'media' ),
+        'supports'      => array( 'title', 'editor', 'thumbnail', 'taxonomies', 'categories', 'media', 'content' ),
         'has_archive'   => true,
 
       );

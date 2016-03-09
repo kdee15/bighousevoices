@@ -46,7 +46,7 @@ get_header(); ?>
                                         <?php the_field('audio_3') ?>
                                         <p class="media-title">SAD</p>
                                         <?php the_field('audio_4') ?>
-                                        
+                                        <a href="<?php the_permalink(); ?>">more</a>
                                     </section>
                                 </div>
                             </article>
