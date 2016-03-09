@@ -37,9 +37,9 @@
                             
                             <p class="media-title bob-caseHover">CORPORATE</p>
                             
-                            <a href="#cs-1" class="reveal button">
-                                <span>VIEW CASE STUDY</span>
-                            </a>
+                            <div class="toggle-div button" name="<?php the_title(); ?>">
+                                <span>VIEW CASE STUDY</span> 
+                            </div>
                         </div>
                     </div>
                     
