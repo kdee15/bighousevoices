@@ -19,13 +19,12 @@
 
             <section class="section-header" id="box1">
                 <h2>VOICE OVER ARTIST AGENCY.</h2>
-                <p class="bob-slogan">Wes give me a 1 liner to go here please</p>
             </section>
 
             <!-- C.2.0.3. Credentials Link -->
 
             <div class="front-requestLink button" id="box3">
-                <a href="mailto:reception@wearebob.co.za" target="_blank"><span>REQUEST OUR CREDENTIALS</span></a>
+                <a href="mailto:wes@bighouserecordingstudios.com" target="_blank"><span>CONTACT US FOR MORE INFO</span></a>
             </div>
 
             <!-- C.2.0.4. Scroll Indicator -->

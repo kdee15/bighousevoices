@@ -444,7 +444,7 @@ html, body {
     -webkit-flex: 0 0 50%;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%; }
-  .tablet--one-third, .tablet--two-sixths, .tablet--four-twelfths {
+  .tablet--one-third, .tablet--two-sixths, .tablet--four-twelfths, #section-services .services-group .services-item {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 33.333%;
         -ms-flex: 0 0 33.333%;
@@ -454,7 +454,7 @@ html, body {
     -webkit-flex: 0 0 66.666%;
         -ms-flex: 0 0 66.666%;
             flex: 0 0 66.666%; }
-  .tablet--one-quarter, .tablet--two-eighths, .tablet--three-twelfths, #section-collaborators .companies-group .companies-item, #section-services .services-group .services-item {
+  .tablet--one-quarter, .tablet--two-eighths, .tablet--three-twelfths, #section-collaborators .companies-group .companies-item {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 25%;
         -ms-flex: 0 0 25%;
@@ -561,7 +561,7 @@ html, body {
     -webkit-flex: 0 0 50%;
         -ms-flex: 0 0 50%;
             flex: 0 0 50%; }
-  .desk--one-third, .desk--two-sixths, .desk--four-twelfths {
+  .desk--one-third, .desk--two-sixths, .desk--four-twelfths, #section-services .services-group .services-item {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 33.333%;
         -ms-flex: 0 0 33.333%;
@@ -571,7 +571,7 @@ html, body {
     -webkit-flex: 0 0 66.666%;
         -ms-flex: 0 0 66.666%;
             flex: 0 0 66.666%; }
-  .desk--one-quarter, .desk--two-eighths, .desk--three-twelfths, #section-collaborators .companies-group .companies-item, #section-services .services-group .services-item {
+  .desk--one-quarter, .desk--two-eighths, .desk--three-twelfths, #section-collaborators .companies-group .companies-item {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 25%;
         -ms-flex: 0 0 25%;
@@ -1969,10 +1969,13 @@ p {
             transform: translateY(-50%); }
   .section-home .section-header {
     padding: 0 0 20px 0; }
+    .section-home .section-header h2 {
+      line-height: normal; }
     .section-home .section-header .bob-slogan {
       text-transform: uppercase;
       padding: 0;
       font-size: 1.6em;
+      line-height: normal;
       margin: 40px 0 10px; }
   .section-home .front-requestLink {
     width: 250px;

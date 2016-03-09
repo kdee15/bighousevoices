@@ -31,13 +31,11 @@
                 <li class="grid-item casestudies-item view view-tenth">
                     
                     <img src="<?php the_field('photo') ?>" alt="client logo" class="bob-mainImg" />
-                    
+                    <?php the_content(); ?>
                     <div class="mask">
                         <div class="foil">
                             
                             <p class="media-title bob-caseHover">CORPORATE</p>
-                            
-                            <? php the_content(); ?>
                             
                             <a href="#cs-1" class="reveal button">
                                 <span>VIEW CASE STUDY</span>

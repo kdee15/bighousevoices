@@ -31,26 +31,7 @@
                 <h4>DIGITAL &amp; MOBILE</h4>
                 <span>Web, mobile and social communications, digital science and app development.</span>
             </li>
-            <li class="grid-item services-item procurement">
-                <figure><img src="<?php echo get_template_directory_uri(); ?>/assets/images/services/icon-procurement.png" alt="brand planning"></figure>
-                <h4>PRODUCTION PROCUREMENT</h4>
-                <span>Specialist production management and fulfilment for retail, POS, BTL, innovation and electronic media.</span>
-            </li>
-            <li class="grid-item services-item digital">
-                <figure><img src="<?php echo get_template_directory_uri(); ?>/assets/images/services/icon-events.png" alt="digital"></figure>
-                <h4>EVENTS &amp; ACTIVATIONS</h4>
-                <span>Activations, events, conferences, pop ups and guerilla marketing from concept to creation.</span>
-            </li>
-            <li class="grid-item services-item pr">
-                <figure><img src="<?php echo get_template_directory_uri(); ?>/assets/images/services/icon-pr.png" alt="pr"></figure>
-                <h4>PR &amp; SOCIAL MEDIA</h4>
-                <span>Emotive PR campaigns, media relations, shaping public perception and managing reputation.</span>
-            </li>
-            <li class="grid-item services-item innovation">
-                <figure><img src="<?php echo get_template_directory_uri(); ?>/assets/images/services/icon-innovation.png" alt="innovation"></figure>
-                <h4>INNOVATION</h4>
-                <span>Trend analysis, innovative thinking and solutions focused.</span>
-            </li> 
+            
         </ul>                       
 
     </div>

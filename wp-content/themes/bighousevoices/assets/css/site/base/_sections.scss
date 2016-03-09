@@ -25,25 +25,29 @@
 				.section-header {
 					
 					padding: 0 0 20px 0;
+                    
+                    h2 { line-height: normal; }
 					
 					//A.1.1.1 page slogan
 					.bob-slogan {
 						text-transform: uppercase;
 						padding: 0; 
 						font-size: 1.6em;
+                        line-height: normal;
     					margin: 40px 0 10px;
 					}
 				}
 				
 				//A.1.2. request info button
 				
-				.front-requestLink {					
-				width: 250px;
-				border: 2px solid #FFF;
-				padding: 15px 5px;
-				margin: 50px auto;
-				font-size: 0.85em;
-				color: #FFF;
+				.front-requestLink {	
+                    
+                    width: 250px;
+                    border: 2px solid #FFF;
+                    padding: 15px 5px;
+                    margin: 50px auto;
+                    font-size: 0.85em;
+                    color: #FFF;
 				
 				    a {
 				        color: $black;
@@ -466,8 +470,8 @@
 				
 				.services-item	{
 					@extend .one-half;
-					@extend .tablet--one-quarter;
-					@extend .desk--one-quarter;
+					@extend .tablet--one-third;
+					@extend .desk--one-third;
 					text-align: center;
 					
 					// RESPONSIVE

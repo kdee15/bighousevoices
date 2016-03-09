@@ -1,6 +1,14 @@
-<!-- D. JAVASCRIPT ++++++++++++++++++++++++++++++++++++++ -->
+    <!-- D. JAVASCRIPT ++++++++++++++++++++++++++++++++++++++ -->
 
-    <!-- D.2. SITE -->               
+    <!-- D.2. SITE -->
+
+	<script src="<?php bloginfo('template_url'); ?>/assets/js/libraries/modernizr-2.6.2.min.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/assets/js/libraries/html5shiv.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/assets/js/libraries/jquery.cbpFWSlider.min.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/assets/js/libraries/ios-orientationchange-fix.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/assets/js/libraries/jquery.mousewheel.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/assets/js/libraries/grid.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/assets/js/scripts/konstruct.js"></script>
 
     <!-- D.3. GOOGLE ANALYTICS -->
 
@@ -11,4 +19,7 @@
         s.parentNode.insertBefore(g,s)}(document,'script'));
     </script>
 
-<!-- D. END ++++++++++++++++++++++++++++++++++++++ -->
+    <!-- D. END ++++++++++++++++++++++++++++++++++++++ -->
+
+    </body>
+</html>

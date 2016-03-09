@@ -29,17 +29,7 @@
 
         <!-- B. HEAD JS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ --> 
 
-        <!-- B.1. Components -->
-        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery/jquery-1.9.1.min.js"></script>
-        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/components/modernizr.js"></script>
-        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/components/grid.js"></script>
-        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/components/jquery.cbpFWSlider.min.js"></script> 
-
-        
-        <!-- B.2. Your App -->
-        <script src="<?php echo get_template_directory_uri(); ?>/assets/js/app.js"></script>
-        
-        <!-- B.3. Load Fonts -->
+        <script src="<?php bloginfo('template_url'); ?>/assets/js/jquery/jquery-1.9.1.min.js"></script>
 
         <!-- B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
