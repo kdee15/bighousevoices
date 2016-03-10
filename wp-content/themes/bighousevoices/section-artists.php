@@ -30,18 +30,21 @@
             
                 <li class="grid-item casestudies-item view view-tenth">
                     
-                    <img src="<?php the_field('photo') ?>" alt="client logo" class="bob-mainImg" />
-                    <?php the_content(); ?>
+                    <img src="<?php the_field('photo') ?>" alt="client logo" class="mainImg" />
+                    <h3 class="card-title"><?php the_field('name') ?></h3>
+                    
                     <div class="mask">
                         <div class="foil">
                             
                             <p class="media-title bob-caseHover">CORPORATE</p>
-                            
+                            <?php the_field('audio1') ?>
                             <div class="toggle-div button" name="<?php the_title(); ?>">
-                                <span>VIEW CASE STUDY</span> 
+                                <span>SEE MORE</span> 
                             </div>
                         </div>
                     </div>
+                    
+                    <?php get_template_part( 'modal-artist' ); ?>
                     
                 </li>
             

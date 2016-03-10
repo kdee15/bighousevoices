@@ -79,18 +79,7 @@
 		// A.3. END
 		
 		// A.4. SECTIONS
-		
-		.bob-modal  {
-			bottom: 0;
-			left: 0;
-			position: fixed;
-			right: 0;
-			text-align: center;
-			top: 0;
-			background: rgba($black, 0.8);
-			z-index: 10;
-			
-		}
+
 		
 		.bob-rollover {
 			background: rgba($black, 0.8);
@@ -146,26 +135,6 @@
 			right: 0;
 			background-color: $white;
 		}
-		
-		.bob-modalClose {
-		
-		    position: absolute;
-		    color: $white;
-		    background: $bob-blue;
-		    top: 20px;
-		    font-size: $large;
-		    right: 20px;
-		    width: 40px;
-		    height: 40px;
-		    z-index: 999;
-		    border-radius: 100%;
-		    border: solid 1px $white;
-		    span {
-		        display: block;
-		        text-align: center;
-		        padding-top: 10px;
-		    }
-		}
 
 		// A.7. END
 		
@@ -189,7 +158,8 @@
 		       margin: 0 auto;
 		   }
 		   
-		   .bob-mainImg {
+            .card-title,
+		    .mainImg {
 		   
 		       transform: translateX(0%);
 		   
@@ -242,11 +212,12 @@
 		   
 		   &:hover, &:focus {
 		   
-		       .bob-mainImg {
-		           transform: translateX(100%);
-		           transition: transform 0.3s ease 0.2s;
-		                       
-		       }
+                .card-title,
+                .mainImg {
+                    transform: translateX(100%);
+                    transition: transform 0.3s ease 0.2s;
+
+                }
 		   
 		       .mask {
 		          opacity: 1;
@@ -276,11 +247,8 @@
 			text-align: center;	
 			margin: 0 auto;			
 		}
-		
-		.bob-mainImg {
-			width: 100%;	
-		}
-		
+
+        .card-title { margin-top: 0; }
 		
 		// A.7. END
 		

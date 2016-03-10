@@ -29,6 +29,21 @@ a { cursor: pointer; }
 
 // A.1.3. END
 
+
+// A.1.3. END
+
+.toggle-content {
+
+    display: none;
+
+    &.on {
+
+        display: block;
+    }
+}
+
+// A.1.3. END
+
 // A.1.4. VERTICAL ALIGN
 
 .v-align {

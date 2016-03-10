@@ -568,11 +568,12 @@
 				.casestudies-item	{
 					@extend .one-quarter;
 					@extend .mobile--one-half;
+					@extend .feature--one-half;
 					padding: 0;
 					position: relative;
 					
 					.bob-caseHover {
-						padding: 20px 0 40px;
+						padding: 0;
 					}
 															
 				}
