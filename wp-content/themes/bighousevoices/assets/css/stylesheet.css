@@ -67,7 +67,7 @@ html, body {
       -ms-flex: 0 0 100%;
           flex: 0 0 100%; }
 
-.one-half, .two-quarters, .three-sixths, .four-eighths, .five-tenths, .six-twelfths, #section-collaborators .companies-group .companies-item, #section-services .services-group .services-item {
+.one-half, .two-quarters, .three-sixths, .four-eighths, .five-tenths, .six-twelfths, #section-collaborators .companies-group .companies-item, #section-services .services-group .services-item, #section-casestudies .casestudies-group .casestudies-item {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 50%;
       -ms-flex: 0 0 50%;
@@ -85,7 +85,7 @@ html, body {
       -ms-flex: 0 0 66.666%;
           flex: 0 0 66.666%; }
 
-.one-quarter, .two-eighths, .three-twelfths, #section-clients .clients-group .clients-item, #section-casestudies .casestudies-group .casestudies-item, #section-contact .contact-group .contact-item, .section-brands ul li {
+.one-quarter, .two-eighths, .three-twelfths, #section-clients .clients-group .clients-item, #section-contact .contact-group .contact-item, .section-brands ul li {
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 25%;
       -ms-flex: 0 0 25%;
@@ -205,7 +205,7 @@ html, body {
     -webkit-flex: 0 0 100%;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%; }
-  .feature--one-half, .feature--two-quarters, .feature--three-sixths, .feature--four-eighths, .feature--five-tenths, .feature--six-twelfths, #section-casestudies .casestudies-group .casestudies-item {
+  .feature--one-half, .feature--two-quarters, .feature--three-sixths, .feature--four-eighths, .feature--five-tenths, .feature--six-twelfths {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 50%;
         -ms-flex: 0 0 50%;
@@ -322,7 +322,7 @@ html, body {
     -webkit-flex: 0 0 100%;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%; }
-  .mobile--one-half, .mobile--two-quarters, .mobile--three-sixths, .mobile--four-eighths, .mobile--five-tenths, .mobile--six-twelfths, #section-different .attributes-group .attributes-item, #section-clients .clients-group .clients-item, #section-casestudies .casestudies-group .casestudies-item, #section-contact .contact-group .contact-item {
+  .mobile--one-half, .mobile--two-quarters, .mobile--three-sixths, .mobile--four-eighths, .mobile--five-tenths, .mobile--six-twelfths, #section-different .attributes-group .attributes-item, #section-clients .clients-group .clients-item, #section-contact .contact-group .contact-item {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 50%;
         -ms-flex: 0 0 50%;
@@ -581,7 +581,7 @@ html, body {
     -webkit-flex: 0 0 75%;
         -ms-flex: 0 0 75%;
             flex: 0 0 75%; }
-  .desk--one-fifth, .desk--two-tenths {
+  .desk--one-fifth, .desk--two-tenths, #section-casestudies .casestudies-group .casestudies-item {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 20%;
         -ms-flex: 0 0 20%;
@@ -1188,320 +1188,34 @@ a {
   left: 0;
   right: 0; }
 
-.mathematics {
-  background: #F5A623; }
-  .mathematics .icon {
-    background: #F5A623; }
-    .mathematics .icon:after {
-      background: #F5A623; }
-    .mathematics .icon svg {
-      border: 1px solid #fff;
-      border-radius: 100%;
-      padding: 5px; }
-      .mathematics .icon svg polygon,
-      .mathematics .icon svg circle,
-      .mathematics .icon svg rect,
-      .mathematics .icon svg path {
-        fill: #F5A623; }
-  .mathematics .lesson-detail:after {
-    position: absolute;
-    bottom: 0;
-    right: -15px;
-    height: 30px;
-    width: 20px;
-    content: '';
-    background: #F5A623;
-    -webkit-transform: skewX(-30deg);
-        -ms-transform: skewX(-30deg);
-            transform: skewX(-30deg); }
-
-.physical {
-  background: #D0021B; }
-  .physical .icon {
-    background: #D0021B; }
-    .physical .icon:after {
-      background: #D0021B; }
-    .physical .icon svg {
-      border: 1px solid #fff;
-      border-radius: 100%;
-      padding: 5px; }
-      .physical .icon svg polygon,
-      .physical .icon svg circle,
-      .physical .icon svg rect,
-      .physical .icon svg path {
-        fill: #D0021B; }
-  .physical .lesson-detail:after {
-    position: absolute;
-    bottom: 0;
-    right: -15px;
-    height: 30px;
-    width: 20px;
-    content: '';
-    background: #D0021B;
-    -webkit-transform: skewX(-30deg);
-        -ms-transform: skewX(-30deg);
-            transform: skewX(-30deg); }
-
-.life {
-  background: #4A90E2; }
-  .life .icon {
-    background: #4A90E2; }
-    .life .icon:after {
-      background: #4A90E2; }
-    .life .icon svg {
-      border: 1px solid #fff;
-      border-radius: 100%;
-      padding: 5px; }
-      .life .icon svg polygon,
-      .life .icon svg circle,
-      .life .icon svg rect,
-      .life .icon svg path {
-        fill: #4A90E2; }
-  .life .lesson-detail:after {
-    position: absolute;
-    bottom: 0;
-    right: -15px;
-    height: 30px;
-    width: 20px;
-    content: '';
-    background: #4A90E2;
-    -webkit-transform: skewX(-30deg);
-        -ms-transform: skewX(-30deg);
-            transform: skewX(-30deg); }
-
-.natural {
-  background: #50E3C2; }
-  .natural .icon {
-    background: #50E3C2; }
-    .natural .icon:after {
-      background: #50E3C2; }
-    .natural .icon svg {
-      border: 1px solid #fff;
-      border-radius: 100%;
-      padding: 5px; }
-      .natural .icon svg polygon,
-      .natural .icon svg circle,
-      .natural .icon svg rect,
-      .natural .icon svg path {
-        fill: #50E3C2; }
-  .natural .lesson-detail:after {
-    position: absolute;
-    bottom: 0;
-    right: -15px;
-    height: 30px;
-    width: 20px;
-    content: '';
-    background: #50E3C2;
-    -webkit-transform: skewX(-30deg);
-        -ms-transform: skewX(-30deg);
-            transform: skewX(-30deg); }
-
-.robotics {
-  background: #3BBDB3; }
-  .robotics .icon {
-    background: #3BBDB3; }
-    .robotics .icon:after {
-      background: #3BBDB3; }
-    .robotics .icon svg {
-      border: 1px solid #fff;
-      border-radius: 100%;
-      padding: 5px; }
-      .robotics .icon svg polygon,
-      .robotics .icon svg circle,
-      .robotics .icon svg rect,
-      .robotics .icon svg path {
-        fill: #3BBDB3; }
-  .robotics .lesson-detail:after {
-    position: absolute;
-    bottom: 0;
-    right: -15px;
-    height: 30px;
-    width: 20px;
-    content: '';
-    background: #3BBDB3;
-    -webkit-transform: skewX(-30deg);
-        -ms-transform: skewX(-30deg);
-            transform: skewX(-30deg); }
-
-.coding {
-  background: #9013FE; }
-  .coding .icon {
-    background: #9013FE; }
-    .coding .icon:after {
-      background: #9013FE; }
-    .coding .icon svg {
-      border: 1px solid #fff;
-      border-radius: 100%;
-      padding: 5px; }
-      .coding .icon svg polygon,
-      .coding .icon svg circle,
-      .coding .icon svg rect,
-      .coding .icon svg path {
-        fill: #9013FE; }
-  .coding .lesson-detail:after {
-    position: absolute;
-    bottom: 0;
-    right: -15px;
-    height: 30px;
-    width: 20px;
-    content: '';
-    background: #9013FE;
-    -webkit-transform: skewX(-30deg);
-        -ms-transform: skewX(-30deg);
-            transform: skewX(-30deg); }
-
-.physical {
-  background: #D0021B; }
-  .physical .icon {
-    background: #D0021B; }
-    .physical .icon:after {
-      background: #D0021B; }
-    .physical .icon svg {
-      border: 1px solid #fff;
-      border-radius: 100%;
-      padding: 5px; }
-      .physical .icon svg polygon,
-      .physical .icon svg circle,
-      .physical .icon svg rect,
-      .physical .icon svg path {
-        fill: #D0021B; }
-  .physical .lesson-detail:after {
-    position: absolute;
-    bottom: 0;
-    right: -15px;
-    height: 30px;
-    width: 20px;
-    content: '';
-    background: #D0021B;
-    -webkit-transform: skewX(-30deg);
-        -ms-transform: skewX(-30deg);
-            transform: skewX(-30deg); }
-
-.life {
-  background: #4A90E2; }
-  .life .icon {
-    background: #4A90E2; }
-    .life .icon:after {
-      background: #4A90E2; }
-    .life .icon svg {
-      border: 1px solid #fff;
-      border-radius: 100%;
-      padding: 5px; }
-      .life .icon svg polygon,
-      .life .icon svg circle,
-      .life .icon svg rect,
-      .life .icon svg path {
-        fill: #4A90E2; }
-  .life .lesson-detail:after {
-    position: absolute;
-    bottom: 0;
-    right: -15px;
-    height: 30px;
-    width: 20px;
-    content: '';
-    background: #4A90E2;
-    -webkit-transform: skewX(-30deg);
-        -ms-transform: skewX(-30deg);
-            transform: skewX(-30deg); }
-
-.natural {
-  background: #50E3C2; }
-  .natural .icon {
-    background: #50E3C2; }
-    .natural .icon:after {
-      background: #50E3C2; }
-    .natural .icon svg {
-      border: 1px solid #fff;
-      border-radius: 100%;
-      padding: 5px; }
-      .natural .icon svg polygon,
-      .natural .icon svg circle,
-      .natural .icon svg rect,
-      .natural .icon svg path {
-        fill: #50E3C2; }
-  .natural .lesson-detail:after {
-    position: absolute;
-    bottom: 0;
-    right: -15px;
-    height: 30px;
-    width: 20px;
-    content: '';
-    background: #50E3C2;
-    -webkit-transform: skewX(-30deg);
-        -ms-transform: skewX(-30deg);
-            transform: skewX(-30deg); }
-
-.robotics {
-  background: #3BBDB3; }
-  .robotics .icon {
-    background: #3BBDB3; }
-    .robotics .icon:after {
-      background: #3BBDB3; }
-    .robotics .icon svg {
-      border: 1px solid #fff;
-      border-radius: 100%;
-      padding: 5px; }
-      .robotics .icon svg polygon,
-      .robotics .icon svg circle,
-      .robotics .icon svg rect,
-      .robotics .icon svg path {
-        fill: #3BBDB3; }
-  .robotics .lesson-detail:after {
-    position: absolute;
-    bottom: 0;
-    right: -15px;
-    height: 30px;
-    width: 20px;
-    content: '';
-    background: #3BBDB3;
-    -webkit-transform: skewX(-30deg);
-        -ms-transform: skewX(-30deg);
-            transform: skewX(-30deg); }
-
-.coding {
-  background: #9013FE; }
-  .coding .icon {
-    background: #9013FE; }
-    .coding .icon:after {
-      background: #9013FE; }
-    .coding .icon svg {
-      border: 1px solid #fff;
-      border-radius: 100%;
-      padding: 5px; }
-      .coding .icon svg polygon,
-      .coding .icon svg circle,
-      .coding .icon svg rect,
-      .coding .icon svg path {
-        fill: #9013FE; }
-  .coding .lesson-detail:after {
-    position: absolute;
-    bottom: 0;
-    right: -15px;
-    height: 30px;
-    width: 20px;
-    content: '';
-    background: #9013FE;
-    -webkit-transform: skewX(-30deg);
-        -ms-transform: skewX(-30deg);
-            transform: skewX(-30deg); }
-
 @media only screen and (max-width: 320px) {
   .no-mobile {
+    display: none; }
+  .no-mobile-inline {
     display: none; } }
 
 @media only screen and (min-width: 321px) and (max-width: 480px) {
   .container {
     padding: 0; }
   .no-mobile {
+    display: none; }
+  .no-mobile-inline {
     display: none; } }
 
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
   .no-mobile {
-    display: block; } }
+    display: block; }
+  .no-mobile-inline {
+    display: inline-block; } }
 
 @media only screen and (min-width: 1024px) {
   .no-mobile {
-    display: block; } }
+    display: block; }
+  .no-mobile-inline {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; } }
 
 @media only screen and (min-width: 1200px) {
   .no-mobile {
@@ -1871,20 +1585,29 @@ a {
         margin-right: 20px; } }
 
 .wp-audio-shortcode {
-  width: 90% !important;
+  width: 100% !important;
   visibility: visible !important;
   padding: 0 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+.wp-audio-shortcode.full {
+  width: 90% !important; }
+
 @media only screen and (min-width: 321px) and (max-width: 480px) {
   .container {
     padding: 0; } }
+
+.modal-open {
+  overflow: hidden; }
 
 .modal_img {
   height: auto;
   margin: 0 auto;
   border-radius: 100%; }
+
+.modal__body h2 {
+  color: #fff; }
 
 .modal {
   bottom: 0;
@@ -1933,7 +1656,7 @@ a {
     padding: 5px; }
   .modal_img {
     width: 30%; }
-  h2 {
+  .modal__body h2 {
     font-size: 0.75em; } }
 
 @media only screen and (min-width: 321px) and (max-width: 480px) {
@@ -1941,7 +1664,7 @@ a {
     padding: 10px; }
   .modal_img {
     width: 50%; }
-  h2 {
+  .modal__body h2 {
     font-size: 0.75em; } }
 
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
@@ -1949,30 +1672,51 @@ a {
     padding: 10px; }
   .modal_img {
     width: 30%; }
-  h2 {
-    font-size: 0.75em; } }
+  .modal__body h2 {
+    font-size: 1.125em; } }
 
 @media only screen and (min-width: 1024px) {
   .modal__grid .grid-item .inner {
     padding: 10px; }
   .modal_img {
     width: 50%; }
-  h2 {
-    font-size: 1em; } }
+  .modal__body h2 {
+    font-size: 1.5em; } }
 
 @media only screen and (min-width: 1200px) {
   .modal__grid .grid-item .inner {
     padding: 10px; }
   .modal_img {
-    width: 50%; }
-  h2 {
-    font-size: 1em; } }
+    width: 20%; }
+  .modal__body h2 {
+    font-size: 1.5em; } }
+
+@media only screen and (max-width: 320px) {
+  #section-different .container {
+    margin: 0 10px; } }
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  #section-different .container {
+    margin: 0 10px; } }
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  #section-different .container {
+    margin: 0 10px; } }
+
+@media only screen and (min-width: 1024px) {
+  #section-different .container {
+    margin: 0 auto; } }
+
+@media only screen and (min-width: 1200px) {
+  #section-different .container {
+    margin: 0 auto; } }
 
 html {
   font-weight: 300; }
 
 html, body, #mast, .section-home, .container {
-  height: 100%; }
+  height: 100%;
+  position: relative; }
 
 body {
   background: url("../images/front/bg-front.png") no-repeat center center fixed;

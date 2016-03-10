@@ -8,7 +8,7 @@
 	<script src="<?php bloginfo('template_url'); ?>/assets/js/libraries/ios-orientationchange-fix.js"></script>
 	<script src="<?php bloginfo('template_url'); ?>/assets/js/libraries/jquery.mousewheel.js"></script>
     <script src="<?php bloginfo('template_url'); ?>/assets/js/libraries/grid.js"></script>
-	<script src="<?php bloginfo('template_url'); ?>/assets/js/scripts/konstruct.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/assets/js/app.js"></script>
 
     <!-- D.3. GOOGLE ANALYTICS -->
 

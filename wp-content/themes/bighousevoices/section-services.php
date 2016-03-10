@@ -15,7 +15,7 @@
 
         <!-- C.2.4.2. services grid -->
 
-        <ul class="grid-group services-group">
+        <ul class="grid-group services-group no-mobile-inline">
             <li class="grid-item services-item strategy">
                 <figure><img src="<?php echo get_template_directory_uri(); ?>/assets/images/services/icon-strat.png" alt="strategy"></figure>
                 <h4>STRATEGY</h4>

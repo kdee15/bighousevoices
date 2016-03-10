@@ -8,7 +8,9 @@
         <!-- C.2.6.1. Page Title -->
 
         <section class="section-header">
-            <figure class="figure-header"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/casestudies/header-icon.png" alt="page header"></figure>
+            <figure class="figure-header icon">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/includes/icon--microphone.svg" alt="page header">
+            </figure>
             <h2>our artists</h2>
             <span></span>
         </section>

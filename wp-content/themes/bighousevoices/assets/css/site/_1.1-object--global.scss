@@ -60,90 +60,6 @@ a { cursor: pointer; }
 
 // A.2. CONTENT -------------------------------------------------------------------------------------------------------
 
-// A.2.1. SUBJECT COLORS ----------------------------------------------------------------------------------------------
-
-.mathematics {
-    
-    background: $ia-orange;
-    @include ia-subject ($ia-orange);
-}
-
-.physical {
-    
-    background: $ia-redDark;
-    @include ia-subject ($ia-redDark);
-}
-
-.life {
-    
-    background: $ia-blueLight;
-    @include ia-subject ($ia-blueLight);
-}
-
-.natural {
-    
-    background: $ia-mint;
-    @include ia-subject ($ia-mint);
-}
-
-.robotics {
-    
-    background: $ia-mintDark;
-    @include ia-subject ($ia-mintDark);
-}
-
-.coding {
-    
-    background: $ia-purple;
-    @include ia-subject ($ia-purple);
-}
-
-// A.2.1. END ---------------------------------------------------------------------------------------------------------
-
-// A.2.2. LESSON PLAY BUTTON COLORS -----------------------------------------------------------------------------------
-
-
-.mathematics {
-    
-    
-}
-
-.physical {
-    
-    background: $ia-redDark;
-    @include ia-subject ($ia-redDark);
-    
-}
-
-.life {
-    
-    background: $ia-blueLight;
-    @include ia-subject ($ia-blueLight);
-    
-}
-
-.natural {
-    
-    background: $ia-mint;
-    @include ia-subject ($ia-mint);
-    
-}
-
-.robotics {
-    
-    background: $ia-mintDark;
-    @include ia-subject ($ia-mintDark);
-    
-}
-
-.coding {
-    
-    background: $ia-purple;
-    @include ia-subject ($ia-purple);
-    
-}
-
-// A.2.1. END ---------------------------------------------------------------------------------------------------------
 // A.2. END -----------------------------------------------------------------------------------------------------------
 
 // A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -154,11 +70,13 @@ a { cursor: pointer; }
 
     // A.1.5. HIDE ON PHONES
 
-    .no-mobile {
+    .no-mobile { display: none; }
 
-        display: none;
+    // A.1.5. END
+    
+    // A.1.5. HIDE ON PHONES
 
-    }
+    .no-mobile-inline { display: none; }
 
     // A.1.5. END
     
@@ -170,20 +88,17 @@ a { cursor: pointer; }
 
 @include media-query(mobile) {
 
-    .container {
-        
-        padding: 0;
-        
-    }
-    
+    .container { padding: 0; }
 
     // A.1.5. HIDE ON PHONES
 
-    .no-mobile {
+    .no-mobile { display: none; }
 
-        display: none;
+    // A.1.5. END
+    
+    // A.1.5. HIDE ON PHONES
 
-    }
+    .no-mobile-inline { display: none; }
 
     // A.1.5. END
     
@@ -198,11 +113,13 @@ a { cursor: pointer; }
 
     // A.1.5. HIDE ON PHONES
 
-    .no-mobile {
+    .no-mobile { display: block; }
 
-        display: block;
+    // A.1.5. END
+    
+    // A.1.5. HIDE ON PHONES
 
-    }
+    .no-mobile-inline { display: inline-block; }
 
     // A.1.5. END
     
@@ -216,11 +133,13 @@ a { cursor: pointer; }
 
     // A.1.5. HIDE ON PHONES
 
-    .no-mobile {
+    .no-mobile { display: block; }
 
-        display: block;
+    // A.1.5. END
+    
+    // A.1.5. HIDE ON PHONES
 
-    }
+    .no-mobile-inline { display: flex; }
 
     // A.1.5. END
     
@@ -234,11 +153,13 @@ a { cursor: pointer; }
 
     // A.1.5. HIDE ON PHONES
 
-    .no-mobile {
+    .no-mobile { display: block; }
 
-        display: block;
+    // A.1.5. END
+    
+    // A.1.5. HIDE ON PHONES
 
-    }
+    //.no-mobile-inline { display: flex; }
 
     // A.1.5. END
     

@@ -104,7 +104,7 @@
 			// RESPONSIVE
 			
 			color: #818181;
-			
+            
 			// B.1. Components
 			
 			//B.1.1. page header
@@ -566,9 +566,9 @@
 				text-align: center; 
 				
 				.casestudies-item	{
-					@extend .one-quarter;
-					@extend .mobile--one-half;
-					@extend .feature--one-half;
+					@extend .one-half;
+					@extend .desk--one-fifth;
+					@extend .desk-wide--one-seventh;
 					padding: 0;
 					position: relative;
 					
