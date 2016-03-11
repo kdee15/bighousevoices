@@ -8,20 +8,11 @@
 
 .wp-audio-shortcode {
     
-    width: 100%!important;
+    width: 90%!important;
     visibility: visible!important;
     padding: 0 $baseline-small;
     box-sizing: border-box;
     
-}
-
-// A.1.1. END
-
-// A.1.1 LINKS
-
-.wp-audio-shortcode {
-    
-    &.full { width: 90%!important; }
 }
 
 // A.1.1. END

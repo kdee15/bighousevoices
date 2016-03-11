@@ -70,13 +70,11 @@ a { cursor: pointer; }
 
     // A.1.5. HIDE ON PHONES
 
-    .no-mobile { display: none; }
+    .no-mobile {
 
-    // A.1.5. END
-    
-    // A.1.5. HIDE ON PHONES
+        display: none;
 
-    .no-mobile-inline { display: none; }
+    }
 
     // A.1.5. END
     
@@ -88,17 +86,20 @@ a { cursor: pointer; }
 
 @include media-query(mobile) {
 
-    .container { padding: 0; }
-
-    // A.1.5. HIDE ON PHONES
-
-    .no-mobile { display: none; }
-
-    // A.1.5. END
+    .container {
+        
+        padding: 0;
+        
+    }
     
+
     // A.1.5. HIDE ON PHONES
 
-    .no-mobile-inline { display: none; }
+    .no-mobile {
+
+        display: none;
+
+    }
 
     // A.1.5. END
     
@@ -113,13 +114,11 @@ a { cursor: pointer; }
 
     // A.1.5. HIDE ON PHONES
 
-    .no-mobile { display: block; }
+    .no-mobile {
 
-    // A.1.5. END
-    
-    // A.1.5. HIDE ON PHONES
+        display: block;
 
-    .no-mobile-inline { display: inline-block; }
+    }
 
     // A.1.5. END
     
@@ -133,13 +132,11 @@ a { cursor: pointer; }
 
     // A.1.5. HIDE ON PHONES
 
-    .no-mobile { display: block; }
+    .no-mobile {
 
-    // A.1.5. END
-    
-    // A.1.5. HIDE ON PHONES
+        display: block;
 
-    .no-mobile-inline { display: flex; }
+    }
 
     // A.1.5. END
     
@@ -153,13 +150,11 @@ a { cursor: pointer; }
 
     // A.1.5. HIDE ON PHONES
 
-    .no-mobile { display: block; }
+    .no-mobile {
 
-    // A.1.5. END
-    
-    // A.1.5. HIDE ON PHONES
+        display: block;
 
-    //.no-mobile-inline { display: flex; }
+    }
 
     // A.1.5. END
     

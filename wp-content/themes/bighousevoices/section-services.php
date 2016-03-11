@@ -2,7 +2,7 @@
 
 <section class="section section-bobServices" id="section-services">
 
-    <div class="figure-servicesTop"></span></div>
+    <div class="figure-servicesTop"><span></span></div>
 
     <div class="container">
 
@@ -10,26 +10,29 @@
 
         <section class="section-header">
             <h2>services</h2>
-            <p>Our collaborative service provides our clients innovative thinking that offers better solutions. </p>
+            <p>Big House voices is Voice Over agency based in Cape Town. We offer voice over solutions for TV, Radio and Film.</p>
         </section>
 
         <!-- C.2.4.2. services grid -->
 
         <ul class="grid-group services-group no-mobile-inline">
             <li class="grid-item services-item strategy">
-                <figure><img src="<?php echo get_template_directory_uri(); ?>/assets/images/services/icon-strat.png" alt="strategy"></figure>
-                <h4>STRATEGY</h4>
-                <span>Brand, communication, commercial and retail strategy. Systemic brand thinking. </span>
+                <figure><img src="<?php echo get_template_directory_uri(); ?>/assets/includes/icons/icon--radio.svg" alt="strategy"></figure>
+                
+                <figure class="icon"><?php include ( 'assets/includes/icons/icon--radio.html' ); ?></figure>
+                
+                <h4>Radio</h4>
+                <span></span>
             </li>
             <li class="grid-item services-item research">
-                <figure><img src="<?php echo get_template_directory_uri(); ?>/assets/images/services/icon-ttl.png" alt="ttl"></figure>
-                <h4>TTL/CREATIVE</h4>
-                <span>Holistic campaigns, integrated campaign business solutions, from creative design to trend creation.</span>
+                <figure class="icon"><?php include ( 'assets/includes/icons/icon--radio.html' ); ?></figure>
+                <h4>Television</h4>
+                <span></span>
             </li>
             <li class="grid-item services-item ttl">
-                <figure><img src="<?php echo get_template_directory_uri(); ?>/assets/images/services/icon-digital.png" alt="digital"></figure>
-                <h4>DIGITAL &amp; MOBILE</h4>
-                <span>Web, mobile and social communications, digital science and app development.</span>
+                <figure class="icon"><?php include ( 'assets/includes/icons/icon--radio.html' ); ?></figure>
+                <h4>Film</h4>
+                <span></span>
             </li>
             
         </ul>                       

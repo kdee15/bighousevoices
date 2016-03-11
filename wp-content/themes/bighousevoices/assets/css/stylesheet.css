@@ -1691,6 +1691,14 @@ a {
   .modal__body h2 {
     font-size: 1.5em; } }
 
+.figure-header {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto; }
+  .figure-header img {
+    width: 100%;
+    height: auto; }
+
 @media only screen and (max-width: 320px) {
   #section-different .container {
     margin: 0 10px; } }

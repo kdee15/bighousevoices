@@ -16,10 +16,6 @@
     
 }
 
-.modal__body {
-    h2 { color: $white; }
-}
-
 // A.1.1. END
 
 // A.1.2. MODAL CONTROLS
@@ -64,6 +60,7 @@
 // A.1.4. END
 
 // A.1.5. END
+
 		
 .modalClose {
 
@@ -109,9 +106,7 @@
 
     .modal_img { width: 30%; }
     
-    .modal__body {
-        h2 { font-size: $small; }
-    }
+    h2 { font-size: $small; }
     
     // A.1.6. END
     
@@ -122,6 +117,7 @@
 // C. TABLET STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 @include media-query(mobile) {
+
 
     // A.1.5. audio padding
 
@@ -137,9 +133,7 @@
 
     .modal_img { width: 50%; }
     
-    .modal__body {
-        h2 { font-size: $small; }
-    }
+    h2 { font-size: $small; }
     
     // A.1.6. END
 }
@@ -149,6 +143,7 @@
 // D. DESKTOP STYLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 @include media-query(tablet) {
+
 
     // A.1.5. audio padding
 
@@ -164,9 +159,7 @@
 
     .modal_img { width: 30%; }
     
-    .modal__body {
-        h2 { font-size: $medium; }
-    }
+    h2 { font-size: $small; }
     
     // A.1.6. END
 }
@@ -176,6 +169,7 @@
 // E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 @include media-query(desk) {
+
 
     // A.1.5. audio padding
 
@@ -191,9 +185,7 @@
 
     .modal_img { width: 50%; }
     
-    .modal__body {
-        h2 { font-size: $large; }
-    }
+    h2 { font-size: $normal; }
     
     // A.1.6. END
 }
@@ -203,6 +195,7 @@
 // E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 @include media-query(desk-wide) {
+
 
     // A.1.5. audio padding
 
@@ -216,11 +209,9 @@
     
     // A.1.6. ARTIST INFO
 
-    .modal_img { width: 20%; }
-
-    .modal__body {
-        h2 { font-size: $large; }
-    }
+    .modal_img { width: 50%; }
+    
+    h2 { font-size: $normal; }
     
     // A.1.6. END
 }
