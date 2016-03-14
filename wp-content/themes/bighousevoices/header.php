@@ -24,6 +24,7 @@
 		<!-- A. CSS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/stylesheet.css">
+        <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/hacks.css">
 
         <!-- A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
@@ -54,11 +55,11 @@
                     <!-- C.1.2. Navigation -->
                     <nav class="nav-main">
                         <ul>
-                            <li><a class="bob-textLink" href="#section-different">About Us</a></li>
-                            <li><a class="bob-textLink" href="#section-services">Our Services</a></li>
-                            <li><a class="bob-textLink" href="#section-casestudies">Our Artists</a></li>
-                            <li><a class="bob-textLink" href="#section-contact">Contact</a></li>
-                            <li><a class="bob-imgLink" href="http://www.facebook.com/bighousevoices" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-facebook.svg" alt="Facebook"></a></li>
+                            <li><a class="textLink" href="#section-different">About Us</a></li>
+                            <li><a class="textLink" href="#section-services">Our Services</a></li>
+                            <li><a class="textLink" href="#section-casestudies">Our Artists</a></li>
+                            <li><a class="textLink" href="#section-contact">Contact</a></li>
+                            <li><a class="imgLink" href="http://www.facebook.com/bighousevoices" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-facebook.svg" alt="Facebook"></a></li>
                         </ul>
                     </nav>
                 

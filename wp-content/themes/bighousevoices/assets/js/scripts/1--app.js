@@ -87,7 +87,7 @@ var currentContent = '';
     
 // A.3. SCROLL TO LINK ------------------------------------------------------------------------------------------------
     
-    $(".bob-textLink, .bob-backUp").click(function(event){
+    $(".textLink, .bob-backUp").click(function(event){
         
          event.preventDefault();
          //calculate destination place

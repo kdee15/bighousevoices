@@ -9,7 +9,7 @@
 
         <section class="section-header">
             <figure class="figure-header icon">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/includes/icons/icon--microphone.svg" alt="page header">
+                <?php include ( 'assets/includes/icons/icon--microphone.html' ); ?>
             </figure>
             <h2>our artists</h2>
             <span></span>

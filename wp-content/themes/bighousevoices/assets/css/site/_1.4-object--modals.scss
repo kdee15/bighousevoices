@@ -45,6 +45,7 @@
         
         margin-bottom: $baseline-small;
         @extend .feature--one-whole;
+        @extend .mobile--one-whole;
         
         .inner {
             
@@ -92,6 +93,7 @@
 
 @include media-query(feature) {
 
+.modal {    
     // A.1.5. audio padding
 
     .modal__grid {
@@ -109,6 +111,7 @@
     h2 { font-size: $small; }
     
     // A.1.6. END
+}
     
 }
 
@@ -118,7 +121,7 @@
 
 @include media-query(mobile) {
 
-
+.modal {
     // A.1.5. audio padding
 
     .modal__grid {
@@ -137,6 +140,7 @@
     
     // A.1.6. END
 }
+}
 
 // C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -144,7 +148,7 @@
 
 @include media-query(tablet) {
 
-
+.modal {
     // A.1.5. audio padding
 
     .modal__grid {
@@ -163,6 +167,7 @@
     
     // A.1.6. END
 }
+}
 
 // D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -170,7 +175,7 @@
 
 @include media-query(desk) {
 
-
+.modal {
     // A.1.5. audio padding
 
     .modal__grid {
@@ -189,6 +194,7 @@
     
     // A.1.6. END
 }
+}
 
 // E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -196,7 +202,7 @@
 
 @include media-query(desk-wide) {
 
-
+.modal {
     // A.1.5. audio padding
 
     .modal__grid {
@@ -214,6 +220,7 @@
     h2 { font-size: $normal; }
     
     // A.1.6. END
+}
 }
 
 // E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

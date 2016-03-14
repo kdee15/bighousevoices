@@ -21,38 +21,52 @@
         <div class="contact-group">
             <ul class="grid-group">
                 <li class="grid-item contact-item">
-                    <figure><img src="<?php echo get_template_directory_uri(); ?>/assets/images/contact/find-us.png" alt="Find Us"></figure>
+                    <a class="no-mobile">
+                        <figure class="icon">
+                            <?php include ( 'assets/includes/icons/icon--pin.html' ); ?>
+                        </figure>
+                    </a>
                     <h4>FIND US</h4>
                     <span>
                         29 Sir Lowry Road, Woodstock,<br>
                         Cape Town, Western Cape,<br>
                         South Africa<br>
-                        -33.929095, 18.444485
+                        -33.927333, 18.434530
                     </span>
                 </li>
                 <li class="grid-item contact-item">
-                    <figure><img src="<?php echo get_template_directory_uri(); ?>/assets/images/contact/email-us.png" alt="Email Us"></figure>
+                    <a class="no-mobile">
+                        <figure class="icon">
+                            <?php include ( 'assets/includes/icons/icon--mail.html' ); ?>
+                        </figure>
+                    </a>
                     <h4>DROP US A MAIL</h4>
                     <span>
-                        <a href="mailto:wes@bighouserecordingstudios.com" target="_blank">Wesley</a>
-                        <a href="mailto:devon@bighouserecordingstudios.com" target="_blank">Devon</a>
+                        <a href="mailto:wes@bighouserecordingstudios.com" target="_blank" class="mail-me">Wesley</a>
+                        <a href="mailto:devon@bighouserecordingstudios.com" target="_blank" class="mail-me">Devon</a>
                     </span>
                 </li> 
                 <li class="grid-item contact-item">
-                    <figure><img src="<?php echo get_template_directory_uri(); ?>/assets/images/contact/call-us.png" alt="Call Us"></figure>
+                    <a class="no-mobile">
+                        <figure class="icon">
+                            <?php include ( 'assets/includes/icons/icon--mobile.html' ); ?>
+                        </figure>
+                    </a>
                     <h4>GIVE US A CALL</h4>
-                    <span>
+                    <span class="mail-me">
                         t +27 78 893 2345<br>
                         f +27 86 000 0000
                     </span>
                 </li>
                 <li class="grid-item contact-item">
-                    <a href="http://www.facebook.com/bighousevoices" target="_blank">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/contact/facebook.png" alt="Facebook">
+                    <a href="http://www.facebook.com/bighousevoices" target="_blank" class="no-mobile">
+                        <figure class="icon">
+                            <?php include ( 'assets/includes/icons/icon--fb.html' ); ?>
+                        </figure>
                     </a>
                     <h4>CONNECT VIA</h4>
                     <span>
-                        <a href="http://www.facebook.com/bighousevoices" target="_blank">FACEBOOK</a>
+                        <a href="http://www.facebook.com/bighousevoices" target="_blank" class="mail-me">FACEBOOK</a>
                     </span>
                 </li> 
             </ul>                            
