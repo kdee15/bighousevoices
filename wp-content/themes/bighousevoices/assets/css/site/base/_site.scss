@@ -116,6 +116,19 @@
                                     border-radius: 100%;
 								}
 							}
+                            
+                            .imgLink {
+                                
+                                color: $ia-grey20;
+                                
+                                img {
+								
+                                    &:hover, &:active {
+                                        color: $ia-grey20;
+                                        text-decoration: none;
+                                    }
+                                }
+                            }
 						}
 					}
 				}

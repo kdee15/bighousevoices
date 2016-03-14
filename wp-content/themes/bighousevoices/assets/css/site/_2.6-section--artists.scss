@@ -39,25 +39,13 @@
 
         .casestudies-item	{
             @extend .one-half;
-            @extend .desk--one-fifth;
-            @extend .desk-wide--one-eighth;
+            @extend .desk--one-quarter;
+            @extend .desk-wide--one-sixth;
             padding: 0;
             position: relative;
 
-            .bob-caseHover {
-                padding: 0;
-            }
-
         }
-
     }
-
-    //
-
-    #cs-1,#cs-2,#cs-3,#cs-4,#cs-5 {
-
-    }
-
 }
 
 // A.2. END -----------------------------------------------------------------------------------------------------------
@@ -68,10 +56,37 @@
 
 @include media-query(feature) {
 
-    // A.1.1 ABOUT US
+    // A.1.1 CASE STUDIES
 
+    #section-casestudies {
 
+        // F.1. Components
 
+        //
+
+        .section-header {
+
+            span {
+                padding: 0 40px;
+            }
+        }
+
+        //
+
+        .casestudies-group	{
+
+            .casestudies-item	{
+
+                .bob-caseHover {
+                    padding: 20px 0 10px;
+                }
+
+            }
+
+        }
+
+    }
+    
     // A.1.1. END
     
 }
@@ -82,10 +97,37 @@
 
 @include media-query(mobile) {
 
-    // A.1.1 ABOUT US
+    // A.1.1 CASE STUDIES
 
+    #section-casestudies {
 
+        // F.1. Components
 
+        //
+
+        .section-header {
+
+            span {
+                padding: 0 40px;
+            }
+        }
+
+        //
+
+        .casestudies-group	{
+
+            .casestudies-item	{
+
+                .bob-caseHover {
+                    padding: 20px 0 10px;
+                }
+
+            }
+
+        }
+
+    }
+    
     // A.1.1. END
     
 
@@ -97,10 +139,37 @@
 
 @include media-query(tablet) {
 
-    // A.1.1 ABOUT US
+    // A.1.1 CASE STUDIES
 
+    #section-casestudies {
 
+        // F.1. Components
 
+        //
+
+        .section-header {
+
+            span {
+                padding: 0 40px;
+            }
+        }
+
+        //
+
+        .casestudies-group	{
+
+            .casestudies-item	{
+
+                .bob-caseHover {
+                    padding: 20px 0 40px;
+                }
+
+            }
+
+        }
+
+    }
+    
     // A.1.1. END
     
 }
@@ -111,10 +180,37 @@
 
 @include media-query(desk) {
 
-    // A.1.1 ABOUT US
+    // A.1.1 CASE STUDIES
 
+    #section-casestudies {
 
+        // F.1. Components
 
+        //
+
+        .section-header {
+
+            span {
+                padding: 0 40px;
+            }
+        }
+
+        //
+
+        .casestudies-group	{
+
+            .casestudies-item	{
+
+                .bob-caseHover {
+                    padding: 20px 0 40px;
+                }
+
+            }
+
+        }
+
+    }
+    
     // A.1.1. END
     
 }
@@ -125,10 +221,37 @@
 
 @include media-query(desk-wide) {
 
-    // A.1.1 ABOUT US
+    // A.1.1 CASE STUDIES
 
+    #section-casestudies {
 
+        // F.1. Components
 
+        //
+
+        .section-header {
+
+            span {
+                padding: 0 40px;
+            }
+        }
+
+        //
+
+        .casestudies-group	{
+
+            .casestudies-item	{
+
+                .bob-caseHover {
+                    padding: 20px 0 40px;
+                }
+
+            }
+
+        }
+
+    }
+    
     // A.1.1. END
     
 }

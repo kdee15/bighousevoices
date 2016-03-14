@@ -47,7 +47,8 @@
         .contact-item	{
             
             @extend .one-quarter;
-            @extend .mobile--one-half;
+            @extend .mobile--one-whole;
+            @extend .feature--one-whole;
             
             // A.1.5. ICON
 
@@ -78,6 +79,8 @@
                 font-size: 0.85em;
 
             }
+            
+            .mail-me { display: block; color: $ia-red; }
         }
 
     }
