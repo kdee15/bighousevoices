@@ -3,9 +3,7 @@
 @media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) 
 { @media {
     
-    .casestudies-item { 
-
-        margin-right: -1px;
-
-    }
+    .casestudies-item { margin-right: -1px; }
+    .casestudies-item .mask { transform: translateX(-110%); }
+    
 }}

@@ -1,4 +1,4 @@
-// 2. SECTION [ 2.5. SERVICES ]  #######################################################################################
+// 2. SECTION [ 2.7. CONTACT ]  #######################################################################################
 
 // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -98,9 +98,33 @@
 @include media-query(feature) {
 
     // A.1.1 ABOUT US
-
-
-
+	
+		#section-contact {
+			
+			// RESPONSIVE
+			padding: 0 0 40px;
+			// RESPONSIVE
+			
+			.figure-map {
+			    
+			    // RESPONSIVE
+				padding: 0 0 60px 0;
+				// RESPONSIVE
+				
+			}
+			
+			.contact-group	{
+				
+				.contact-item	{
+					
+					margin-bottom: 20px;
+				}
+					
+			}
+			
+    		// H.1. End			
+		}
+	
     // A.1.1. END
     
 }
@@ -112,9 +136,33 @@
 @include media-query(mobile) {
 
     // A.1.1 ABOUT US
-
-
-
+	
+		#section-contact {
+			
+			// RESPONSIVE
+			padding: 0 0 40px;
+			// RESPONSIVE
+			
+			.figure-map {
+			    
+			    // RESPONSIVE
+				padding: 0 0 60px 0;
+				// RESPONSIVE
+				
+			}
+			
+			.contact-group	{
+				
+				.contact-item	{
+					
+					margin-bottom: 20px;
+				}
+					
+			}
+			
+    		// H.1. End			
+		}
+	
     // A.1.1. END
     
 

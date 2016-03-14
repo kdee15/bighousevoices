@@ -93,6 +93,15 @@
 // the above objects in a meaningful manner to build 
 // up any given page.
 
+    // 2.1. MASTHEAD
+    @import	"_2.1-section--masthead";
+
+    // 2.2. MAST
+    @import	"_2.2-section--mast";
+
+    // 2.3. FOOTEND
+    @import	"_2.3-section--footend";
+
     // 2.4. ABOUT
     @import	"_2.4-section--about";
 
@@ -104,6 +113,9 @@
 
     // 2.7. CONTACT
     @import	"_2.7-section--contact";
+
+    // 2.8. FRONT
+    @import	"_2.8-section--front";
 
 
 // 2. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -122,34 +134,5 @@
 
 
 // 3. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-// 4. LEGACY QUERIES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-
-	// A. BASE STYLING ++++++++++++++++++++++++++++++++++++
-	@import	"base/base";
-	
-	// B. MOBILE STYLING ++++++++++++++++++++++++++++++++++++
-
-	@media only screen and (max-width: 480px) {
-	    @import	"mobile/mobile";
-	}
-	
-	// C. TABLET STYLING ++++++++++++++++++++++++++++++++++++
-	@media only screen and (min-width: 481px) and (max-width: 1023px) {
-	    @import	"tablets/tablets";
-	}
-	
-	// D. DESK STYLING ++++++++++++++++++++++++++++++++++++
-	@media only screen and (min-width: 1024px) {
-	    @import	"desk/desk";
-	}
-	
-	// E. WIDE DESK STYLING ++++++++++++++++++++++++++++++++++++
-	@media only screen and (min-width: 1200px) {
-	    //@import	"mobile/mobile";
-	}
-
-// 4. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // END OF FILE ########################################################################################################

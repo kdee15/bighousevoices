@@ -112,12 +112,67 @@
 // B. MOBILE STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 @include media-query(feature) {
-
-    // A.1.1 ABOUT US
-
-
-
-    // A.1.1. END
+	
+		// E.1. anchor padding to align screen top
+		
+		#top-services {
+			padding: 55px 0;	
+		}
+		
+		
+		// E.2. containing div elements
+		
+		#section-services {
+		
+		    .section-header {
+		    	
+		    	h2 {
+		    	    // RESPONSIVE
+		    	    margin-bottom: 35px;
+		    	    // RESPONSIVE
+		    	}
+		    	
+		    	p {
+		    	    // RESPONSIVE
+		    	    margin-bottom: 65px;
+		    	    // RESPONSIVE
+		    	}					
+		    }
+			
+			// RESPONSIVE
+			padding: 0 0 40px;
+			// RESPONSIVE
+			
+			// E.2.1. Components
+			
+			
+			//
+			
+			.figure-servicesTop {
+			
+				// RESPONSIVE
+				margin-top: -60px;
+    			padding: 90px 0;
+    			// RESPONSIVE
+			}			
+			
+			//
+			
+			.services-group	{
+				
+				.services-item	{
+					// RESPONSIVE
+					margin: 20px 0 0 0;
+					// RESPONSIVE
+					
+				}
+					
+			}
+			
+			
+    		// E.1. End			
+		}
+	
     
 }
 
@@ -126,12 +181,67 @@
 // C. TABLET STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 @include media-query(mobile) {
-
-    // A.1.1 ABOUT US
-
-
-
-    // A.1.1. END
+	
+		// E.1. anchor padding to align screen top
+		
+		#top-services {
+			padding: 55px 0;	
+		}
+		
+		
+		// E.2. containing div elements
+		
+		#section-services {
+		
+		    .section-header {
+		    	
+		    	h2 {
+		    	    // RESPONSIVE
+		    	    margin-bottom: 35px;
+		    	    // RESPONSIVE
+		    	}
+		    	
+		    	p {
+		    	    // RESPONSIVE
+		    	    margin-bottom: 65px;
+		    	    // RESPONSIVE
+		    	}					
+		    }
+			
+			// RESPONSIVE
+			padding: 0 0 40px;
+			// RESPONSIVE
+			
+			// E.2.1. Components
+			
+			
+			//
+			
+			.figure-servicesTop {
+			
+				// RESPONSIVE
+				margin-top: -60px;
+    			padding: 90px 0;
+    			// RESPONSIVE
+			}			
+			
+			//
+			
+			.services-group	{
+				
+				.services-item	{
+					// RESPONSIVE
+					margin: 20px 0 0 0;
+					// RESPONSIVE
+					
+				}
+					
+			}
+			
+			
+    		// E.1. End			
+		}
+	
     
 
 }
