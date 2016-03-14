@@ -1,64 +1,64 @@
-// 1. OBJECT [ 1.0. GENERAL ]  ########################################################################################
+// 2. SECTION [ 2.5. SERVICES ]  #######################################################################################
 
 // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-// A.1. STRUCTURE -----------------------------------------------------------------------------------------------------
+// A.1. HOME -----------------------------------------------------------------------------------------------------
+	
+#section-casestudies {
 
-// A.1.1 LINKS
+    background: #ecf0f1;
 
-a { cursor: pointer; }
+    // F.1. Components
 
-// A.1.1. END
+    //
 
-// A.1.2. SECTIONS
+    .section-header {
+        
+        margin-bottom: $baseline-large;
+        
+        .icon {
+            
+            @include icon (100px, 100px, $ia-grey90);   
+            
+        }
 
-.section { padding: 0; margin: 0; }
+        //
 
-// A.1.2. END
-
-// A.1.3. DROPDOWNS
-
-.dropdown {
-    
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    
-}
-
-// A.1.3. END
-
-
-// A.1.3. END
-
-.toggle-content {
-
-    display: none;
-
-    &.on {
-
-        display: block;
+        span {
+            border-top: 5px dotted $ia-red;
+            padding: 0 40px;
+        }
     }
+
+    //
+
+    .casestudies-group	{
+
+        @include clearfix();
+        text-align: center; 
+
+        .casestudies-item	{
+            @extend .one-half;
+            @extend .desk--one-fifth;
+            @extend .desk-wide--one-eighth;
+            padding: 0;
+            position: relative;
+
+            .bob-caseHover {
+                padding: 0;
+            }
+
+        }
+
+    }
+
+    //
+
+    #cs-1,#cs-2,#cs-3,#cs-4,#cs-5 {
+
+    }
+
 }
-
-// A.1.3. END
-
-// A.1.4. VERTICAL ALIGN
-
-.v-align {
-    
-    @include vertical-align (absolute);
-    left: 0;
-    right: 0;
-    
-}
-
-// A.1.4. END
-
-// A.1. END -----------------------------------------------------------------------------------------------------------
-
-// A.2. CONTENT -------------------------------------------------------------------------------------------------------
 
 // A.2. END -----------------------------------------------------------------------------------------------------------
 
@@ -68,11 +68,11 @@ a { cursor: pointer; }
 
 @include media-query(feature) {
 
-    // A.1.5. HIDE ON PHONES
+    // A.1.1 ABOUT US
 
-    .no-mobile, .no-mobile-inline { display: none; }
 
-    // A.1.5. END
+
+    // A.1.1. END
     
 }
 
@@ -82,18 +82,11 @@ a { cursor: pointer; }
 
 @include media-query(mobile) {
 
-    .container {
-        
-        padding: 0;
-        
-    }
-    
+    // A.1.1 ABOUT US
 
-    // A.1.5. HIDE ON PHONES
 
-    .no-mobile, .no-mobile-inline { display: none; }
 
-    // A.1.5. END
+    // A.1.1. END
     
 
 }
@@ -104,12 +97,11 @@ a { cursor: pointer; }
 
 @include media-query(tablet) {
 
-    // A.1.5. HIDE ON PHONES
+    // A.1.1 ABOUT US
 
-    .no-mobile { display: block; }
-    .no-mobile-inline { display: flex; }
 
-    // A.1.5. END
+
+    // A.1.1. END
     
 }
 
@@ -119,12 +111,11 @@ a { cursor: pointer; }
 
 @include media-query(desk) {
 
-    // A.1.5. HIDE ON PHONES
+    // A.1.1 ABOUT US
 
-    .no-mobile { display: block; }
-    .no-mobile-inline { display: flex; }
 
-    // A.1.5. END
+
+    // A.1.1. END
     
 }
 
@@ -134,12 +125,11 @@ a { cursor: pointer; }
 
 @include media-query(desk-wide) {
 
-    // A.1.5. HIDE ON PHONES
+    // A.1.1 ABOUT US
 
-    .no-mobile { display: block; }
-    .no-mobile-inline { display: flex; }
 
-    // A.1.5. END
+
+    // A.1.1. END
     
 }
 

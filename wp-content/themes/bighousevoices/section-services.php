@@ -17,20 +17,17 @@
 
         <ul class="grid-group services-group no-mobile-inline">
             <li class="grid-item services-item strategy">
-                <figure><img src="<?php echo get_template_directory_uri(); ?>/assets/includes/icons/icon--radio.svg" alt="strategy"></figure>
-                
                 <figure class="icon"><?php include ( 'assets/includes/icons/icon--radio.html' ); ?></figure>
-                
                 <h4>Radio</h4>
                 <span></span>
             </li>
             <li class="grid-item services-item research">
-                <figure class="icon"><?php include ( 'assets/includes/icons/icon--radio.html' ); ?></figure>
+                <figure class="icon"><?php include ( 'assets/includes/icons/icon--television.html' ); ?></figure>
                 <h4>Television</h4>
                 <span></span>
             </li>
             <li class="grid-item services-item ttl">
-                <figure class="icon"><?php include ( 'assets/includes/icons/icon--radio.html' ); ?></figure>
+                <figure class="icon"><?php include ( 'assets/includes/icons/icon--film.html' ); ?></figure>
                 <h4>Film</h4>
                 <span></span>
             </li>

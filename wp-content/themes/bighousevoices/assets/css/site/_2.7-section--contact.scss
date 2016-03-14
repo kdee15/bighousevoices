@@ -1,62 +1,92 @@
-// 1. OBJECT [ 1.8.2. CARD: MEDIUM ] ##################################################################################
-
-// ====== INDEX  ======================================================================================================
-// ==
-// == A.1. GENERAL STYLES
-// == A.2. CAROUSEL CARDS
-// == A.3. CARD ELEMENTS
-// ==
-// ====== INDEX  ======================================================================================================
+// 2. SECTION [ 2.5. SERVICES ]  #######################################################################################
 
 // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-// A.1. GENERAL CARDS -------------------------------------------------------------------------------------------------
+// A.1. HOME -----------------------------------------------------------------------------------------------------
 
-.card {
+#section-contact {
 
-    // A.1.5. MEDIUM CARD ---------------------------------------------------------------------------------------------
-    
-    &.medium {
+    background: $black url(../images/contact/bg-contact.jpg) no-repeat fixed;
+    background-size: cover;
+
+    // RESPONSIVE
+    padding: 0 0 40px;
+    // RESPONSIVE
+
+    color: #818181;
+
+    // H.1. Components
+
+    //
+
+    .section-header {
         
-        a { display: block; margin: 4px; }
-        
-        .card__header {
-            
-            .icon { 
-
-                @include icon (50px, 50px, $white);
-                position: relative;
-                padding: $baseline-small 0;
-                text-align: center;
-
-            }
-        }
-        
-        .card__body {
-            
-            background: $white;
-
-            .title {
-
-                text-align: center;
-                color: $ia-grey80;
-                font-size: $small;
-                padding: $baseline-small 0;
-
-                &:hover { color: $ia-grey80; }
-
-            }
-        }
+        margin-bottom: $baseline-large;
     }
-    
-    // A.1.5. END ----------------------------------------------------------------------------------------------------- 
-    
+
+    .figure-map {
+
+        // RESPONSIVE
+        padding: 0 0 60px 0;
+        display: none;
+        // RESPONSIVE
+
+        //
+
+        img {
+            max-width: 100%;
+        }
+
+    }
+
+    .contact-group	{
+
+        text-align: center;
+        color: #D0D0D0;
+
+        .contact-item	{
+            
+            @extend .one-quarter;
+            @extend .mobile--one-half;
+            
+            // A.1.5. ICON
+
+            .icon {
+
+                @include icon (80px, 80px, $ia-grey10);
+
+                .icon {
+
+                    text-align: center;
+                    border: 2px solid $ia-red;
+                    border-radius: 100%;
+                    padding: $baseline;
+
+                }
+            }
+
+            // A.1.5. END
+
+            margin-bottom: 20px;
+
+            h4 {
+                text-transform: uppercase;
+            }
+
+            span {
+
+                font-size: 0.85em;
+
+            }
+        }
+
+    }
+
+
+    // H.1. End			
 }
 
-
-
-// A.1. END -----------------------------------------------------------------------------------------------------------
-
+// A.2. END -----------------------------------------------------------------------------------------------------------
 
 // A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -64,7 +94,12 @@
 
 @include media-query(feature) {
 
+    // A.1.1 ABOUT US
 
+
+
+    // A.1.1. END
+    
 }
 
 // B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -72,6 +107,13 @@
 // C. TABLET STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 @include media-query(mobile) {
+
+    // A.1.1 ABOUT US
+
+
+
+    // A.1.1. END
+    
 
 }
 
@@ -81,6 +123,12 @@
 
 @include media-query(tablet) {
 
+    // A.1.1 ABOUT US
+
+
+
+    // A.1.1. END
+    
 }
 
 // D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -89,7 +137,11 @@
 
 @include media-query(desk) {
 
+    // A.1.1 ABOUT US
 
+
+
+    // A.1.1. END
     
 }
 
@@ -98,7 +150,12 @@
 // E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 @include media-query(desk-wide) {
-    
+
+    // A.1.1 ABOUT US
+
+
+
+    // A.1.1. END
     
 }
 

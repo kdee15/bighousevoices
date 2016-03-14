@@ -45,6 +45,7 @@
         
         margin-bottom: $baseline-small;
         @extend .feature--one-whole;
+        @extend .mobile--one-whole;
         
         .inner {
             
