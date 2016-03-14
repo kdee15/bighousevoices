@@ -728,7 +728,7 @@ html, body {
     -webkit-flex: 0 0 83.333%;
         -ms-flex: 0 0 83.333%;
             flex: 0 0 83.333%; }
-  .desk-wide--one-eighth {
+  .desk-wide--one-eighth, #section-casestudies .casestudies-group .casestudies-item {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 12.5%;
         -ms-flex: 0 0 12.5%;
@@ -1190,32 +1190,21 @@ a {
 
 @media only screen and (max-width: 320px) {
   .no-mobile {
-    display: none; }
-  .no-mobile-inline {
     display: none; } }
 
 @media only screen and (min-width: 321px) and (max-width: 480px) {
   .container {
     padding: 0; }
   .no-mobile {
-    display: none; }
-  .no-mobile-inline {
     display: none; } }
 
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
   .no-mobile {
-    display: block; }
-  .no-mobile-inline {
-    display: inline-block; } }
+    display: block; } }
 
 @media only screen and (min-width: 1024px) {
   .no-mobile {
-    display: block; }
-  .no-mobile-inline {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex; } }
+    display: block; } }
 
 @media only screen and (min-width: 1200px) {
   .no-mobile {
@@ -1585,14 +1574,11 @@ a {
         margin-right: 20px; } }
 
 .wp-audio-shortcode {
-  width: 100% !important;
+  width: 90% !important;
   visibility: visible !important;
   padding: 0 10px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
-
-.wp-audio-shortcode.full {
-  width: 90% !important; }
 
 @media only screen and (min-width: 321px) and (max-width: 480px) {
   .container {
@@ -1605,9 +1591,6 @@ a {
   height: auto;
   margin: 0 auto;
   border-radius: 100%; }
-
-.modal__body h2 {
-  color: #fff; }
 
 .modal {
   bottom: 0;
@@ -1656,7 +1639,7 @@ a {
     padding: 5px; }
   .modal_img {
     width: 30%; }
-  .modal__body h2 {
+  h2 {
     font-size: 0.75em; } }
 
 @media only screen and (min-width: 321px) and (max-width: 480px) {
@@ -1664,7 +1647,7 @@ a {
     padding: 10px; }
   .modal_img {
     width: 50%; }
-  .modal__body h2 {
+  h2 {
     font-size: 0.75em; } }
 
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
@@ -1672,59 +1655,30 @@ a {
     padding: 10px; }
   .modal_img {
     width: 30%; }
-  .modal__body h2 {
-    font-size: 1.125em; } }
+  h2 {
+    font-size: 0.75em; } }
 
 @media only screen and (min-width: 1024px) {
   .modal__grid .grid-item .inner {
     padding: 10px; }
   .modal_img {
     width: 50%; }
-  .modal__body h2 {
-    font-size: 1.5em; } }
+  h2 {
+    font-size: 1em; } }
 
 @media only screen and (min-width: 1200px) {
   .modal__grid .grid-item .inner {
     padding: 10px; }
   .modal_img {
-    width: 20%; }
-  .modal__body h2 {
-    font-size: 1.5em; } }
-
-.figure-header {
-  width: 60px;
-  height: 60px;
-  margin: 0 auto; }
-  .figure-header img {
-    width: 100%;
-    height: auto; }
-
-@media only screen and (max-width: 320px) {
-  #section-different .container {
-    margin: 0 10px; } }
-
-@media only screen and (min-width: 321px) and (max-width: 480px) {
-  #section-different .container {
-    margin: 0 10px; } }
-
-@media only screen and (min-width: 481px) and (max-width: 1023px) {
-  #section-different .container {
-    margin: 0 10px; } }
-
-@media only screen and (min-width: 1024px) {
-  #section-different .container {
-    margin: 0 auto; } }
-
-@media only screen and (min-width: 1200px) {
-  #section-different .container {
-    margin: 0 auto; } }
+    width: 50%; }
+  h2 {
+    font-size: 1em; } }
 
 html {
   font-weight: 300; }
 
 html, body, #mast, .section-home, .container {
-  height: 100%;
-  position: relative; }
+  height: 100%; }
 
 body {
   background: url("../images/front/bg-front.png") no-repeat center center fixed;
