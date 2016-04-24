@@ -160,9 +160,9 @@ _system/_bower.cache
 _system/.sass-cache
 _system/node_modules
 
-wp-content/themes/bighousevoices/_system/_bower.cache
-wp-content/themes/bighousevoices/_system/.sass-cache
-wp-content/themes/bighousevoices/_system/node_modules
+wp-content/themes/_system/_bower.cache
+wp-content/themes/_system/.sass-cache
+wp-content/themes/_system/node_modules
 
 wp-config.php
 
