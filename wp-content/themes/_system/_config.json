@@ -1,0 +1,56 @@
+{
+
+    "root": "",
+    
+    "assets" : {
+        
+        "js" : {
+            
+            "bower" : [
+                
+                "modernizr/modernizr.js",
+                "jquery/dist/jquery.js",
+                "html5shiv-master/dist/html5shiv.min.js"
+
+            ],
+            
+            "order" : [
+                
+                "modernizr.js",
+                "jquery.js"
+                
+
+            ],
+            
+            "maps" : [
+
+                "jquery/dist/jquery.min.map"
+
+            ]
+            
+        },
+        
+        "css" : {
+            
+            "vendors" : [
+
+                "normalize.css/normalize.css"
+
+            ],
+            
+            "konstruct" : [
+
+                "konstruct.config/",
+                "konstruct.bricks/",
+                "konstruct.cement/"
+
+            ],
+            
+            "site" : [
+
+                "konstruct.site/"
+
+            ]
+        }
+    }
+}
