@@ -61,28 +61,28 @@ $('.showhide').click(function(e) {
     
 // A.2. END -----------------------------------------------------------------------------------------------------------
     
-var currentContent = '';	
-	$(".toggle-div").on('click', function(){
-		currentContent = $(this).attr('name');
-		if($('#'+currentContent).hasClass('on')){
-			$('#'+currentContent).removeClass('on');
-            $("body").removeClass("modal-open");
-		}else{
-			hideAllContent();
-			showCurrentContent(currentContent);
-		}
-	});
+    var currentContent = '';	
+    $('.toggle-div').on('click', function(){
+        currentContent = $(this).attr('name');
+        if($('#'+currentContent).hasClass('on')){
+            $('#'+currentContent).removeClass('on');
+            $('body').removeClass('modal-open');
+        }else{
+            hideAllContent();
+            showCurrentContent(currentContent);
+        }
+    });
 
 	function hideAllContent(){
-		$('.toggle-content').removeClass('on');
-        $("body").removeClass("modal-open");
+        $('.toggle-content').removeClass('on');
+        $('body').removeClass('modal-open');
 	};
 	
 	function showCurrentContent(currentContentDiv){
-		$('#'+currentContentDiv).addClass('on');
-        $("body").addClass("modal-open");
-	};	
-			 
+        $('#'+currentContentDiv).addClass('on');
+        $('body').addClass('modal-open');
+	};
+    
 // A.2. END -----------------------------------------------------------------------------------------------------------
     
 // A.3. SCROLL TO LINK ------------------------------------------------------------------------------------------------
@@ -90,6 +90,7 @@ var currentContent = '';
     $(".textLink, .bob-backUp").click(function(event){
         
          event.preventDefault();
+        
          //calculate destination place
          var dest=0;
          if($(this.hash).offset().top > $(document).height()-$(window).height()){
@@ -97,8 +98,12 @@ var currentContent = '';
          }else{
               dest=$(this.hash).offset().top;
          }
+        
          //go to destination
          $('html,body').animate({scrollTop:dest}, 1000,'swing');
+        
+        //add class to burger
+        $('#mobi-nav').addClass('hide-nav');
         
     });
     
@@ -106,7 +111,7 @@ var currentContent = '';
     
 // A.4. SHOW HIDE LOGO ------------------------------------------------------------------------------------------------
 
-    var t = $(".wrapper").offset().top;
+    var t = $('.wrapper').offset().top;
 
     $(document).scroll(function(){
 
@@ -115,10 +120,10 @@ var currentContent = '';
             // Hide the logo, and show as you scroll
             if($(this).scrollTop() > t)
             {   
-                $('.logo').css({"display":"block"});
+                $('.logo').css({"display":'block'});
 
             }else{
-                $('.logo').css({"display":"none"});
+                $('.logo').css({"display":'none'});
             }
 
 
